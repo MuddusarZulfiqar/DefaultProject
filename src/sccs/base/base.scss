@@ -1,0 +1,45 @@
+:root{
+    --primary: #003160;
+    --seconary: #0082ff;
+    --textcolor: #515151;
+}
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: rem(16px);
+    font-family: $primary-font;
+    color: var(--textcolor);
+    line-height: 1;
+    margin: 0;
+    overflow-x: hidden;
+    font-weight: 400;
+    // @media screen and (max-width:1600px){
+    //     padding-top: 129px;
+    // }
+    //  @media screen and (max-width:991px){
+    //     padding-top: 102px;
+    // }
+    // @media screen and (max-width:767px){
+    //     padding-top:0;
+    // }
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1300px) {
+    .container {
+        max-width: 1260px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 80%;
+    }
+}
