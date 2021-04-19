@@ -503,7 +503,7 @@
 */
 :root {
   --primary: #003160;
-  --seconary: #0082ff;
+  --secondary: #0082ff;
   --textcolor: #515151; }
 
 html {
@@ -525,7 +525,7 @@ body {
 
 @media (min-width: 1300px) {
   .container {
-    max-width: 1260px; } }
+    max-width: 1200px; } }
 
 @media screen and (max-width: 991px) {
   html {
@@ -543,22 +543,6 @@ body {
 .ar .button-row .list-inline-item:not(:last-child) {
   margin-left: 4.0625rem;
   margin-right: 0px; }
-
-.btn-group {
-  position: relative;
-  width: max-content; }
-  .btn-group .btn:first-child {
-    position: relative; }
-    .btn-group .btn:first-child::before {
-      content: '';
-      position: absolute;
-      right: 0;
-      width: 2px;
-      height: 50%;
-      background: #2887c7;
-      z-index: 9;
-      top: 50%;
-      transform: translateY(-50%); }
 
 .btn {
   display: inline-block;
@@ -585,27 +569,23 @@ body {
   .btn.btn-primary,
   .btn .btn-primary:focus,
   .btn .btn-primary:active {
-    background: #1c5a84;
+    background: var(--primary);
     font-family: "Raleway", sans-serif; }
-    .btn.btn-primary:not(.big),
-    .btn .btn-primary:focus:not(.big),
-    .btn .btn-primary:active:not(.big) {
-      max-width: 150px; }
     .btn.btn-primary.bold,
     .btn .btn-primary:focus.bold,
     .btn .btn-primary:active.bold {
-      font-family: "Raleway", sans-serif; }
+      font-weight: 700; }
     .btn.btn-primary:not(:disabled):hover, .btn.btn-primary:focus,
     .btn .btn-primary:focus:not(:disabled):hover,
     .btn .btn-primary:focus:focus,
     .btn .btn-primary:active:not(:disabled):hover,
     .btn .btn-primary:active:focus {
-      background: #1c5a84;
+      background: var(--primary);
       color: #fff; }
     .btn.btn-primary:not(:disabled):active,
     .btn .btn-primary:focus:not(:disabled):active,
     .btn .btn-primary:active:not(:disabled):active {
-      background: #1c5a84;
+      background: var(--primary);
       border: 0;
       box-shadow: none !important; }
     .btn.btn-primary.big,
@@ -615,12 +595,12 @@ body {
       max-width: 200px; }
   .btn.btn-secondary {
     color: #fff;
-    border: 1px solid #0082ff;
-    background: #0082ff;
+    border: 1px solid var(--secondary);
+    background: var(--secondary);
     border-radius: 10px;
     text-align: center; }
     .btn.btn-secondary:hover {
-      background: #0082ff;
+      background: var(--secondary);
       color: #fff; }
     .btn.btn-secondary:not(.big) {
       max-width: 150px; }
@@ -2321,96 +2301,56 @@ header {
   width: 100%;
   transition: all 0.5s;
   position: relative; }
-  header .logo {
-    display: flex;
-    align-items: center; }
-    header .logo img {
-      transition: all 0.5s;
-      width: 88px;
-      height: 100%; }
-    header .logo .logo-title {
-      margin-left: 1.875rem;
-      transition: all 0.5s; }
-      header .logo .logo-title p {
-        color: #a8372d;
-        line-height: 1.1;
-        font-family: 'fontinbold'; }
-        header .logo .logo-title p span {
-          color: #1f1d1d;
-          display: block; }
-        header .logo .logo-title p.arabic {
-          font-size: 1.5625rem; }
-          header .logo .logo-title p.arabic span {
-            font-size: 1.25rem;
-            line-height: 1.5; }
-          @media screen and (max-width: 1600px) {
-            header .logo .logo-title p.arabic {
-              font-size: 1.25rem;
-              margin-bottom: 0.625rem; }
-              header .logo .logo-title p.arabic span {
-                font-size: 1.125rem; } }
-          @media screen and (max-width: 991px) {
-            header .logo .logo-title p.arabic {
-              font-size: 1.125rem; }
-              header .logo .logo-title p.arabic span {
-                font-size: 1rem; } }
-          @media screen and (max-width: 767px) {
-            header .logo .logo-title p.arabic {
-              font-size: 1rem; }
-              header .logo .logo-title p.arabic span {
-                font-size: 0.8125rem; } }
-        header .logo .logo-title p.eng {
-          font-size: 1.8125rem;
-          text-transform: uppercase;
-          letter-spacing: 8px;
-          margin-bottom: 0; }
-          header .logo .logo-title p.eng span {
-            font-size: 1.375rem;
-            letter-spacing: 2px; }
-          @media screen and (max-width: 1600px) {
-            header .logo .logo-title p.eng {
-              font-size: 1.5625rem; }
-              header .logo .logo-title p.eng span {
-                font-size: 1.125rem; } }
-          @media screen and (max-width: 991px) {
-            header .logo .logo-title p.eng {
-              font-size: 1.375rem;
-              letter-spacing: 6px; }
-              header .logo .logo-title p.eng span {
-                font-size: 1rem; } }
-          @media screen and (max-width: 767px) {
-            header .logo .logo-title p.eng {
-              font-size: 1.125rem;
-              letter-spacing: 5px; }
-              header .logo .logo-title p.eng span {
-                font-size: 0.8125rem; } }
   header .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
   header .navbar ul li {
     margin: 0px 0.625rem; }
     header .navbar ul li a {
-      font-size: 1.125rem;
+      font-size: 1.1875rem;
       text-transform: capitalize;
-      color: #1c5a84; }
-  header .menu-icon {
+      color: var(--primary);
+      position: relative;
+      display: block; }
+      header .navbar ul li a:after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 0%;
+        left: 0;
+        bottom: -5px;
+        transition: all 0.6s ease;
+        background: var(--secondary); }
+      @media screen and (min-width: 1025px) {
+        header .navbar ul li a:hover:after {
+          width: 100%; } }
+    header .navbar ul li .search-icon svg {
+      width: 20px;
+      height: auto; }
+    header .navbar ul li .search-icon:after {
+      display: none; }
+    header .navbar ul li .search-icon:hover {
+      color: var(--secondary); }
+    header .navbar ul li.active a:after {
+      width: 100%; }
+  header .btn-group {
+    margin-left: 0.9375rem;
     position: relative;
-    cursor: pointer;
-    z-index: 99; }
-    @media screen and (min-width: 768px) {
-      header .menu-icon {
-        display: none; } }
-    header .menu-icon span {
-      width: 26px;
-      height: 3px;
-      background: #89201a;
-      display: block;
-      margin-bottom: 4px;
-      transition: all .3s; }
-      header .menu-icon span:nth-child(3) {
-        width: 16px;
-        position: relative; }
-    header .menu-icon:hover span:nth-child(3) {
-      width: 26px; }
+    width: max-content; }
+    header .btn-group .btn:first-child {
+      position: relative; }
+      header .btn-group .btn:first-child::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 1px;
+        height: 35%;
+        background: #1c5a84;
+        z-index: 9;
+        top: 50%;
+        transform: translateY(-50%); }
+    header .btn-group .btn {
+      font-size: 1.125rem;
+      padding: 1.375rem 1.5625rem; }
 
 footer {
   background: url("../../assets/footer.png") left top no-repeat;

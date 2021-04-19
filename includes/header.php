@@ -32,10 +32,11 @@
     <title>Aqarat</title>
 </head>
 <body <?php if(isset($ishome)){ echo "class='front-page'";}?> >
+<?php include_once "includes/svg.php";?>
 <header>
     <nav class="navbar navbar-expand-lg container">
         <a class="navbar-brand" href="#">
-            <img src="./src/assets/logo.png" alt="" class="img-fluid">
+            <img src="./src/images/logo.png" alt="" class="img-fluid">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -58,17 +59,21 @@
                     <a class="nav-link" href="#">contact us</a>
                 </li>
             </ul>
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#">العربية</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
+                    <a class="nav-link search-icon" href="#">
+                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.54 511.26">
+                            <use xlink:href="#search-icon"></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
             <div class="btn-group" role="group">
-                <a href="" type="button" class="btn btn-primary">LOG IN</a>
-                <a href=""  type="button" class="btn btn-primary">register</a>
+                <a href="#" type="button" class="btn btn-primary">LOG IN</a>
+                <a href="#" type="button" class="btn btn-primary">register</a>
             </div>
         </div>
     </nav>

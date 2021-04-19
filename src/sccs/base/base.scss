@@ -1,6 +1,6 @@
 :root{
     --primary: #003160;
-    --seconary: #0082ff;
+    --secondary: #0082ff;
     --textcolor: #515151;
 }
 html {
@@ -34,7 +34,7 @@ body {
 
 @media (min-width: 1300px) {
     .container {
-        max-width: 1260px;
+        max-width: 1200px;
     }
 }
 
