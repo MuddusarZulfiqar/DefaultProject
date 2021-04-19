@@ -90,31 +90,66 @@
 
             <h6>Property Item</h6>
             
-            <div class="property">
-                <div class="property__image">
-                    <img src="src/assets/house.png" alt="" class="image-fluid">
-                    <div class="property__image--overlay"></div>
-                    <span class="property__verified">
-                    </span>
-                </div>
-                <div class="property__info">
-                    <p class="property__info--title"></p>
-                    <p class="property__info--location"></p>
-                    <div class="property__info--features">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="property__organizor">
-                    <div class="grid" data-item-gap="10" grid-item-width="1/2">
-                        <div class="property__organizor--image">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="property verified">
+                        <div class="property__image">
+                            <img src="src/images/house.png" alt="" class="img-fluid">
+                            <div class="property__image--overlay">
+                                <button class="btn btn-secondary">explore</button>
+                            </div>
+                            <span class="property__verified">
+                                <img src="src/images/svg/varified.svg" alt="">
+                            </span>
                         </div>
-                        <div class="property__organizor--name">
-                            <span>BY</span>
-                            Gulf Investment Co.
+                        <div class="property__info">
+                            <p class="property__info--title mb-3">sui house</p>
+                            <p class="property__info--location mb-3"><img class="icon" src="src/images/svg/location.svg" alt="" > Ahmed Al Jaber Street , Sahrq</p>
+                            <div class="property__info--features mb-3">
+                                <ul>
+                                    <li>
+                                        <div class="icons">
+                                            <div class="icons_image">
+                                                <img class="icon" src="src/images/svg/bed.svg" alt="">
+                                            </div>
+                                            <div class="icons_label">
+                                                6
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icons">
+                                            <div class="icons_image">
+                                                <img class="icon" src="src/images/svg/bath.svg" alt="">
+                                            </div>
+                                            <div class="icons_label">
+                                                3
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icons">
+                                            <div class="icons_image">
+                                                <img class="icon" src="src/images/svg/kitchen.svg" alt="">
+                                            </div>
+                                            <div class="icons_label">
+                                                1
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="property__organizor">
+                            <div class="d-flex align-items-center">
+                                <div class="property__organizor--image">
+                                    <img  src="src/images/card_logo.png" alt="" class="img-fluid rounded-circle">
+                                </div>
+                                <div class="property__organizor--name">
+                                    <span>BY</span>
+                                    Gulf Investment Co.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

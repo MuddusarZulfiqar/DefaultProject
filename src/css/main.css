@@ -2424,9 +2424,103 @@ footer {
     footer .footer-links li a {
       font-size: 1rem; } }
 
-header nav .nav-item a {
-  font-size: 1.125rem;
-  text-transform: capitalize;
-  color: #1c5a84; }
+.property__image {
+  position: relative; }
+  .property__image img {
+    border-radius: 10px;
+    width: 100%; }
+  .property__image--overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease all; }
+    .property__image--overlay button {
+      position: absolute;
+      bottom: 15px;
+      left: 15px; }
+    .property__image--overlay::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgba(28, 90, 132, 0.5);
+      border-radius: 10px; }
+
+.property__info {
+  margin-top: 20px;
+  padding-left: 20px; }
+  .property__info img.icon {
+    max-width: 15px; }
+  .property__info--title {
+    font-size: 1.5625rem;
+    text-transform: capitalize;
+    color: var(--primary, #003160);
+    font-weight: bold;
+    margin: unset;
+    line-height: 0.8; }
+  .property__info--location {
+    font-size: 1.125rem;
+    color: #515151; }
+    .property__info--location img {
+      margin-right: 5px; }
+  .property__info--features img {
+    max-width: 18px !important; }
+  .property__info--features ul li {
+    display: inline-block;
+    width: 70px;
+    position: relative; }
+    .property__info--features ul li .icons {
+      display: flex;
+      width: 100%; }
+      .property__info--features ul li .icons_image {
+        flex: 0 0 30px; }
+    .property__info--features ul li::before {
+      content: '';
+      position: absolute;
+      height: 70%;
+      width: 1px;
+      background: #0082ff;
+      left: 80%;
+      top: 50%;
+      transform: translateY(-50%); }
+    .property__info--features ul li:last-child::before {
+      content: unset; }
+
+.property__organizor--image {
+  max-width: 61px;
+  margin-right: 20px; }
+  .property__organizor--image img {
+    border: 2px solid var(--blue); }
+
+.property__organizor--name {
+  font-weight: bold;
+  color: #003160;
+  text-transform: uppercase; }
+  .property__organizor--name span {
+    display: block;
+    margin-bottom: 4px;
+    color: #598ea9; }
+
+.property__verified {
+  position: absolute;
+  display: block;
+  bottom: -4px;
+  max-width: 40px;
+  background: #fff;
+  height: 40px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  left: -3px;
+  display: none; }
+
+.property:hover .property__image--overlay {
+  visibility: visible;
+  opacity: 1; }
+
+.property.verified .property__verified {
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */
