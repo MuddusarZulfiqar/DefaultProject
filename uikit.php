@@ -22,11 +22,16 @@
 
             <div class="grid" grid-item-width="1/2" data-item-gap="10">
                 <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-primary big">Primary big</button>
                 <button class="btn btn-secondary">Secondary</button>
-                <button class="btn btn-primary big">Primary Big</button>
-                <button class="btn btn-primary"><i class="fas fa-plus"></i>Primary</button>
-                <button class="btn btn-primary arrow-right">Upload and Next<span></span></button>
-                
+                <button class="btn btn-cancel">cancel</button>
+                <!-- <button class="btn btn-primary big">Primary Big</button> -->
+                <!-- <button class="btn btn-primary"><i class="fas fa-plus"></i>Primary</button>
+                <button class="btn btn-primary arrow-right">Upload and Next<span></span></button> -->
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-primary">LOG IN</button>
+                    <button  type="button" class="btn btn-primary">register</button>
+                </div>
             </div>
 
             <h6>Form Controls</h6>
@@ -64,13 +69,30 @@
                         </select>
                     </div>
                 </div>
+                <div class="form-group">
+                <label class="control-label"><span>*</span>Would you like us to assist on location?</label>
+                    <ul class="list-inline">
+                        <li class="radio list-inline-item">
+                            <label>
+                                <input type="radio" name="radio" checked="">
+                                <span>Yes</span>
+                            </label>
+                        </li>
+                        <li class="radio list-inline-item">
+                            <label>
+                                <input type="radio" name="radio">
+                                <span>No</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <h6>Property Item</h6>
             
             <div class="property">
                 <div class="property__image">
-                    <img src="" alt="">
+                    <img src="src/assets/house.png" alt="" class="image-fluid">
                     <div class="property__image--overlay"></div>
                     <span class="property__verified">
                     </span>

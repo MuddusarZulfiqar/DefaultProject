@@ -8,21 +8,13 @@ form {
     outline: none;
     .control-label {
         font-size: rem(15px);
-        display: inline-block;
         margin-bottom: 0px;
-        color: #4a4a4a;
-        position: absolute;
-        background: #fff;
-        left: rem(23px);
-        top: -7px;
-        padding: 0px rem(8px);
-        z-index: 1;
-        &.static {
-            position: static;
-            margin-bottom: rem(20px);
-            padding: 0;
-            display: block;
-        }
+        color: $primary;
+        margin-bottom: rem(20px);
+        padding: 0;
+        display: block;
+        font-weight: bold;
+        margin-left:15px;
         span {
             color: #a8372d;
             font-size: rem(15px);
@@ -36,7 +28,7 @@ form {
         }
     }
     .form-control {
-        height: 45px;
+        height: 50px;
         font-size: rem(18px);
         color: $primary;
         background-color: #fff;
@@ -168,13 +160,14 @@ form {
             color: #2c2b33;
             font-size: rem(16px);
             font-weight: 300;
+            font-weight: bold;
         }
         &:after {
             border: 0;
             content: "";
             width: 12px;
             height: 7px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12px' height='7px'%3E%3Cpath fill-rule='evenodd' fill='rgb(137, 32, 26)' d='M5.547,6.407 L0.859,1.580 C0.560,1.272 0.560,0.775 0.859,0.468 C1.157,0.161 1.640,0.161 1.938,0.468 L6.087,4.739 L10.236,0.468 C10.534,0.161 11.018,0.161 11.316,0.468 C11.614,0.775 11.614,1.273 11.316,1.580 L6.627,6.407 C6.478,6.561 6.283,6.638 6.087,6.638 C5.892,6.638 5.696,6.561 5.547,6.407 Z'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12px' height='7px'%3E%3Cpath fill-rule='evenodd' fill='%230082ff' d='M5.547,6.407 L0.859,1.580 C0.560,1.272 0.560,0.775 0.859,0.468 C1.157,0.161 1.640,0.161 1.938,0.468 L6.087,4.739 L10.236,0.468 C10.534,0.161 11.018,0.161 11.316,0.468 C11.614,0.775 11.614,1.273 11.316,1.580 L6.627,6.407 C6.478,6.561 6.283,6.638 6.087,6.638 C5.892,6.638 5.696,6.561 5.547,6.407 Z'/%3E%3C/svg%3E");
             margin-top: 0;
         }
         &:focus {
@@ -211,82 +204,82 @@ form {
     }
 }
 
-.checkbox,
-.radio {
-    label {
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-        input,
-        svg {
-            width: 20px;
-            height: 20px;
-        }
-        input {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            position: relative;
-            outline: none;
-            background: #fff;
-            border: none;
-            margin: 0;
-            padding: 0;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: box-shadow .3s;
-            box-shadow: inset 0 0 0 1px #D1D6EE;
-            display: none;
-            cursor: pointer;
-            &:hover {
-                box-shadow: inset 0 0 0 1px $primary;
-            }
-            &:checked {
-                box-shadow: inset 0 0 0 1px $primary;
-            }
-        }
-        svg {
-            pointer-events: none;
-            fill: none;
-            stroke-width: 2px;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke: $primary;
-            width: 20px;
-            height: 20px;
-            transform: scale(1) translateZ(0);
-            border: 1px solid #d7d7d7;
-            border-radius: 2px;
-        }
-        &.path {
-            input {
-                &:checked {
-                    --s: 2px;
-                    transition-delay: .4s;
-                    &+svg {
-                        // --a: 16.1 86.12;
-                        // --o: 102.22;
-                        stroke-dasharray: 16.1 86.12;
-                        stroke-dashoffset: 102.22;
-                    }
-                }
-            }
-            svg {
-                stroke-dasharray: 86.12;
-                stroke-dashoffset: 86.12;
-                transition: stroke-dasharray .6s, stroke-dashoffset .6s;
-            }
-        }
-        span {
-            padding-left: rem(7px);
-            color: #4a4a4a;
-            vertical-align: middle;
-        }
-    }
-    a {
-        color: $primary;
-        text-decoration: underline;
-        &:hover {
-            text-decoration: none;
-        }
-    }
-}
+// .checkbox,
+// .radio {
+//     label {
+//         position: relative;
+//         display: inline-block;
+//         cursor: pointer;
+//         input,
+//         svg {
+//             width: 20px;
+//             height: 20px;
+//         }
+//         input {
+//             -webkit-appearance: none;
+//             -moz-appearance: none;
+//             position: relative;
+//             outline: none;
+//             background: #fff;
+//             border: none;
+//             margin: 0;
+//             padding: 0;
+//             cursor: pointer;
+//             border-radius: 4px;
+//             transition: box-shadow .3s;
+//             box-shadow: inset 0 0 0 1px #D1D6EE;
+//             display: none;
+//             cursor: pointer;
+//             &:hover {
+//                 box-shadow: inset 0 0 0 1px $primary;
+//             }
+//             &:checked {
+//                 box-shadow: inset 0 0 0 1px $primary;
+//             }
+//         }
+//         svg {
+//             pointer-events: none;
+//             fill: none;
+//             stroke-width: 2px;
+//             stroke-linecap: round;
+//             stroke-linejoin: round;
+//             stroke: $primary;
+//             width: 20px;
+//             height: 20px;
+//             transform: scale(1) translateZ(0);
+//             border: 1px solid #d7d7d7;
+//             border-radius: 2px;
+//         }
+//         &.path {
+//             input {
+//                 &:checked {
+//                     --s: 2px;
+//                     transition-delay: .4s;
+//                     &+svg {
+//                         // --a: 16.1 86.12;
+//                         // --o: 102.22;
+//                         stroke-dasharray: 16.1 86.12;
+//                         stroke-dashoffset: 102.22;
+//                     }
+//                 }
+//             }
+//             svg {
+//                 stroke-dasharray: 86.12;
+//                 stroke-dashoffset: 86.12;
+//                 transition: stroke-dasharray .6s, stroke-dashoffset .6s;
+//             }
+//         }
+//         span {
+//             padding-left: rem(7px);
+//             color: #4a4a4a;
+//             vertical-align: middle;
+//         }
+//     }
+//     a {
+//         color: $primary;
+//         text-decoration: underline;
+//         &:hover {
+//             text-decoration: none;
+//         }
+//     }
+// }

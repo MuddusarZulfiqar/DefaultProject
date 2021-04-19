@@ -1,0 +1,12 @@
+@import "import";
+header{
+    nav{
+        .nav-item{
+            a{
+                font-size: rem(18px);
+                text-transform: capitalize;
+                color: $primary;
+            }
+        }
+    }
+}

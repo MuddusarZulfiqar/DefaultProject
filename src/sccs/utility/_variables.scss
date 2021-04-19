@@ -40,8 +40,8 @@
 // Theme Colors
 
 $default: #303030;
-$primary: #89201a;
-$secondary: #be473c;
+$primary: #1c5a84;
+$secondary: #0082ff;
 $text-color: #1c1c1c;
 $link-color: #ffffff;
 $link-hover:#000000;
@@ -49,14 +49,14 @@ $link-hover:#000000;
 // Fonts
 
 $primary-font: 'Raleway', sans-serif;
-$primary-font-b: 'fontinbold';
+$primary-font-b: 'Raleway', sans-serif;
 $time-new-roman: "Times New Roman", "serif";
 $arabic-font: '';
 
 //** Primary Font
 
 // font sizes
-$h--1: ( base: rem(24px),
+$h--1: ( base: rem(24px), 
 mobile: rem(20px),
 tablet: rem(22px),
 wide: rem(24px),
