@@ -1,4 +1,4 @@
-Dropzone.autoDiscover = false;
+// Dropzone.autoDiscover = false;
 $(document).ready(function() {
     aqarat.init({
         slick: $(".slick-instance"),
@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
 });
 var self;
-var da3aity = {
+var aqarat = {
     init: function(options) {
         this.settings = options;
         self = this;
@@ -18,6 +18,8 @@ var da3aity = {
         this.utilities();
         this.loader();
         this.configureModal();
+        this.uploadControls();
+        this.changeImage();
         this.datetimePickers();
         this.stickyHeader();
     },
@@ -92,6 +94,9 @@ var da3aity = {
             liveSearch: true,
             liveSearchPlaceholder: 'Search'
         });
+        $('.property__save').click(function(){
+            $(this).toggleClass('active')
+        });
     },
     configureModal: function () {
         $("body").on("click", "*[data-toggle='custom-modal']", function (e) {
@@ -129,7 +134,61 @@ var da3aity = {
                     $(".custom-modal").removeClass("small");
         });
     },
-
+    uploadControls: function() {
+        $(document).on("change", '.file-wrapper input[type="file"]', function(e) {
+            var fileName = e.target.files[0].name;
+            $(this).parents(".type-file").find(".file-name .file_name").text(fileName);
+            let str = $('.file-name .file_name').text();
+            let text =  str.slice(0, 10);
+            var file_ext = fileName.split(".")
+            var checkText = file_ext[0]
+            if(checkText.length>=15){
+                file_ext =  file_ext[file_ext.length-1]
+                $(this).parents(".type-file").find(".file-name .file_name").text(`${text}...${file_ext}`);
+            }
+            
+            $(this).parents(".type-file").find(".file-name").addClass("active");
+        });
+        $(".file-name .cross").click(function(e) {
+            e.preventDefault();
+            $(this).parents('.type-file').find('input[type="file"]').val('')
+            $(this).parent(".file-name").removeClass("active");
+        });
+    },
+    changeImage: function() {
+        $(document).on("change", ".image_uploader--parent input[type='file']", function(e) {
+           //console.log(e)
+           var prnt = $(this).parent();
+            var files = $(this)[0].files;
+            var img = $(this).parents('.image_uploader--parent').find(".img-upload img")
+            for (i = 0; i < files.length; i++) {
+                var readImg = new FileReader();
+                var file = files[i];
+                
+                if (file.type.match('image.*')) {
+                    // var img = $(prnt).find("img");
+                    $(this).parents('.image_uploader--parent').find('.img-upload').removeClass('d-none');
+                    console.log(img);
+                    readImg.onload = (function(file) {
+                        return function(e) {
+                            console.log(e.target.result);
+                            //$(img).parents('.image_uploader--parent').find(".img-upload img").attr("src", e.target.result);
+                            $(img).attr("src", e.target.result);
+                        };
+                    })(file);
+                    readImg.readAsDataURL(file);
+                }
+                else{
+                    alert('please Put Image File')
+                    $(this).parents('.image_uploader--parent').find('input[type="file"]').val('')
+                }
+            }
+        });
+        $('.img-upload .delete').click(function(e){
+            $(this).parent('.img-upload').addClass('d-none');
+            $(this).parents('.image_uploader--parent').find('input[type="file"]').val('')
+        })
+    }
 };
 
 var lazyload = {

@@ -33,6 +33,7 @@
 </head>
 <body <?php if(isset($ishome)){ echo "class='front-page'";}?> >
 <?php include_once "includes/svg.php";?>
+<?php include_once "includes/modals.php";?>
 <header>
     <nav class="navbar navbar-expand-lg container">
         <a class="navbar-brand" href="#">

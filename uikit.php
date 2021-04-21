@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                <label class="control-label"><span>*</span>Would you like us to assist on location?</label>
+                    <label class="control-label"><span>*</span>Would you like us to assist on location?</label>
                     <ul class="list-inline">
                         <li class="radio list-inline-item">
                             <label>
@@ -86,21 +86,115 @@
                         </li>
                     </ul>
                 </div>
+                <div class="form-group has-value">
+                    <div class="p-relative">
+                        <input type="text" class="form-control" placeholder="Enter Name">
+                        <span class="value">KD</span>
+                    </div>
+                    
+                </div>
+                <div class="form-group">
+                    <div class="fields-group">
+                        <textarea class="form-control" placeholder="Description (Arabic)"></textarea>
+                    </div>
+                </div>
+                <div class="form-group type-file">
+                    <div class="file-wrapper">
+                        <input type="file" class="form-control" name="file">
+                    </div>
+                    <div class="file-name">
+                        <span class="file_name">Logo-my-company.pdf</span>
+                        <span class="cross">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+                                <use xlink:href="#cross"></use>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div></div>
+                
             </div>
-
+            <div class="form-group image-uploader">
+                    <label class="control-label">Images</label>
+                    <i>(upto 4 images)</i>
+                    <div class="image_uploader">
+                        <div class="image_uploader--parent">
+                            <div class="file">
+                                <input type="file" name="file">
+                            </div>
+                            <div class="img-upload d-none">
+                                <img src="" alt="" class="img-fluid">
+                                <span class="delete">
+                                    <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
+                                        <use xlink:href="#delete-icon"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="image_uploader--parent">
+                            <div class="file">
+                                <input type="file" name="file">
+                            </div>
+                            <div class="img-upload d-none">
+                                <img src="" alt="" class="img-fluid">
+                                <span class="delete">
+                                    <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
+                                        <use xlink:href="#delete-icon"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="image_uploader--parent">
+                            <div class="file">
+                                <input type="file" name="file">
+                            </div>
+                            <div class="img-upload d-none">
+                                <img src="" alt="" class="img-fluid">
+                                <span class="delete">
+                                    <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
+                                        <use xlink:href="#delete-icon"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="image_uploader--parent">
+                            <div class="file">
+                                <input type="file" name="file">
+                            </div>
+                            <div class="img-upload d-none">
+                                <img src="" alt="" class="img-fluid">
+                                <span class="delete">
+                                    <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
+                                        <use xlink:href="#delete-icon"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <h6>Property Item</h6>
             
             <div class="row">
                 <div class="col-md-4">
-                    <div class="property verified">
+                    <div class="property">
                         <div class="property__image">
                             <img src="src/images/house.png" alt="" class="img-fluid">
                             <div class="property__image--overlay">
                                 <button class="btn btn-secondary">explore</button>
                             </div>
-                            <span class="property__verified">
-                                <img src="src/images/svg/varified.svg" alt="">
+                            <span class="property__type">buy</span>
+                            <span class="property__save"></span>
+                            <span class="property__delete">
+                            <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                        viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
+                                <use xlink:href="#delete-icon"></use>
+                            </svg>
                             </span>
+                            <span class="property__verified"></span>
                         </div>
                         <div class="property__info">
                             <p class="property__info--title mb-3">sui house</p>
@@ -152,6 +246,36 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <h6>
+                PopUps
+            </h6>
+            <div class="row">
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">
+                        SignIn
+                    </button>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#forgetPassword">
+                        Forget Password
+                    </button>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signIn">
+                        SignIn
+                    </button>   
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerInd">
+                        Registration (Individual)
+                    </button>   
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerland">
+                        Registration (Landlords/Organization)
+                    </button>   
                 </div>
             </div>
         </div>
