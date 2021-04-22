@@ -9,10 +9,10 @@ input::placeholder{
     position: relative;
     outline: none;
     .control-label {
-        font-size: rem(15px);
+        font-size: rem(16px);
         margin-bottom: 0px;
         color: $primary;
-        margin-bottom: rem(20px);
+        margin-bottom: rem(15px);
         padding: 0;
         display: block;
         font-weight: bold;
@@ -33,7 +33,7 @@ input::placeholder{
         height: 50px;
         font-size: rem(18px);
         color: $primary;
-        background-color: #fff;
+        background-color: transparent;
         outline: none;
         padding: 0px;
         padding: 0 rem(10px) 0 rem(30px);
@@ -276,7 +276,8 @@ input::placeholder{
         border: solid 1px #d2d2d2;
         // z-index: -1;
         &.btn-light {
-            background: #fff;
+            background: transparent;
+            text-transform: capitalize;
             // padding: rem(14px) rem(18px) rem(13px) rem(30px);
             padding: rem(0px) rem(18px) rem(0px) rem(30px);
             &:disabled,

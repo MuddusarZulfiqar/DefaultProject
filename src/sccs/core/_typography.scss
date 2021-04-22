@@ -48,12 +48,16 @@ h6 {
 
 h1 {
 	@include font-size($h--1);
-	color: #000000;
+	color: var(--primary);
 	font-family: $primary-font-b;
+    margin-bottom: unset
 }
 
 h2 {
 	@include font-size($h--2);
+    color: var(--primary);
+    margin-bottom: unset;
+    font-weight: bold;
 }
 
 h3 {
