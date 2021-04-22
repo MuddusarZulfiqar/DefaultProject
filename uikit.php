@@ -86,10 +86,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="form-group has-value">
-                    <div class="p-relative">
+                <div class="form-group">
+                    <div class="has-label">
                         <input type="text" class="form-control" placeholder="Enter Name">
-                        <span class="value">KD</span>
+                        <span class="info-label">KD</span>
                     </div>
                     
                 </div>
@@ -180,72 +180,69 @@
             
             <div class="row">
                 <div class="col-md-4">
-                    <div class="property">
-                        <div class="property__image">
-                            <img src="src/images/house.png" alt="" class="img-fluid">
-                            <div class="property__image--overlay">
-                                <button class="btn btn-secondary">explore</button>
+                    <div class="properties">
+                        <div class="property__item">
+                            <div class="property__item--image">
+                                <img src="src/images/house.png" alt="" class="img-fluid">
+                                <div class="overlay">
+                                    <button class="btn btn-secondary">explore</button>
+                                </div>
+                                <span class="property__item--type">buy</span>
+                                <span class="property__item--save"></span>
+                                <span class="property__item--delete">
+                                    <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
+                                        <use xlink:href="#delete-icon"></use>
+                                    </svg>
+                                </span>
+                                <span class="property__item--verified"></span>
                             </div>
-                            <span class="property__type">buy</span>
-                            <span class="property__save"></span>
-                            <span class="property__delete">
-                            <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                        viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
-                                <use xlink:href="#delete-icon"></use>
-                            </svg>
-                            </span>
-                            <span class="property__verified"></span>
-                        </div>
-                        <div class="property__info">
-                            <p class="property__info--title mb-3">sui house</p>
-                            <p class="property__info--location mb-3"><img class="icon" src="src/images/svg/location.svg" alt="" > Ahmed Al Jaber Street , Sahrq</p>
-                            <div class="property__info--features mb-3">
-                                <ul>
-                                    <li>
-                                        <div class="icons">
-                                            <div class="icons_image">
-                                                <img class="icon" src="src/images/svg/bed.svg" alt="">
+                            <div class="property__info">
+                                <p class="property__info--title mb-3">sui house</p>
+                                <p class="property__info--location mb-3"><img class="icon" src="src/images/svg/location.svg" alt="" > Ahmed Al Jaber Street , Sahrq</p>
+                                <div class="property__info--features mb-3">
+                                    <ul>
+                                        <li>
+                                            <div class="icon">
+                                                <img src="src/images/svg/bed.svg" alt="">
                                             </div>
-                                            <div class="icons_label">
+                                            <div>
                                                 6
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icons">
-                                            <div class="icons_image">
-                                                <img class="icon" src="src/images/svg/bath.svg" alt="">
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <img src="src/images/svg/bath.svg" alt="">
                                             </div>
                                             <div class="icons_label">
                                                 3
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icons">
-                                            <div class="icons_image">
-                                                <img class="icon" src="src/images/svg/kitchen.svg" alt="">
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <img src="src/images/svg/kitchen.svg" alt="">
                                             </div>
-                                            <div class="icons_label">
-                                                1
+                                            <div>
+                                                3
                                             </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="property__organizor">
-                            <div class="d-flex align-items-center">
-                                <div class="property__organizor--image">
-                                    <img  src="src/images/card_logo.png" alt="" class="img-fluid rounded-circle">
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="property__organizor--name">
-                                    <span>BY</span>
-                                    Gulf Investment Co.
+                            </div>
+                            <div class="property__organizor">
+                                <div class="d-flex align-items-center">
+                                    <div class="property__organizor--image">
+                                        <img  src="src/images/card_logo.png" alt="" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="property__organizor--name">
+                                        <span>BY</span>
+                                        Gulf Investment Co.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <h6>
