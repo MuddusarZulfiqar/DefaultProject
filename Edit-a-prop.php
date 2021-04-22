@@ -2,7 +2,7 @@
 <div class="EditPopup section">
     <div class="pageHead">
         <div class="container">
-            <h1>Edit Your <b>Property</b></h1>
+            <h1>Edit Your <span>Property</span></h1>
         </div>
     </div>
     <div class="EditPopup__main">

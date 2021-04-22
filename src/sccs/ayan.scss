@@ -1,0 +1,29 @@
+.about {
+	margin-top: rem(30px);
+	h2 {
+		font-weight: 300;
+		color: var(--primary);
+	}
+	h3 {
+		font-size: rem(35px);
+		color: var(--primary);
+		margin-bottom: rem(50px);
+	}
+	.statistics {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		margin-bottom: 100px;
+		&__item span {
+			font-size: rem(55px);
+			color: #0082ff;
+			svg {
+				color: #003160;
+			}
+		}
+	}
+	p {
+		line-height: 1.5;
+		font-size: rem(18px);
+	}
+}
