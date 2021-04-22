@@ -151,6 +151,14 @@ $data-gap-list: 0,
         --grid-item-width: calc((100% / 4) - var(--grid-item-gap));
     }
 }
+//Container
+.container-md{
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 8px;
+    padding-left: 8px;
+}
 
 .grid {
     //--grid-item-gap: rem(15px);
