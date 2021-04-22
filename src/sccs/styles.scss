@@ -16,6 +16,7 @@
     align-items: center;
     box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.1);
     position: relative;
+    background: #fff;
 }
 // 1: signinModel
 .modal-backdrop.show{
@@ -43,6 +44,9 @@
 }
 // Models 
 #register{
+    .modal-dialog{
+        width: 600px;
+    }
     .registerTypes{
         @include flex(flex-start, space-between);
         &__item{
@@ -65,12 +69,6 @@
                     width: 100%;
                     height: auto;
                 }
-                &:hover{
-                        
-                    a{
-                        
-                    }
-                }
             }
             &--title{
                 font-size: rem(18px);
@@ -85,7 +83,6 @@
             
         }
         .registerTypes__item{
-            
             &:hover{
                 .registerTypes__item--icon{
                     border: 3px solid var(--secondary);
@@ -97,8 +94,6 @@
             
         }
     }
-
-
     .modal-body{
         .flex-items{
             text-align: center;
@@ -129,14 +124,6 @@
                     }
                 }
             }
-            .label{
-                font-size: rem(18px);
-                color: #fff;
-                font-weight: bold;
-                margin-top: 20px;
-                min-height: 34px;
-                min-width: 238px;
-            }
             &:hover{
                 .upper_circle{
                     border: 3px solid var(--secondary);
@@ -148,170 +135,132 @@
             }
         }
     }
-    .modal-footer{
-        p{
-            font-size: rem(16px);
+}
+.User{
+    &__logo{
+        &--file{
+            position: relative;
+            width: 120px;
+            height: 120px;
+            background-image: url(../images/PopupImage_upload.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            border-radius: 50%;
+        }  
+    }
+    &__field{
+        &--label{
+            max-width: 380px;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 20px;
+            line-height: 1.2;
             color: #fff;
+            font-weight: normal;
+        }
+    }
+    &__button{
+        text-align: center;
+        button{
+            padding: 17px 70px;
+            font-size: 20px;
             text-transform: uppercase;
             font-weight: bold;
-            letter-spacing: 1.2px;
-            a{
-                color: var(--secondary);
-            }
+            max-width: unset;
         }
     }
-}
-#forgetPassword,#signIn,#registerInd,#registerland{
-    .modal-dialog{
-        min-height: 400px;
-        .modal-content{
-            min-height: 400px;
-        }
-    }
-    .modal-footer{
-        margin-bottom: 30px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        a{
-            color: #b9c9d8;
-            text-transform: capitalize;
-            text-decoration: underline;
-            font-size: 16px;
-            word-spacing: 2px;
-            letter-spacing: 0.8px;
-        }
-    }
-    .User{
-        max-width: 500px;
-        margin: auto;
-        &__logo{
-            &--file{
-                position: relative;
-                width: 120px;
-                height: 120px;
-                background-image: url(../images/PopupImage_upload.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 40px;
-                border-radius: 50%;
-            }
-            
-        }
-        &__field{
-            &--label{
-                max-width: 380px;
-                margin: auto;
-                text-align: center;
-                margin-bottom: 20px;
-                line-height: 1.2;
-                color: #fff;
-                font-weight: normal;
-            }
-        }
-        &__button{
-            text-align: center;
-            button{
-                padding: 17px 70px;
-                font-size: 20px;
-                text-transform: uppercase;
-                font-weight: bold;
-                max-width: unset;
-            }
-        }
-        .custom_select{
-            .dropdown {
-                padding: unset;
-                border: unset;
-            }
+    .custom_select{
+        .dropdown {
             padding: unset;
-            margin: unset;
             border: unset;
-            select{
-                margin: unset;
+        }
+        padding: unset;
+        margin: unset;
+        border: unset;
+        select{
+            margin: unset;
+        }
+        button{
+            height: 55px;
+        }
+    }
+    .form-group{
+        margin-bottom: rem(20px);
+        label{
+            color: #bac9d7;
+            font-size: rem(16px);
+            margin-bottom: rem(12px);
+        }
+        &+div{
+            position: relative;
+            
+        }
+        textarea{
+            height: 100px !important;
+        }
+        .form-control{
+            &.icon_input{
+                padding-left: calc(0.625rem + 47px);
             }
-            button{
-                height: 55px;
+            
+            height: 55px;
+            &.focus-visible{
+                background: #fff;
+                color: #1c5a84;
             }
         }
-        .form-group{
-            margin-bottom: rem(20px);
-            label{
-                color: #bac9d7;
-                font-size: rem(16px);
-                margin-bottom: rem(12px);
-            }
-            &+div{
-                position: relative;
-                
-            }
-            textarea{
-                height: 100px;
-            }
+        .icon{
+            width: 27px;
+            height: 27px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+            color: var(--primary);
+        }
+        .fields-group{
             .form-control{
-                &.icon_input{
-                    padding-left: calc(0.625rem + 47px);
+                &.bootstrap-select{
+                    border: unset;
                 }
-                
-                height: 55px;
-                &.focus-visible{
-                    background: #fff;
-                    color: #1c5a84;
-                }
-            }
-            .icon{
-                width: 27px;
-                height: 27px;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 20px;
-                color: var(--primary);
-            }
-            .fields-group{
-                .form-control{
-                    &.bootstrap-select{
-                        border: unset;
-                    }
-                    &:first-child{
-                        width: 25%;
+                &:first-child{
+                    width: 25%;
+                    margin: unset;
+                    padding: unset;
+                    select{
                         margin: unset;
-                        padding: unset;
-                        select{
-                            margin: unset;
-                        }
-                        .dropdown-toggle{
-                            margin: unset;
-                            border-radius: 30px;
-                            border-top-right-radius: 0;
-                            border-bottom-right-radius: 0;
-                            padding: 18px;
-                            height: 55px;
-                            &::after{
-                                border: 0;
-                                content: "";
-                                width: 8px;
-                                height: 6px;
-                                margin-top: 0;
-                                position: absolute;
-                                right: 10px;
-                                background-size: contain;
-                                background-repeat: no-repeat;
-                            }
-                        }
                     }
-                    &:nth-child(2){
-                        width: 72%;
+                    .dropdown-toggle{
+                        margin: unset;
+                        border-radius: 30px;
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                        padding: 18px;
+                        height: 55px;
+                        &::after{
+                            border: 0;
+                            content: "";
+                            width: 8px;
+                            height: 6px;
+                            margin-top: 0;
+                            position: absolute;
+                            right: 10px;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
                     }
                 }
-                
+                &:nth-child(2){
+                    width: 72%;
+                }
             }
             
         }
+        
     }
-    
 }
 
 

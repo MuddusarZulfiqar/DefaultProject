@@ -340,9 +340,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="fields-group">
-                                    <textarea height="100px" class="form-control" placeholder="Business Address"></textarea>
-                                </div>
+                                <textarea class="form-control" placeholder="Business Address"></textarea>
                             </div>
                             
                         </div>
