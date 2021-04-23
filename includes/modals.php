@@ -74,30 +74,26 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <h5 class="modal-title" id="exampleModalLabel">Forget your password</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body forgotpassword">
                     <div class="User">
-                        <div class="User__field">
                             <p class="User__field--label">
                                 Enter your email we will generate a password reset link
                             </p>
                             <div class="form-group">
-                                <div>
-                                    <input type="email" class="form-control icon_input" placeholder="Email">
-                                    <div class="icon">
-                                        <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 230.17 230.17" style="enable-background:new 0 0 230.17 230.17;" xml:space="preserve">
-                                            <use xlink:href="#email"></use>
-                                        </svg>
-                                    </div>
+                                <input type="email" class="form-control icon_input" placeholder="Email">
+                                <div class="icon">
+                                    <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 230.17 230.17" style="enable-background:new 0 0 230.17 230.17;" xml:space="preserve">
+                                        <use xlink:href="#email"></use>
+                                    </svg>
                                 </div>
                             </div>
-                        </div>
-                        <div class="User__button">
+                        <div class="button-row">
                             <button class="btn btn-secondary ">
                                 Submit
                             </button>
@@ -114,45 +110,37 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="User">
-                        <div class="User__field">
-                            <div class="form-group">
-                                <div>
-                                    <input type="email" class="form-control icon_input" placeholder="Email">
-                                    <div class="icon">
-                                        <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 230.17 230.17" style="enable-background:new 0 0 230.17 230.17;" xml:space="preserve">
-                                            <use xlink:href="#email"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div>
-                                    <input type="password" class="form-control icon_input" placeholder="Password">
-                                    <div class="icon">
-                                        <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                             viewBox="0 0 47 47" style="enable-background:new 0 0 47 47;" xml:space="preserve">
-                                                <use xlink:href="#password"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control icon_input" placeholder="Email">
+                        <div class="icon">
+                            <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 230.17 230.17" style="enable-background:new 0 0 230.17 230.17;" xml:space="preserve">
+                                <use xlink:href="#email"></use>
+                            </svg>
                         </div>
-                        <div class="User__button">
-                            <button class="btn btn-secondary ">
-                                login
-                            </button>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control icon_input" placeholder="Password">
+                        <div class="icon">
+                            <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 47 47" style="enable-background:new 0 0 47 47;" xml:space="preserve">
+                                    <use xlink:href="#password"></use>
+                            </svg>
                         </div>
+                    </div>
+                    <div class="button-row">
+                        <button class="btn btn-secondary ">
+                            login
+                        </button>
                     </div>
                 </div>
                 <div class="modal-footer">
-                        <a href=""><i>forget password?</i></a>
+                    <a href=""><i>forget password?</i></a>
                 </div>
             </div>
         </div>
@@ -164,67 +152,28 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Registration (Individual)</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                        <h5 class="modal-title" id="exampleModalLabel">Registration <span>(Individual)</span></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="User">
-                        <div class="User__field">
-                            <div class="form-group">
-                                <div>
-                                    <input type="text" class="form-control" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div>
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div>
-                                    <input type="password" class="form-control" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div>
-                                    <input type="password" class="form-control" placeholder="Confirm Password">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="fields-group">
-                                    <!-- <input type="text" value="+965" class="form-control font-weight-bold" placeholder="Height"> -->
-                                    <select class="selectpicker form-control">
-                                        <option>1 Week</option>
-                                        <option>2 Week</option>
-                                        <option>3 Week</option>
-                                        <option>4 Week</option>
-                                        <option>5 Week</option>
-                                        <option>6 Week</option>
-                                        <option>7 Week</option>
-                                        <option>8 Week</option>
-                                        <option>9 Week</option>
-                                        <option>10 Week</option>
-                                        <option>1 Year</option>
-                                        <option>2 Year</option>
-                                        <option>3 Year</option>
-                                    </select>
-                                    <input type="text" class="form-control" placeholder="Phone Number">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div>
-                                    <input type="text" class="form-control" placeholder="Occupation">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div>
-                                    <input type="text" class="form-control" placeholder="Company">
-                                </div>
-                            </div>
-                            <div class="form-group custom_select">
-                                <label class="control-label">What are you here for?</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Confirm Password">
+                        </div>
+                        <div class="form-group">
+                            <div class="fields-group">
+                                <!-- <input type="text" value="+965" class="form-control font-weight-bold" placeholder="Height"> -->
                                 <select class="selectpicker form-control">
                                     <option>1 Week</option>
                                     <option>2 Week</option>
@@ -240,10 +189,34 @@
                                     <option>2 Year</option>
                                     <option>3 Year</option>
                                 </select>
+                                <input type="text" class="form-control" placeholder="Phone Number">
                             </div>
-                            
                         </div>
-                        <div class="User__button">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Occupation">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Company">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">What are you here for?</label>
+                            <select class="selectpicker form-control">
+                                <option>1 Week</option>
+                                <option>2 Week</option>
+                                <option>3 Week</option>
+                                <option>4 Week</option>
+                                <option>5 Week</option>
+                                <option>6 Week</option>
+                                <option>7 Week</option>
+                                <option>8 Week</option>
+                                <option>9 Week</option>
+                                <option>10 Week</option>
+                                <option>1 Year</option>
+                                <option>2 Year</option>
+                                <option>3 Year</option>
+                            </select>
+                        </div>
+                        <div class="button-row ">
                             <button class="btn btn-secondary ">
                                 submit
                             </button>
@@ -259,34 +232,63 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Registration (Landlords/Organization)</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <h5 class="modal-title" id="exampleModalLabel">Registration <span>(Landlords/Organization)</span></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="User">
-                        <div class="User__logo">
-                            <div class="User__logo--file">
+                    <div class="image_uploader--parent file-upload" data-text="add logo">
+                            <div class="file-upload__file">
                                 <input type="file" name="file">
                             </div>
-                            <div class="User__logo--image">
-                                
+                            <div class="file-upload__image img-upload d-none">
+                                <img src="" alt="" class="img-fluid">
+                                <span class="delete">
+                                    <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
+                                        <use xlink:href="#delete-icon"></use>
+                                    </svg>
+                                </span>
                             </div>
                         </div>
-                        <div class="User__field">
-                            <div class="form-group">
-                                <div>
-                                    <input type="text" class="form-control" placeholder="Business Name">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div>
-                                    <input type="email" class="form-control" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="form-group custom_select">
-                                <label class="control-label">Industry Type</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Business Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group custom_select">
+                            <label class="control-label">Industry Type</label>
+                            <select class="selectpicker form-control">
+                                <option>1 Week</option>
+                                <option>2 Week</option>
+                                <option>3 Week</option>
+                                <option>4 Week</option>
+                                <option>5 Week</option>
+                                <option>6 Week</option>
+                                <option>7 Week</option>
+                                <option>8 Week</option>
+                                <option>9 Week</option>
+                                <option>10 Week</option>
+                                <option>1 Year</option>
+                                <option>2 Year</option>
+                                <option>3 Year</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email ID">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Confirm Password">
+                        </div>
+                        <div class="form-group">
+                            <div class="fields-group">
+                                <!-- <input type="text" value="+965" class="form-control font-weight-bold" placeholder="Height"> -->
                                 <select class="selectpicker form-control">
                                     <option>1 Week</option>
                                     <option>2 Week</option>
@@ -302,47 +304,11 @@
                                     <option>2 Year</option>
                                     <option>3 Year</option>
                                 </select>
+                                <input type="text" class="form-control" placeholder="Phone Number">
                             </div>
-                            <div class="form-group">
-                                <div>
-                                    <input type="email" class="form-control" placeholder="Email ID">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div>
-                                    <input type="password" class="form-control" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div>
-                                    <input type="password" class="form-control" placeholder="Confirm Password">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="fields-group">
-                                    <!-- <input type="text" value="+965" class="form-control font-weight-bold" placeholder="Height"> -->
-                                    <select class="selectpicker form-control">
-                                        <option>1 Week</option>
-                                        <option>2 Week</option>
-                                        <option>3 Week</option>
-                                        <option>4 Week</option>
-                                        <option>5 Week</option>
-                                        <option>6 Week</option>
-                                        <option>7 Week</option>
-                                        <option>8 Week</option>
-                                        <option>9 Week</option>
-                                        <option>10 Week</option>
-                                        <option>1 Year</option>
-                                        <option>2 Year</option>
-                                        <option>3 Year</option>
-                                    </select>
-                                    <input type="text" class="form-control" placeholder="Phone Number">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="Business Address"></textarea>
-                            </div>
-                            
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Business Address"></textarea>
                         </div>
                         <div class="User__button">
                             <button class="btn btn-secondary ">
@@ -354,5 +320,4 @@
             </div>
         </div>
     </div>
-
 </div>

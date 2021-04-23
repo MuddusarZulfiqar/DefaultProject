@@ -87,9 +87,9 @@
                     </ul>
                 </div>
                 <div class="form-group">
-                    <div class="has-label">
+                    <div class="has-value">
                         <input type="text" class="form-control" placeholder="Enter Name">
-                        <span class="info-label">KD</span>
+                        <span class="value">KD</span>
                     </div>
                     
                 </div>
@@ -118,11 +118,11 @@
                     <label class="control-label">Images</label>
                     <i>(upto 4 images)</i>
                     <div class="image_uploader">
-                        <div class="image_uploader--parent">
-                            <div class="file">
+                        <div class="image_uploader--parent file-upload">
+                            <div class="file-upload__file">
                                 <input type="file" name="file">
                             </div>
-                            <div class="img-upload d-none">
+                            <div class="file-upload__image img-upload d-none">
                                 <img src="" alt="" class="img-fluid">
                                 <span class="delete">
                                     <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -132,11 +132,11 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="image_uploader--parent">
-                            <div class="file">
+                        <div class="image_uploader--parent file-upload">
+                            <div class="file-upload__file">
                                 <input type="file" name="file">
                             </div>
-                            <div class="img-upload d-none">
+                            <div class="file-upload__image img-upload d-none">
                                 <img src="" alt="" class="img-fluid">
                                 <span class="delete">
                                     <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -146,11 +146,11 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="image_uploader--parent">
-                            <div class="file">
+                        <div class="image_uploader--parent file-upload">
+                            <div class="file-upload__file">
                                 <input type="file" name="file">
                             </div>
-                            <div class="img-upload d-none">
+                            <div class="file-upload__image img-upload d-none">
                                 <img src="" alt="" class="img-fluid">
                                 <span class="delete">
                                     <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -160,11 +160,11 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="image_uploader--parent">
-                            <div class="file">
+                        <div class="image_uploader--parent file-upload">
+                            <div class="file-upload__file">
                                 <input type="file" name="file">
                             </div>
-                            <div class="img-upload d-none">
+                            <div class="file-upload__image img-upload d-none">
                                 <img src="" alt="" class="img-fluid">
                                 <span class="delete">
                                     <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

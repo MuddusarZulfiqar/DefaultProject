@@ -156,18 +156,18 @@ var aqarat = {
         });
     },
     changeImage: function() {
-        $(document).on("change", ".image_uploader--parent input[type='file']", function(e) {
+        $(document).on("change", ".file-upload__file input[type='file']", function(e) {
            //console.log(e)
            var prnt = $(this).parent();
             var files = $(this)[0].files;
-            var img = $(this).parents('.image_uploader--parent').find(".img-upload img")
+            var img = $(this).parents('.image_uploader--parent').find(".file-upload__image img")
             for (i = 0; i < files.length; i++) {
                 var readImg = new FileReader();
                 var file = files[i];
                 
                 if (file.type.match('image.*')) {
                     // var img = $(prnt).find("img");
-                    $(this).parents('.image_uploader--parent').find('.img-upload').removeClass('d-none');
+                    $(this).parents('.image_uploader--parent').find('.file-upload__image').removeClass('d-none');
                     console.log(img);
                     readImg.onload = (function(file) {
                         return function(e) {
@@ -180,7 +180,7 @@ var aqarat = {
                 }
                 else{
                     alert('please Put Image File')
-                    $(this).parents('.image_uploader--parent').find('input[type="file"]').val('')
+                    $(this).parents('.file-upload').find('input[type="file"]').val('')
                 }
             }
         });

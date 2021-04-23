@@ -1269,7 +1269,9 @@ $data-gap-list: 0,
             vertical-align: middle;
             margin-right: -4px;
         }
-
+        .modal-body{
+            padding: 1rem calc(1rem + 30px);
+        }
         .modal-dialog {
             min-width: 500px;
             display: inline-block;
@@ -1287,11 +1289,14 @@ $data-gap-list: 0,
                 width: 100%;
                 margin-top: calc(16px + 10px);
                 font-weight: bold;
+                span{
+                    font-weight: lighter;
+                }
             }
             .modal-header{
                 .close{
                     font-size: 60px;
-                    font-weight: 500;
+                    font-weight: 100;
                     box-shadow: unset;
                     color: #0082ff;
                     text-shadow: unset;
@@ -1309,10 +1314,11 @@ $data-gap-list: 0,
 
 
             .modal-content { 
-                border-radius: 20px;
+                border-radius: 10px;
                 box-shadow: none; 
                 border:none; width:inherit; 
-                min-height: 550px; margin: 0 auto; 
+                // min-height: 550px;
+                margin: 0 auto; 
                 pointer-events:all; 
                 background: rgba(0,49,96,0.9);
                 overflow: visible;
@@ -1367,9 +1373,9 @@ $data-gap-list: 0,
         }
     &.custom-modal{
         .modal-body {
-            /*padding: 25px 30px 20px 30px;*/ padding: 0;
+            padding: 0;
             visibility: hidden;
-            max-height: 595px;
+            // max-height: 595px;
             overflow: hidden;
 
                 &.show {
@@ -1387,7 +1393,7 @@ $data-gap-list: 0,
         margin-right: auto;
         a{
             color: #b9c9d8;
-            text-transform: capitalize;
+            text-transform: uppercase;
             text-decoration: underline;
             font-size: 16px;
             word-spacing: 2px;
@@ -1399,6 +1405,7 @@ $data-gap-list: 0,
             text-transform: uppercase;
             font-weight: bold;
             letter-spacing: 1.2px;
+            margin-bottom: unset;
             a{
                 color: var(--secondary);
             }
