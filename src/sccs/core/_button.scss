@@ -33,6 +33,7 @@
     text-transform: uppercase;
     // max-width: 150px; 
     font-weight: bold;
+    box-shadow: none !important;
     i {
         font-size: rem(17px);
         padding-right: rem(15px);
@@ -40,7 +41,6 @@
     &:focus,
     &:active {
         outline: none;
-        box-shadow: none;
     }
     &.btn-primary,
     .btn-primary:focus,
@@ -52,36 +52,36 @@
             font-weight: 700;
         }
         &:not(:disabled):hover,
-        &:focus {
+        &:focus,&:active {
             // box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
-            background: var(--primary);
+            background: var(--secondary) !important;
             color: #fff;
         }
-        &:not(:disabled):active {
-            background: var(--primary);
-            border: 0;
-            box-shadow: none !important;
-        }
+        // &:not(:disabled):active {
+        //     background: var(--primary) !important;
+        //     border: 0;
+        // }
         &.big {
             padding: rem(15px) rem(45px);
             max-width: 200px; 
         }
     }
-    &.btn-secondary {
+    &.btn-secondary,
+    .btn-secondary:focus,
+    .btn-secondary:active {
         // padding: rem(14px) rem(35px);
         &:focus,
         &:active {
             outline: none;
-            box-shadow: none;
-            border: 1px solid var(--secondary);
+            border-color:transparent !important;
+            background-color: var(--secondary) !important;
         }
         color: #fff;
-        border: 1px solid var(--secondary);
         background: var(--secondary);
         border-radius: 10px;
         text-align: center;
-        &:hover {
-            background: var(--secondary);
+        &:hover,&:active,&:focus {
+            background: var(--primary) !important;
             color: #fff;
         }
         &:not(.big) {
@@ -101,6 +101,10 @@
         background: #b9c9d8;
         &:not(.big) {
             // max-width: 150px;
+        }
+        &:hover,&:active,&:focus {
+            background: #8b8e91;
+            color: #fff;
         }
         &.big {
             padding: rem(15px) rem(45px);

@@ -1260,8 +1260,97 @@ $data-gap-list: 0,
 }
 
 .modal {
+    
     text-align: center;
     padding: 0 !important;
+    p{
+        max-width: 370px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: rem(30px);
+        line-height: 1.2;
+        color: #fff;
+        font-weight: normal;
+        font-size: rem(18px);
+    }
+    .dropdown {
+        padding: unset;
+        border: unset;
+    }
+    .button-row{
+        button{
+            padding-left: rem(70px);
+            padding-right: rem(70px);
+            font-size: rem(20px);
+            text-transform: uppercase;
+            font-weight: bold;
+            max-width: unset;
+        }
+    }
+    
+    .form-group{
+        margin-bottom: rem(20px);
+        &+div{
+            position: relative;
+            
+        }
+    }
+    .fields-group{
+        .form-control{
+            &.bootstrap-select{
+                border: unset;
+            }
+            &:first-child{
+                width: 25%;
+                margin: unset;
+                padding: unset;
+                select{
+                    margin: unset;
+                }
+                .dropdown-toggle{
+                    margin: unset;
+                    border-radius: 30px;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    padding: rem(10px);
+                    height: 48px;
+                    &::after{
+                        border: 0;
+                        content: "";
+                        width: 8px;
+                        height: 6px;
+                        margin-top: 0;
+                        position: absolute;
+                        right: 10px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            &:nth-child(2){
+                width: 72%;
+            }
+        }
+        
+    }
+    .icon{
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        color: var(--primary);
+    }
+    .form-control{
+        &.icon_input{
+            padding-left: calc(0.625rem + 47px);
+        }
+        &.focus-visible{
+            background: #fff;
+            color: #1c5a84;
+        }
+    }
         &:before{
             content: '';
             display: inline-block;
@@ -1277,9 +1366,9 @@ $data-gap-list: 0,
             display: inline-block;
             text-align: left;
             vertical-align: middle;
-            margin: 15px 0;
+            margin: rem(15px) 0;
             .modal-title{
-                font-size: 15px;
+                font-size: rem(15px);
                 text-align: center;
                 color: #fff;
                 font-size: 24px;
@@ -1295,7 +1384,7 @@ $data-gap-list: 0,
             }
             .modal-header{
                 .close{
-                    font-size: 60px;
+                    font-size: rem(60px);
                     font-weight: 100;
                     box-shadow: unset;
                     color: #0082ff;
@@ -1326,13 +1415,18 @@ $data-gap-list: 0,
                 .form-control{
                     background-color: #fff;
                 }
-                .label{
-                    font-size: rem(18px);
-                    color: #fff;
-                    font-weight: bold;
-                    margin-top: 20px;
-                    min-height: 34px;
-                    min-width: 238px;
+                // .label{
+                //     font-size: rem(18px);
+                //     color: #fff;
+                //     font-weight: bold;
+                //     margin-top: 20px;
+                //     min-height: 34px;
+                //     min-width: 238px;
+                // }
+                label{
+                    color: #bac9d7;
+                    font-size: rem(16px);
+                    margin-bottom: rem(12px);
                 }
                     .popup-cross-icon {
                         position: absolute;
