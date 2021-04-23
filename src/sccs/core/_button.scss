@@ -32,7 +32,7 @@
     position: relative;
     text-transform: uppercase;
     // max-width: 150px; 
-    // font-weight: bold;
+    font-weight: bold;
     i {
         font-size: rem(17px);
         padding-right: rem(15px);
@@ -69,6 +69,12 @@
     }
     &.btn-secondary {
         // padding: rem(14px) rem(35px);
+        &:focus,
+        &:active {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid var(--secondary);
+        }
         color: #fff;
         border: 1px solid var(--secondary);
         background: var(--secondary);
@@ -149,6 +155,14 @@
             webkit-animation: fa-spin 2s infinite linear;
             animation: fa-spin 2s infinite linear;
         }
+    }
+    &.btn-lg{
+        padding-left: rem(70px);
+        padding-right: rem(70px);
+        font-size: rem(20px);
+        text-transform: uppercase;
+        font-weight: bold;
+        max-width: unset;
     }
 }
 

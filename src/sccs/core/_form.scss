@@ -70,14 +70,15 @@ input::placeholder{
     .fields-group {
         @include flex(center, space-between);
         .form-control {
-            width: 49%;
             &:first-child {
                 border-top-right-radius: 0;
                 border-bottom-right-radius: 0;
+                width: 20%;
             }
             &:last-child {
                 border-top-left-radius: 0;
                 border-bottom-left-radius: 0;
+                width: 77%;
             }
         }
     }
