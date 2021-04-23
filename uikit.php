@@ -37,20 +37,20 @@
             <h6>Form Controls</h6>
             <div class="grid" grid-item-width="1/2" data-item-gap="10">
                 <div class="form-group">
-                    <label class="control-label">Name <span>*</span></label>
+                    <label class="control-label">Name </label>
                     <div>
                         <input type="text" class="form-control" placeholder="Enter Name">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label">Screen Size <span>*</span></label>
+                    <label class="control-label">Screen Size </label>
                     <div class="fields-group">
                         <input type="text" class="form-control" placeholder="Height">
                         <input type="text" class="form-control" placeholder="Width">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label">Minimum Duration <span>*</span></label>
+                    <label class="control-label">Minimum Duration </label>
                     <div>
                         <select class="selectpicker">
                             <option>1 Week</option>
@@ -70,7 +70,8 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label"><span>*</span>Would you like us to assist on location?</label>
+                    <h1 class="mb-3">Radio Buttons</h1>
+                    <label class="control-label">Would you like us to assist on location?</label>
                     <ul class="list-inline">
                         <li class="radio list-inline-item">
                             <label>
@@ -86,6 +87,25 @@
                         </li>
                     </ul>
                 </div>
+                <div class="form-group">
+                    <h1 class="mb-3">CheckBox</h1>
+                    <label class="control-label">Would you like us to assist on location?</label>
+                    <ul class="list-inline">
+                        <li class="checkbox list-inline-item">
+                            <label>
+                                <input type="checkbox" name="checkbox" checked="">
+                                <span>Yes</span>
+                            </label>
+                        </li>
+                        <li class="radio list-inline-item">
+                            <label>
+                                <input type="checkbox" name="checkbox">
+                                <span>No</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div></div>
                 <div class="form-group">
                     <div class="has-value">
                         <input type="text" class="form-control" placeholder="Enter Name">

@@ -15,7 +15,7 @@
     }
 }
 
-.btn {
+.btn { 
     display: inline-block;
     white-space: nowrap;
     user-select: none;
@@ -24,16 +24,18 @@
     line-height: 1;
     border-radius: 10px;
     transition: all .5s ease;
-    font-size: rem(16px); 
     color: #fff;
-    padding: rem(15px) rem(30px);
+    padding: rem(15px) rem(70px);
     font-family: $primary-font-b;
     vertical-align: middle;
     position: relative;
     text-transform: uppercase;
-    // max-width: 150px; 
     font-weight: bold;
     box-shadow: none !important;
+    font-size: rem(20px);
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: unset;
     i {
         font-size: rem(17px);
         padding-right: rem(15px);
@@ -161,12 +163,7 @@
         }
     }
     &.btn-lg{
-        padding-left: rem(70px);
-        padding-right: rem(70px);
-        font-size: rem(20px);
-        text-transform: uppercase;
-        font-weight: bold;
-        max-width: unset;
+        
     }
 }
 
@@ -196,7 +193,7 @@
     }
 }
 
-.radio {
+.radio,.checkbox {
     margin: 0;
     padding: 0;
     padding-bottom: rem(15px);
@@ -204,13 +201,12 @@
         padding-left: 0px;
         margin: 0;
         cursor: pointer;
-        // font-family: 'Bw Modelica LGC SS01 Medium';
         font-weight: 500;
         &:not(:last-child) {
             margin-right: rem(50px);
         }
     }
-    input[type="radio"] {
+    input[type="radio"],input[type="checkbox"] {
         display: none;
         +span {
             display: inline-block;

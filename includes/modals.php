@@ -234,7 +234,6 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="User">
                     <div class="image_uploader--parent file-upload" data-text="add logo">
                             <div class="file-upload__file">
                                 <input type="file" name="file">
