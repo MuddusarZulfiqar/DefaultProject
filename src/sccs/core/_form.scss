@@ -128,10 +128,8 @@ input::placeholder{
             padding-left: rem(20px);
         }
     }
-    &.has-value{
-       .p-relative{
-            position: relative;
-        }
+    .has-value{
+        position: relative;
         .form-control{
             padding-right: rem(60px);
         }
