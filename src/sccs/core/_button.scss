@@ -162,9 +162,6 @@
             animation: fa-spin 2s infinite linear;
         }
     }
-    &.btn-lg{
-        
-    }
 }
 
 .btn-upload {
@@ -238,6 +235,24 @@
                     background-size: 62%;
                     background-color: #003160;
                     border-color: #003160;
+                }
+            }
+        }
+    }
+    input[type="checkbox"] {
+        + span {
+            padding-left: unset;
+            padding-right: 45px;
+            &::after {
+                right: 0px;
+                left: auto;
+            }
+        }
+        &:checked{
+            +span{
+                &::after{
+                    background-color: #0082ff;
+                    border-color: #0082ff;
                 }
             }
         }
