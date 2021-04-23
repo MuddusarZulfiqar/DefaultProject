@@ -117,8 +117,8 @@
             <div class="form-group image-uploader">
                     <label class="control-label">Images</label>
                     <i>(upto 4 images)</i>
-                    <div class="image_uploader">
-                        <div class="image_uploader--parent file-upload">
+                    <div class="grid" data-item-gap="20" grid-item-width="1/4">
+                        <div class="file-upload">
                             <div class="file-upload__file">
                                 <input type="file" name="file">
                             </div>
@@ -132,7 +132,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="image_uploader--parent file-upload">
+                        <div class="file-upload">
                             <div class="file-upload__file">
                                 <input type="file" name="file">
                             </div>
@@ -146,7 +146,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="image_uploader--parent file-upload">
+                        <div class="file-upload">
                             <div class="file-upload__file">
                                 <input type="file" name="file">
                             </div>
@@ -160,7 +160,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="image_uploader--parent file-upload">
+                        <div class="file-upload">
                             <div class="file-upload__file">
                                 <input type="file" name="file">
                             </div>

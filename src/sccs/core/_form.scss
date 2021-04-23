@@ -30,7 +30,7 @@ input::placeholder{
         }
     }
     .form-control {
-        height: 50px;
+        height: 48px;
         font-size: rem(18px);
         color: $primary;
         background-color: transparent;
@@ -148,7 +148,7 @@ input::placeholder{
         .file-wrapper{
             border-radius: 30px;
             width: 100%;
-            height: 50px;
+            height: 48px;
             border: solid 1px #d2d2d2;
             position: relative;
             &::before{
@@ -216,7 +216,7 @@ input::placeholder{
     }
     >.dropdown-toggle {
         position: relative;
-        height: 50px;
+        height: 48px;
         font-size: rem(18px);
         color: $primary;
         background-color: '#fff';

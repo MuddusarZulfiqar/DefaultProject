@@ -79,25 +79,23 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body forgotpassword">
-                    <div class="User">
-                            <p class="User__field--label">
-                                Enter your email we will generate a password reset link
-                            </p>
-                            <div class="form-group">
-                                <input type="email" class="form-control icon_input" placeholder="Email">
-                                <div class="icon">
-                                    <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 230.17 230.17" style="enable-background:new 0 0 230.17 230.17;" xml:space="preserve">
-                                        <use xlink:href="#email"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        <div class="button-row">
-                            <button class="btn btn-secondary ">
-                                Submit
-                            </button>
+                <div class="modal-body">
+                    <p>
+                        Enter your email we will generate a password reset link
+                    </p>
+                    <div class="form-group">
+                        <input type="email" class="form-control icon_input" placeholder="Email">
+                        <div class="icon">
+                            <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 230.17 230.17" style="enable-background:new 0 0 230.17 230.17;" xml:space="preserve">
+                                <use xlink:href="#email"></use>
+                            </svg>
                         </div>
+                    </div>
+                    <div class="button-row">
+                        <button class="btn btn-secondary ">
+                            Submit
+                        </button>
                     </div>
                 </div>
                 
@@ -158,48 +156,21 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="User">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Confirm Password">
-                        </div>
-                        <div class="form-group">
-                            <div class="fields-group">
-                                <!-- <input type="text" value="+965" class="form-control font-weight-bold" placeholder="Height"> -->
-                                <select class="selectpicker form-control">
-                                    <option>1 Week</option>
-                                    <option>2 Week</option>
-                                    <option>3 Week</option>
-                                    <option>4 Week</option>
-                                    <option>5 Week</option>
-                                    <option>6 Week</option>
-                                    <option>7 Week</option>
-                                    <option>8 Week</option>
-                                    <option>9 Week</option>
-                                    <option>10 Week</option>
-                                    <option>1 Year</option>
-                                    <option>2 Year</option>
-                                    <option>3 Year</option>
-                                </select>
-                                <input type="text" class="form-control" placeholder="Phone Number">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Occupation">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Company">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">What are you here for?</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Confirm Password">
+                    </div>
+                    <div class="form-group">
+                        <div class="fields-group">
+                            <!-- <input type="text" value="+965" class="form-control font-weight-bold" placeholder="Height"> -->
                             <select class="selectpicker form-control">
                                 <option>1 Week</option>
                                 <option>2 Week</option>
@@ -215,12 +186,37 @@
                                 <option>2 Year</option>
                                 <option>3 Year</option>
                             </select>
+                            <input type="text" class="form-control" placeholder="Phone Number">
                         </div>
-                        <div class="button-row ">
-                            <button class="btn btn-secondary ">
-                                submit
-                            </button>
-                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Occupation">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Company">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">What are you here for?</label>
+                        <select class="selectpicker form-control">
+                            <option>1 Week</option>
+                            <option>2 Week</option>
+                            <option>3 Week</option>
+                            <option>4 Week</option>
+                            <option>5 Week</option>
+                            <option>6 Week</option>
+                            <option>7 Week</option>
+                            <option>8 Week</option>
+                            <option>9 Week</option>
+                            <option>10 Week</option>
+                            <option>1 Year</option>
+                            <option>2 Year</option>
+                            <option>3 Year</option>
+                        </select>
+                    </div>
+                    <div class="button-row ">
+                        <button class="btn btn-secondary ">
+                            submit
+                        </button>
                     </div>
                 </div>
             </div>
@@ -259,7 +255,7 @@
                         <div class="form-group">
                             <input type="email" class="form-control" placeholder="Name">
                         </div>
-                        <div class="form-group custom_select">
+                        <div class="form-group">
                             <label class="control-label">Industry Type</label>
                             <select class="selectpicker form-control">
                                 <option>1 Week</option>
@@ -310,7 +306,7 @@
                         <div class="form-group">
                             <textarea class="form-control" placeholder="Business Address"></textarea>
                         </div>
-                        <div class="User__button">
+                        <div class="button-row">
                             <button class="btn btn-secondary ">
                                 submit
                             </button>
