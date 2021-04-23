@@ -733,6 +733,15 @@ body {
         background-size: 62%;
         background-color: #003160;
         border-color: #003160; }
+  .radio input[type="checkbox"] + span, .checkbox input[type="checkbox"] + span {
+    padding-left: unset;
+    padding-right: 45px; }
+    .radio input[type="checkbox"] + span::after, .checkbox input[type="checkbox"] + span::after {
+      right: 0px;
+      left: auto; }
+  .radio input[type="checkbox"]:checked + span::after, .checkbox input[type="checkbox"]:checked + span::after {
+    background-color: #0082ff;
+    border-color: #0082ff; }
   .radio:not(:last-child), .checkbox:not(:last-child) {
     margin-right: 4.375rem; }
 
@@ -836,7 +845,7 @@ h2 {
       font-size: 2.1875rem; } }
 
 h3 {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 600; }
   @media screen and (min-width: 414px) {
     h3 {
@@ -2962,18 +2971,6 @@ h3.sectionTitle {
     .modal-dialog .file-upload__image img {
       border-radius: 50%; }
 
-.checkbox label span.icon {
-  width: 63px;
-  height: 41px;
-  display: inline-flex;
-  background: var(--primary);
-  padding: 18px;
-  align-items: center;
-  border-radius: 11px; }
-  .checkbox label span.icon svg {
-    width: 100%;
-    height: auto; }
-
 #register .modal-dialog {
   max-width: 600px; }
 
@@ -3244,8 +3241,38 @@ h3.sectionTitle {
       margin-bottom: 4px;
       color: #598ea9; }
 
-.EditPopup__main {
-  background: #f2f7ff;
-  padding: 55px 0px; }
+.EditPopup .checkbox label {
+  display: flex;
+  align-items: center; }
+  .EditPopup .checkbox label span.icon {
+    width: 63px;
+    height: 41px;
+    display: inline-flex;
+    background: #fff;
+    padding: 1.125rem;
+    align-items: center;
+    border-radius: 11px;
+    color: var(--primary); }
+    .EditPopup .checkbox label span.icon svg {
+      width: 100%;
+      height: auto; }
+    .EditPopup .checkbox label span.icon::after {
+      content: unset; }
+  .EditPopup .checkbox label .label {
+    margin-left: 0.875rem; }
+
+.EditPopup .checkbox input[type="checkbox"]:checked + span {
+  background: var(--primary);
+  color: #fff; }
+
+.EditPopup .radio_row [class*='col-']:first-child .form-group {
+  margin-bottom: 1.75rem; }
+
+.EditPopup .radio_row [class*='col-']:not(:first-child) .form-group {
+  margin-bottom: unset;
+  margin-left: 0.9375rem; }
+
+.EditPopup .radio_row [class*='col-']:last-child .form-group {
+  margin-bottom: 1.25rem; }
 
 /*# sourceMappingURL=main.css.map */
