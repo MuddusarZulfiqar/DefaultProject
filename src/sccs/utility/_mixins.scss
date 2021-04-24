@@ -821,3 +821,16 @@
 @mixin circle($size: 50px) {
 	width: var(--size); height: var(--size); border-radius: var(--size);
 }
+
+@mixin truncate($lines, $lh: 1.2,$spacer:0){
+    line-height: $lh;
+    max-height: $lh * $lines + $spacer + em;
+    // overflow: hidden;
+    text-overflow: ellipsis;
+    text-overflow: -o-ellipsis-lastline;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

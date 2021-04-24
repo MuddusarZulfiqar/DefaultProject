@@ -1,4 +1,9 @@
 @import "import";
+
+.white-bg
+{
+    background: #fff;
+}
 h2.sectionTitle,
 h3.sectionTitle {
     color: var(--primary);
@@ -15,76 +20,86 @@ h3.sectionTitle {
     }
     
 }
-.file-upload{
-    height: 155px;
-    position: relative;
-    &__file{
-        position: relative;
-        width: 100%;
-        height: 92%;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border: 2px dashed #d2d2d2;
-        border-radius: 20px;
-        margin-top: 10px;
-        opacity: 0.8;
-        &::before{
-            content: '';
-            position: absolute;
-            width: 55px;
-            height: 55px;
-            border: 1px solid #d2d2d2;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            z-index: -1;
-        }
-        &::after{
-            content: '';
-            background-image: url("data:image/svg+xml,%0A%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 33.55 33'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23d3d3d3;%7D.cls-2%7Bfill:%23f5f6f6;%7D%3C/style%3E%3C/defs%3E%3Cpolygon class='cls-1' points='14.76 1.03 18.69 1.03 18.69 13.99 32.78 13.99 32.78 18.97 18.78 18.97 18.78 31.93 14.76 31.93 14.76 19 0.79 19 0.79 14.02 14.76 14.02 14.76 1.03'/%3E%3Cpolygon class='cls-2' points='14.79 0.88 14.79 0 18.87 0 18.87 1.03 14.76 1.03 14.79 0.88'/%3E%3Cpolygon class='cls-2' points='32.88 14.89 33.55 14.89 33.55 18.14 32.76 18.14 32.76 14.87 32.88 14.89'/%3E%3Cpolygon class='cls-2' points='0.12 14.87 0.79 14.87 0.79 18.11 0 18.11 0 14.84 0.12 14.87'/%3E%3Crect class='cls-2' x='18.78' y='1.03' width='0.99' height='12.9'/%3E%3Crect class='cls-2' x='13.77' y='1' width='0.96' height='12.99'/%3E%3Crect class='cls-2' x='18.81' y='19' width='0.87' height='12.93'/%3E%3Crect class='cls-2' x='14.73' y='31.96' width='4.14' height='1.04'/%3E%3Crect class='cls-2' x='13.8' y='18.97' width='0.96' height='12.99'/%3E%3Crect class='cls-2' x='288.51' y='415.89' width='0.96' height='13.98' transform='translate(-415.11 307.48) rotate(-90)'/%3E%3Crect class='cls-2' x='306.51' y='415.89' width='0.96' height='13.98' transform='translate(-397.11 325.48) rotate(-90)'/%3E%3Crect class='cls-2' x='306.51' y='411.81' width='0.96' height='13.98' transform='translate(-393.03 321.4) rotate(-90)'/%3E%3Crect class='cls-2' x='288.51' y='411.81' width='0.96' height='13.98' transform='translate(-411.03 303.4) rotate(-90)'/%3E%3C/svg%3E");
-            width: 30px;
-            height: 30px;
-            background-size: contain;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-        }
+
+.uploadFile{
+    .grid{
+        --grid-item-width: 200px;
     }
-    &__image{
-        top: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        img{
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
+    &__item{
+        height: 155px;
+        position: relative;
+        &--file{
+            position: relative;
             width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border: 2px dashed #d2d2d2;
+            border-radius: 25px;
             overflow: hidden;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 55px;
+                height: 55px;
+                border: 1px solid #d2d2d2;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                z-index: -1;
+            }
+            &::after{
+                content: '';
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='32px' height='33px'%3e%3cpath fill-rule='evenodd' fill='rgb(210, 210, 210)' d='M32.000,19.000 L18.500,19.000 L18.500,32.500 L13.500,32.500 L13.500,19.000 L-0.000,19.000 L-0.000,14.000 L13.500,14.000 L13.500,0.500 L18.500,0.500 L18.500,14.000 L32.000,14.000 L32.000,19.000 Z'/%3e%3c/svg%3e");
+                background-repeat: no-repeat;
+                background-size: 100%;;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+            }
         }
-        span.delete{
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: #fff;
-            right: 7px;
-            bottom: 7px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 9px;
-            cursor: pointer;
+        &--image{
+            height: 100%;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+            span.delete{
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: #fff;
+                right: 7px;
+                bottom: 7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                &:after{
+                    position: absolute;
+                    content:"";
+                    background: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' fill='%23be1f2c' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 384 384' style='enable-background:new 0 0 384 384;' xml:space='preserve'%3e%3cg%3e%3cg%3e%3cg%3e%3cpath d='M64,341.333C64,364.907,83.093,384,106.667,384h170.667C300.907,384,320,364.907,320,341.333v-256H64V341.333z'/%3e%3cpolygon points='266.667,21.333 245.333,0 138.667,0 117.333,21.333 42.667,21.333 42.667,64 341.333,64 341.333,21.333 '/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e") center center no-repeat;
+                    width: 20px;
+                    height: 20px;
+                }
+                &:hover{
+                    background: #be1f2c;
+                    &:after{
+                        background: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 384 384' style='enable-background:new 0 0 384 384;' xml:space='preserve'%3e%3cg%3e%3cg%3e%3cg%3e%3cpath d='M64,341.333C64,364.907,83.093,384,106.667,384h170.667C300.907,384,320,364.907,320,341.333v-256H64V341.333z'/%3e%3cpolygon points='266.667,21.333 245.333,0 138.667,0 117.333,21.333 42.667,21.333 42.667,64 341.333,64 341.333,21.333 '/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e") center center no-repeat;
+                    }
+                }
+            }
         }
     }
 }
+
 .section{
     padding-bottom: rem(55px);
 }
@@ -499,8 +514,11 @@ h3.sectionTitle {
     }
 }
 
-.EditPopup{
+.propertyFeatures{
+    padding-left: 15px;
     .checkbox{
+        padding-bottom: 0px;
+        margin-right: 0px;
         label{
             display: flex;
             align-items: center;
@@ -534,23 +552,109 @@ h3.sectionTitle {
             }
         }
     }
-    .radio_row{
-        [class*='col-']:first-child{
-            .form-group{
-                margin-bottom: rem(28px);
+}
+
+.searchAddress{
+    @include flex(center,flex-start);
+    .form-control{
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+    }
+    button{
+        background:none;
+        border:0;
+        color: var(--secondary);
+        cursor: pointer;
+        &:hover{
+            color: var(--primary);
+        }
+        svg{
+            width: 19px;
+            height: auto;
+        }
+    }
+}
+
+.map{
+    iframe{
+        width: 100%;
+        border: 0;
+        height: 100%;
+    }
+}
+
+.editProperty{
+    h2, h3{
+        font-size: rem(20px);
+        padding-bottom: rem(30px);
+        color: var(--primary);
+        font-weight: 700;
+        span{
+            display: block;
+            color: var(--lightblue);
+            font-size:rem(16px);
+            padding-top: 8px;
+            font-weight: 400;
+        }
+    }
+    h3{
+        padding-bottom: rem(20px);
+    }
+    .map{
+        margin-bottom: rem(35px);
+        height: 400px;
+        position: relative;
+        &:before{
+            position: absolute;
+            content:"";
+            width: 100%;
+            height: 50px;
+            box-shadow: inset 2px 19px 12px rgba(0, 0, 0, 0.15);
+            top:0px;
+            left: 0;
+            z-index: 9;
+        }
+    }
+    .button-row{
+        margin-top: 0px;
+    }
+}
+
+.propertyListing{
+    .pageHead{
+        height: 105px;
+        .container{
+            height: 100%;
+        }
+        h1{
+            flex: 0 0 30%;
+            max-width: 30%;
+        }
+        .search{
+            flex: 1;
+            border-left: solid 1px #ccd6df;
+            border-right: solid 1px #ccd6df;
+            @include flex(center, flex-start);
+            flex-wrap: nowrap;
+            padding: 0px rem(15px) 0px rem(50px);
+            height: 100%;
+            .icon{
+                margin-right: rem(10px);
+            }
+            svg{
+                width: 20px;
+                height: auto;
+                color: var(--secondary);
+            }
+            span:not(.icon){
+                color:var(--secondary);
+                font-size: rem(22px);
+                @include truncate(1);
             }
         }
-        [class*='col-']:not(:first-child){
-            .form-group{
-                margin-bottom: unset;
-                margin-left: rem(15px);
-            }
+        .listingTabs{
+            flex: 0 0 20%;
+            max-width: 20%;
         }
-        [class*='col-']:last-child{
-            .form-group{
-                margin-bottom: rem(20px);
-            }
-        }
-        
     }
 }

@@ -19,7 +19,7 @@ var aqarat = {
         this.loader();
         this.configureModal();
         this.uploadControls();
-        this.changeImage();
+        this.uploadImage();
         this.datetimePickers();
         this.stickyHeader();
     },
@@ -98,6 +98,54 @@ var aqarat = {
             $(this).toggleClass('active')
         });
     },
+    uploadControls: function() {
+        $(document).on("change", '.file-wrapper input[type="file"]', function(e) {
+            var fileName = e.target.files[0].name;
+            $(this).parents(".type-file").find(".file-name .file_name").text(fileName);
+            let str = $('.file-name .file_name').text();
+            let text =  str.slice(0, 10);
+            var file_ext = fileName.split(".")
+            var checkText = file_ext[0]
+            if(checkText.length>=15){
+                file_ext =  file_ext[file_ext.length-1]
+                $(this).parents(".type-file").find(".file-name .file_name").text(`${text}...${file_ext}`);
+            }
+            
+            $(this).parents(".type-file").find(".file-name").addClass("active");
+        });
+        $(".file-name .cross").click(function(e) {
+            e.preventDefault();
+            $(this).parents('.type-file').find('input[type="file"]').val('')
+            $(this).parent(".file-name").removeClass("active");
+        });
+    },
+    uploadImage: function() {
+        $(document).on("change", ".uploadFile__item--file input[type='file']", function(e) {           
+            var prnt = $(this).parent();
+            var files = $(this)[0].files;
+            for (i = 0; i < files.length; i++) {
+                var readImg = new FileReader();
+                var file = files[i];
+                if (file.type.match('image.*')) {
+                    readImg.onload = (function(file) {
+                        return function(e) {
+                            $(prnt).find(".uploadFile__item--image").remove();
+                            $(prnt).append(`<div class="uploadFile__item--image"><img src="${e.target.result}"><span class="delete"></span></div>`);
+                        };
+                    })(file);
+                    readImg.readAsDataURL(file);
+                }
+                else{
+                    prnt.find('input[type="file"]').val('');
+                }
+            }
+        });
+        $(document).on("click", '.uploadFile__item--image .delete', function(e){
+            var prnt = $(this).parents(".uploadFile__item--file");
+            $(this).parent().remove();
+            $(prnt).find('input[type="file"]').val('')
+        })
+    },
     configureModal: function () {
         $("body").on("click", "*[data-toggle='custom-modal']", function (e) {
             e.preventDefault();
@@ -134,61 +182,7 @@ var aqarat = {
                     $(".custom-modal").removeClass("small");
         });
     },
-    uploadControls: function() {
-        $(document).on("change", '.file-wrapper input[type="file"]', function(e) {
-            var fileName = e.target.files[0].name;
-            $(this).parents(".type-file").find(".file-name .file_name").text(fileName);
-            let str = $('.file-name .file_name').text();
-            let text =  str.slice(0, 10);
-            var file_ext = fileName.split(".")
-            var checkText = file_ext[0]
-            if(checkText.length>=15){
-                file_ext =  file_ext[file_ext.length-1]
-                $(this).parents(".type-file").find(".file-name .file_name").text(`${text}...${file_ext}`);
-            }
-            
-            $(this).parents(".type-file").find(".file-name").addClass("active");
-        });
-        $(".file-name .cross").click(function(e) {
-            e.preventDefault();
-            $(this).parents('.type-file').find('input[type="file"]').val('')
-            $(this).parent(".file-name").removeClass("active");
-        });
-    },
-    changeImage: function() {
-        $(document).on("change", ".file-upload__file input[type='file']", function(e) {
-           //console.log(e)
-           var prnt = $(this).parent();
-            var files = $(this)[0].files;
-            var img = $(this).parents('.file-upload').find(".file-upload__image img")
-            for (i = 0; i < files.length; i++) {
-                var readImg = new FileReader();
-                var file = files[i];
-                
-                if (file.type.match('image.*')) {
-                    // var img = $(prnt).find("img");
-                    $(this).parents('.file-upload').find('.file-upload__image').removeClass('d-none');
-                    console.log(img);
-                    readImg.onload = (function(file) {
-                        return function(e) {
-                            console.log(e.target.result);
-                            //$(img).parents('.file-upload').find(".img-upload img").attr("src", e.target.result);
-                            $(img).attr("src", e.target.result);
-                        };
-                    })(file);
-                    readImg.readAsDataURL(file);
-                }
-                else{
-                    alert('please Put Image File')
-                    $(this).parents('.file-upload').find('input[type="file"]').val('')
-                }
-            }
-        });
-        $('.img-upload .delete').click(function(e){
-            $(this).parent('.img-upload').addClass('d-none');
-            $(this).parents('.file-upload').find('input[type="file"]').val('')
-        })
-    }
+    
 };
 
 var lazyload = {

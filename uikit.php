@@ -107,9 +107,9 @@
                 </div>
                 <div></div>
                 <div class="form-group">
-                    <div class="has-value">
+                    <div class="has-label">
                         <input type="text" class="form-control" placeholder="Enter Name">
-                        <span class="value">KD</span>
+                        <span class="info-label">KD</span>
                     </div>
                     
                 </div>
@@ -134,65 +134,14 @@
                 <div></div>
                 
             </div>
-            <div class="form-group image-uploader">
-                    <label class="control-label">Images</label>
-                    <i>(upto 4 images)</i>
+            <div class="form-group uploadFile">
+                    <label class="control-label">Images <span class="note">(upto 4 images)</span></label>                    
                     <div class="grid" data-item-gap="20" grid-item-width="1/4">
-                        <div class="file-upload">
-                            <div class="file-upload__file">
+                        <div class="uploadFile__item">
+                            <div class="uploadFile__item--file">
                                 <input type="file" name="file">
                             </div>
-                            <div class="file-upload__image img-upload d-none">
-                                <img src="" alt="" class="img-fluid">
-                                <span class="delete">
-                                    <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
-                                        <use xlink:href="#delete-icon"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="file-upload">
-                            <div class="file-upload__file">
-                                <input type="file" name="file">
-                            </div>
-                            <div class="file-upload__image img-upload d-none">
-                                <img src="" alt="" class="img-fluid">
-                                <span class="delete">
-                                    <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
-                                        <use xlink:href="#delete-icon"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="file-upload">
-                            <div class="file-upload__file">
-                                <input type="file" name="file">
-                            </div>
-                            <div class="file-upload__image img-upload d-none">
-                                <img src="" alt="" class="img-fluid">
-                                <span class="delete">
-                                    <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
-                                        <use xlink:href="#delete-icon"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="file-upload">
-                            <div class="file-upload__file">
-                                <input type="file" name="file">
-                            </div>
-                            <div class="file-upload__image img-upload d-none">
-                                <img src="" alt="" class="img-fluid">
-                                <span class="delete">
-                                    <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
-                                        <use xlink:href="#delete-icon"></use>
-                                    </svg>
-                                </span>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
