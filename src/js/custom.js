@@ -6,7 +6,7 @@ $(document).ready(function() {
         datepicker_inline: $("#datepicker_inline"),
         datepicker: $("#datepicker,#datepicker2"),
         datepicker_filter: $("#datepicker_filter"),
-        menuToggler: document.querySelector(".dashboard__left--toggler"),
+        filterToggle: $(".propertyListing__filter--icon, .propertyListing__filter--close"),
     });
 });
 var self;
@@ -14,7 +14,7 @@ var aqarat = {
     init: function(options) {
         this.settings = options;
         self = this;
-
+        this.bindEvents();
         this.utilities();
         this.loader();
         this.configureModal();
@@ -22,6 +22,10 @@ var aqarat = {
         this.uploadImage();
         this.datetimePickers();
         this.stickyHeader();
+        //this.filters();
+    },
+    bindEvents: function(){
+        this.settings.filterToggle.on("click", this.filters)
     },
     loader: function() {
         setTimeout(function() {
@@ -94,7 +98,7 @@ var aqarat = {
             liveSearch: true,
             liveSearchPlaceholder: 'Search'
         });
-        $('.property__save').click(function(){
+        $('.property__item--save').click(function(){
             $(this).toggleClass('active')
         });
     },
@@ -145,6 +149,10 @@ var aqarat = {
             $(this).parent().remove();
             $(prnt).find('input[type="file"]').val('')
         })
+    },
+    filters: function(){
+        event.preventDefault();        
+        $(this).parents(".propertyListing__filter").toggleClass("toggle");
     },
     configureModal: function () {
         $("body").on("click", "*[data-toggle='custom-modal']", function (e) {

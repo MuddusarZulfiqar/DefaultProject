@@ -154,7 +154,7 @@
                             <div class="property__item--image">
                                 <img src="src/images/house.png" alt="" class="img-fluid">
                                 <div class="overlay">
-                                    <button class="btn btn-secondary">explore</button>
+                                    <a href="#" class="btn btn-secondary">explore</a>
                                 </div>
                                 <span class="property__item--type">buy</span>
                                 <span class="property__item--save"></span>

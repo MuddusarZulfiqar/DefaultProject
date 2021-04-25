@@ -4,6 +4,9 @@
 {
     background: #fff;
 }
+.content-wrapper{
+    padding-bottom: rem(25px);
+}
 h2.sectionTitle,
 h3.sectionTitle {
     color: var(--primary);
@@ -111,6 +114,7 @@ h3.sectionTitle {
     position: relative;
     background: #fff;
     margin-bottom: rem(40px);
+    z-index: 3;
     h1{
         span{
             font-weight: bold;
@@ -294,10 +298,13 @@ h3.sectionTitle {
                     visibility: hidden;
                     opacity: 0;
                     transition: 0.5s ease all;
-                    button{
+                    .btn{
                         position: absolute;
                         bottom: 15px;
-                        left: 40px;
+                        left: 25px;
+                        padding: rem(17px) rem(33px);
+                        font-weight: 400;
+                        font-size: rem(18px);
                     }
                     &::before{
                         position: absolute;
@@ -621,8 +628,10 @@ h3.sectionTitle {
 }
 
 .propertyListing{
+    background: #fff;
     .pageHead{
         height: 105px;
+        margin-bottom: 0;
         .container{
             height: 100%;
         }
@@ -657,4 +666,91 @@ h3.sectionTitle {
             max-width: 20%;
         }
     }
+    &__filter{
+        $self: &;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 115px;
+        height: calc(100% + 25px);
+        background: #f2f7ff;
+        padding-top:rem(20px);
+        transition: all 0.5s ease;
+        z-index: 2;
+        &--icon{
+            @include flex(center,center);
+            width: 60px;
+            height: 60px;
+            margin:auto;
+            border-radius: 10px;
+            background: #1c5a84;
+            transition: all 0.3s ease;
+            &:hover{
+                background: var(--primary);
+            }
+            svg{
+                width: 24px;
+                height: auto;
+                fill: #fff;
+            }
+        }
+        &--close{
+            display: block;
+            text-align: right;
+            font-size:rem(20px);
+            font-weight: 700;
+            color:#1c5a84;
+            border-bottom: solid 1px #c2cfdf;
+            padding-bottom: rem(25px);
+            margin-bottom: rem(30px);
+            svg{
+                width: 14px;
+                height: auto;
+                color:var(--secondary);
+            }
+            &:hover{
+                text-decoration: none;
+                color:var(--secondary);
+            }
+        }
+        &--inner{
+            padding: 0px rem(60px) 0px rem(30px);
+            position: relative;
+            opacity: 0;
+            z-index: -99;
+            transition: all 0.2s ease;
+            
+            .row{
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .form-group{
+                .control-label{
+                    margin-left: 0;
+                }
+            }
+        }
+        &.toggle{
+            width: 700px;
+            #{ $self }--icon{
+                opacity: 0;
+                position: relative;
+                z-index: -99;
+            }
+            #{ $self }--inner{
+                opacity: 1;
+                z-index: 1;
+                transition-delay: 0.1s;
+            }
+        }
+        
+    }
+    &__wrapper{
+        position: relative;
+        padding-top: rem(45px);
+        .grid{
+            row-gap: rem(45px);
+        }
+    }
+    
 }
