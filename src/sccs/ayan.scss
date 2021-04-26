@@ -44,12 +44,80 @@
 // contact_us
 
 .contact_us {
+	.left__side {
+		margin-top: rem(118px);
+		h2 {
+			font-weight: 300;
+			margin-bottom: rem(40px);
+			span {
+				font-weight: 600;
+			}
+		}
+	}
 	.map {
 		margin-top: rem(118px);
 		height: 532px;
+		margin-bottom: rem(30px);
 		iframe {
 			height: 100%;
 			width: 100%;
+		}
+	}
+	.contact {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: auto;
+		width: 100%;
+		&__item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: relative;
+			&:not(:last-child) {
+				&::before {
+					position: absolute;
+					content: '';
+					top: 50%;
+					transform: translateY(-50%);
+					width: 1px;
+					height: 30px;
+					background: #1c5a84;
+					right: -35px;
+				}
+			}
+		}
+		&__item span {
+			margin-top: rem(30px);
+			font-size: rem(18px);
+			color: #5e5f60;
+			svg {
+				color: var(--primary);
+			}
+		}
+	}
+	.card_position {
+		position: relative;
+		// padding-left: rem(60px);
+		.card {
+			flex-direction: column;
+			align-items: center;
+			box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+			padding: 1.0625rem 2rem;
+			margin: auto;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 385px;
+			&--title {
+				text-align: center;
+			}
+			p {
+				margin-top: rem(20px);
+				font-size: rem(18px);
+				font-weight: 500;
+				color: #5e5f60;
+			}
 		}
 	}
 }
@@ -96,45 +164,3 @@
 		}
 	}
 }
-// #defaultCheck1 {
-// 	display: none;
-// 	& + label {
-// 		position: relative;
-// 		font-weight: bold;
-// 		color: var(--primary);
-// 		margin-bottom: rem(30px);
-// 		&::before {
-// 			content: '';
-// 			position: absolute;
-// 			width: 25px;
-// 			height: 25px;
-// 			background: transparent;
-// 			border-radius: 50%;
-// 			border: 1px solid #000;
-// 			right: -40px;
-// 			top: -4px;
-// 		}
-// 	}
-// 	&:checked {
-// 		& + label {
-// 			&::before {
-// 				background: transparent;
-// 			}
-// 			&::after {
-// 				content: '';
-// 				position: absolute;
-// 				background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' xml:space='preserve' width='101.665mm' height='77.2682mm' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 10167.6 7727.66' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:white;fill-rule:nonzero%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Cg id='Layer_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cg id='_2302603447616'%3E%3Cg%3E%3Cpath class='fil0' d='M9901.1 210.89c-331.08,-300.96 -845.96,-277.38 -1148.52,55.3l-4961.83 5463.71 -2397.13 -2436.96c-316.42,-320.49 -830.49,-325.38 -1150.16,-9.76 -320.49,314.78 -325.38,829.67 -9.76,1150.16l3000.65 3050.29c153.75,156.17 361.96,243.21 579.94,243.21 4.88,0 10.58,0 15.46,0.82 224.5,-4.88 436.01,-100.87 586.46,-266.8l5540.13 -6100.59c301.83,-333.53 277.42,-847.58 -55.25,-1149.37z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
-// 				background-repeat: no-repeat;
-// 				background-position: center;
-// 				background-size: 62%;
-// 				background-color: var(--secondary);
-// 				border-color: var(--secondary);
-// 				width: 25px;
-// 				height: 25px;
-// 				border-radius: 50%;
-// 				right: -40px;
-// 				top: -4px;
-// 			}
-// 		}
-// 	}
-// }
