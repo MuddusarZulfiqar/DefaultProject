@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="src/css/bootstrap-select.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="src/css/main.css" rel="stylesheet"></link>
+    <script src="https://kit.fontawesome.com/273df80109.js" crossorigin="anonymous"></script> 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <title>Aqarat</title>
 </head>
