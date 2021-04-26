@@ -1,6 +1,5 @@
 // about
 .about {
-	margin-top: rem(30px);
 	h2 {
 		font-weight: 300;
 		color: var(--primary);
@@ -42,27 +41,18 @@
 		}
 	}
 }
+// contact_us
 
-// dash_individual
-
-.editprofile {
-	.button-row {
-		justify-content: space-around;
-	}
-	.checkbox {
-		input[type='checkbox'] {
-			+ span {
-				padding-left: unset;
-				padding-right: 45px;
-				&::after {
-					right: 0px;
-					left: auto;
-				}
-			}
+.contact_us {
+	.map {
+		margin-top: rem(118px);
+		height: 532px;
+		iframe {
+			height: 100%;
+			width: 100%;
 		}
 	}
 }
-
 // generic
 .card {
 	flex-direction: row;

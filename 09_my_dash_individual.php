@@ -1,5 +1,5 @@
 <?php include_once "includes/header.php";?>
-<div class="content-wrapper editprofile">
+<div class="content-wrapper">
     <div class="pageHead">
         <div class="container">
             <h1>Edit Your<span> Profile</span></h1>

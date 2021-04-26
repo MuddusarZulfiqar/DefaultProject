@@ -52,6 +52,9 @@ form {
             box-shadow: none;
             border-radius: 0;
         }
+        &:disabled {
+			background: #e5edf5;
+		}
         &:focus {
             outline: none;
             box-shadow: none;
