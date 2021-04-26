@@ -105,7 +105,12 @@
                         </li>
                     </ul>
                 </div>
-                <div></div>
+                <div class="form-group">
+                        <div class="has-label">
+                            <input type="text" class="form-control datetimepicker-input" readonly id="datepicker" name="name" data-target="#datepicker" data-toggle="datetimepicker" placeholder="20/11/2019">
+							<span class="icon-date"></span>
+                        </div>
+                    </div>
                 <div class="form-group">
                     <div class="has-label">
                         <input type="text" class="form-control" placeholder="Enter Name">
@@ -114,9 +119,7 @@
                     
                 </div>
                 <div class="form-group">
-                    <div class="fields-group">
-                        <textarea class="form-control" placeholder="Description (Arabic)"></textarea>
-                    </div>
+                    <textarea class="form-control" placeholder="Description (Arabic)"></textarea>
                 </div>
                 <div class="form-group type-file">
                     <div class="file-wrapper">
