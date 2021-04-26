@@ -12,6 +12,7 @@ $(document).ready(function() {
         datetimepicker3: $("#datetimepicker3"),
         datetimepicker4: $("#datetimepicker4"),
         filterToggle: $(".propertyListing__filter--icon, .propertyListing__filter--close"),
+        
     });
 });
 var self;
@@ -29,7 +30,7 @@ var aqarat = {
         this.uploadImage();
         // this.datetimePickers();
         this.stickyHeader();
-        
+        this.tabsChange();
         //this.filters();
     },
     bindEvents: function(){
@@ -207,6 +208,11 @@ var aqarat = {
                     $(".custom-modal").removeClass("small");
         });
     },
+    tabsChange:function(){
+        $('.listingTabs .nav-tabs a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            $(".inner-scroll").mCustomScrollbar();
+        })
+    }
     
 };
 

@@ -266,6 +266,63 @@
                             </div>
                         </div>
                         <div class="form-group row align-items-center">
+                            <label class="control-label col-sm-2">Bathroom</label>
+                            <div class="col-sm-10">
+                                <div class="grid" grid-item-width="1/5" data-item-gap="15">
+                                    <div>
+                                        <div class="radio">
+                                            <label style="">
+                                                <input type="radio" name="Bathroom" checked="">
+                                                <span class="icon text">
+                                                    1
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="radio">
+                                            <label style="">
+                                                <input type="radio" name="Bathroom">
+                                                <span class="icon text">
+                                                    2
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="radio">
+                                            <label style="">
+                                                <input type="radio" name="Bathroom">
+                                                <span class="icon text">
+                                                    3
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="radio">
+                                            <label style="">
+                                                <input type="radio" name="Bathroom">
+                                                <span class="icon text">
+                                                    4
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="radio">
+                                            <label style="">
+                                                <input type="radio" name="Bathroom">
+                                                <span class="icon text">
+                                                    5
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row align-items-center">
                             <label class="control-label col-sm-2">Amenities</label>
                             <div class="col-sm-10">
                                 <div class="row">
@@ -324,11 +381,11 @@
                                 </div>
                             </div>
                         </div>
+                        
+                    </div>
                         <div class="button-row">
                             <button class="btn btn-secondary">Find Properties</button>
                         </div>
-                    </div>
-                
                 </form>
             </div>
         </div>

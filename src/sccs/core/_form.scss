@@ -253,7 +253,7 @@ form {
             &:disabled,
             &:active,
             &:focus {
-                background: #fff !important;
+                background: transparent ;
             }
         }
         .filter-option {

@@ -58,6 +58,68 @@
                 </div>
             </div>
         </div>
+        <div class="lifestyle">
+            <div class="container">
+                <h2 class="sectionTitle text-center">Find Properties based on your lifestyle</h2>
+                <div class="lifestyle__content">
+                    <div class="lifestyle__content--head">
+                        <ul class="nav nav-tabs" id="lifestyle" role="tablist">
+                            <li class="nav-item">
+                                <a data-title="home" class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                    <svg fill="currentColor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
+                                        <use xlink:href="#home"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-title="Commerical" class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                                    <svg fill="currentColor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 324.49">
+                                        <use xlink:href="#building"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-title="Shopping" class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                                <svg fill="currentColor" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 352">
+                                        <use xlink:href="#shop"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-title="Offices" class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                                    <svg fill="currentColor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
+                                        <use xlink:href="#home"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-title="Apartments" class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                                    <svg fill="currentColor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
+                                        <use xlink:href="#home"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-title="view all" href="" class="nav-link" aria-controls="contact" aria-selected="false">
+                                    <svg fill="currentColor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
+                                        <use xlink:href="#home"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>   
+                    </div>
+                    <div class="lifestyle__content--body">
+                        <div class="container">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
    	</div>
 <?php include_once "includes/footer.php";?>
 

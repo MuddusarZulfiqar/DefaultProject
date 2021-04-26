@@ -1,5 +1,7 @@
 @import "import";
-
+.inner-scroll{
+    height: calc(100% + 25px);
+}
 .white-bg
 {
     background: #fff;
@@ -789,6 +791,8 @@ h3.sectionTitle {
             }
         }
         &--inner{
+            width: 100%;
+            height: 100%;
             padding: 0px rem(60px) 0px rem(30px);
             position: relative;
             opacity: 0;
@@ -898,13 +902,62 @@ h3.sectionTitle {
         }
         .checkbox{
             label{
-                span{
-
-                }
                 span.icon{
                     width: 63px;
                     padding: rem(15px);
                 }
             }
         }
+        .button-row{
+            button{
+                position: absolute;
+                width: 100%;
+                bottom: calc(10px + 50px);
+                border-radius: unset;
+                left: 0;
+            }
+        }
+}
+
+.search-results{
+    
+    padding-bottom: unset;
+    .search__wrapper{
+        margin-bottom: rem(55px);
+        &--title{
+            margin-bottom: rem(55px);
+            p{
+                font-size: rem(18px);
+                color: #515151;
+                span{
+                    font-weight: bold;
+                    
+                }
+            }
+        }
+        &--search{
+            margin-bottom: rem(55px);
+        }
+    }
+    .about__wrapper{
+        background: #fff;
+        padding: rem(40px) 0px;
+        &--content{
+            h1{
+                font-weight: bold;
+            }
+            p{
+                padding: rem(30px) 0 rem(30px);
+                margin:unset;
+                line-height: 1.4;
+                span{
+                    font-weight: bold;
+                }
+            }
+            a{
+                text-decoration: underline;
+                font-weight: bold;
+            }
+        }
+    }
 }
