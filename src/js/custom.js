@@ -3,9 +3,14 @@ $(document).ready(function() {
     aqarat.init({
         slick: $(".slick-instance"),
         selectPicker: $(".selectpicker"),
-        datepicker_inline: $("#datepicker_inline"),
-        datepicker: $("#datepicker,#datepicker2"),
-        datepicker_filter: $("#datepicker_filter"),
+        // datepicker_inline: $("#datepicker_inline"),
+        // datepicker: $("#datepicker,#datepicker2"),
+        // datepicker_filter: $("#datepicker_filter"),
+        timepicker: $("#timepicker, #timepicker2"),
+        datepicker: $("#datepicker, #datepicker1"),
+        datepicker2: $("#datepicker2"),
+        datetimepicker3: $("#datetimepicker3"),
+        datetimepicker4: $("#datetimepicker4"),
         filterToggle: $(".propertyListing__filter--icon, .propertyListing__filter--close"),
     });
 });
@@ -14,14 +19,17 @@ var aqarat = {
     init: function(options) {
         this.settings = options;
         self = this;
+        lazyload.load(" .table__body", 'src/data/properties.html');
         this.bindEvents();
         this.utilities();
         this.loader();
+        this.datepickers();
         this.configureModal();
         this.uploadControls();
         this.uploadImage();
-        this.datetimePickers();
+        // this.datetimePickers();
         this.stickyHeader();
+        
         //this.filters();
     },
     bindEvents: function(){
@@ -51,28 +59,37 @@ var aqarat = {
             }
         });
     },
-    datetimePickers: function() {
-        this.settings.datepicker.datepicker({
-            orientation: 'bottom',
+    datepickers: function() {
+        this.settings.timepicker.datetimepicker({
+            format: 'LT',
+            ignoreReadonly: true,
+            keepOpen: false
         });
-        this.settings.datepicker_inline.datepicker({
-            startDate: moment(new Date()).add(1, "M").format('M/DD/YYYY')
+        // this.settings.datepicker_inline.datetimepicker({
+        //      inline: true,
+        //      format: 'DD/MM/YYYY'
+        //  });
+        this.settings.datepicker.datetimepicker({
+            format: 'L',
+            keepOpen: false,
+            ignoreReadonly: true
+
         });
-        this.settings.datepicker_filter.datepicker({
-            orientation: 'bottom',
-            format: {
-                toDisplay: function(date, format, language) {
-                    var d = new Date(date);
-                    d.setDate(d.getDate());
-                    return moment(d).format('MMMM YYYY')
-                },
-                toValue: function(date, format, language) {
-                    var d = new Date(date);
-                    d.setDate(d.getDate());
-                    return moment(d).format('1/MM/YYYY')
-                }
-            }
+        this.settings.datepicker2.datetimepicker({
+            keepOpen: false,
+            ignoreReadonly: true
         });
+        this.settings.datetimepicker3.datetimepicker({
+            keepOpen: false,
+            ignoreReadonly: true,
+            format: "YYYY"
+        });
+        this.settings.datetimepicker4.datetimepicker({
+            keepOpen: false,
+            ignoreReadonly: true,
+            format: "MM",
+        });
+
     },
     utilities: function() {
         // aos Animation
@@ -197,12 +214,11 @@ var lazyload = {
     load: function(wrapper, dataURL) {
         $(".marker-end")
             .on('lazyshow', function() {
-                if ($("#loadmorecount").val() < 5) {
+                if ($("#loadmorecount").val() < 3) {
                     $.ajax({
                         url: dataURL,
                         dataType: "html",
                         success: function(responseText) {
-                            console.log(responseText);
                             setTimeout(function() {
                                 if (responseText != "") {
                                     $(wrapper).append($.parseHTML(responseText));
