@@ -3206,7 +3206,8 @@ footer {
       opacity: .7; }
 
 .inner-scroll {
-  height: calc(100% + 25px); }
+  --scrollheight: 250px;
+  max-height: var(--scrollheight); }
 
 .white-bg {
   background: #fff; }

@@ -48,7 +48,6 @@
                         </svg>
                     </span>
                 </a>
-                
                 <form>
                     <div class="inner-scroll">
                         <div class="form-group row align-items-center">
@@ -381,11 +380,10 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
-                        <div class="button-row">
-                            <button class="btn btn-secondary">Find Properties</button>
-                        </div>
+                    <div class="button-row">
+                        <button class="btn btn-secondary">Find Properties</button>
+                    </div>
                 </form>
             </div>
         </div>

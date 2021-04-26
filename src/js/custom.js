@@ -34,7 +34,8 @@ var aqarat = {
         //this.filters();
     },
     bindEvents: function(){
-        this.settings.filterToggle.on("click", this.filters)
+        this.settings.filterToggle.on("click", this.filters);
+        $('.listingTabs a[data-toggle="tab"]').on('shown.bs.tab', this.updateScroll);
     },
     loader: function() {
         setTimeout(function() {
@@ -171,6 +172,10 @@ var aqarat = {
     filters: function(){
         event.preventDefault();        
         $(this).parents(".propertyListing__filter").toggleClass("toggle");
+    },
+    updateScroll: function(){
+        alert();
+        $(".inner-scroll").mCustomScrollbar('update');
     },
     configureModal: function () {
         $("body").on("click", "*[data-toggle='custom-modal']", function (e) {
