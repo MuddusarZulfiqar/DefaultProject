@@ -78,9 +78,151 @@
                             </a>
                         </div>
                     </nav>
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="Category">...</div>
-                        <div class="tab-pane fade" id="Category1">...</div>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="Category">
+                            <div id="accordion" class="accordion">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">
+                                        Purchasing process
+                                        </button>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show content" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                Etiam ac molestie risus. Nullam nec neque eu nisl condimentum condimentum. Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam. Proin est nibh, tristique non magna non, eleifend euismod lorem. Integer dui quam, lacinia vel sagittis ut, consequat at libero. Sed faucibus aliquam mi, in pulvinar turpis pulvinar non. Duis varius molestie elementum. Proin fermentum luctus metus, et congue sem viverra vitae.
+                                            </p>
+                                            <p>
+                                            Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" >
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </button>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse content" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                Etiam ac molestie risus. Nullam nec neque eu nisl condimentum condimentum. Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam. Proin est nibh, tristique non magna non, eleifend euismod lorem. Integer dui quam, lacinia vel sagittis ut, consequat at libero. Sed faucibus aliquam mi, in pulvinar turpis pulvinar non. Duis varius molestie elementum. Proin fermentum luctus metus, et congue sem viverra vitae.
+                                            </p>
+                                            <p>
+                                                Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree">
+                                        Nullam nec neque eu nisl condimentum condimentum
+                                        </button>
+                                    </div>
+                                    <div id="collapseThree" class="collapse content">
+                                        <div class="card-body">
+                                            <p>
+                                                Etiam ac molestie risus. Nullam nec neque eu nisl condimentum condimentum. Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam. Proin est nibh, tristique non magna non, eleifend euismod lorem. Integer dui quam, lacinia vel sagittis ut, consequat at libero. Sed faucibus aliquam mi, in pulvinar turpis pulvinar non. Duis varius molestie elementum. Proin fermentum luctus metus, et congue sem viverra vitae.
+                                            </p>
+                                            <p>
+                                            Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour">
+                                            Purchasing process
+                                        </button>
+                                    </div>
+                                    <div id="collapseFour" class="collapse content">
+                                        <div class="card-body">
+                                            <p>
+                                                Etiam ac molestie risus. Nullam nec neque eu nisl condimentum condimentum. Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam. Proin est nibh, tristique non magna non, eleifend euismod lorem. Integer dui quam, lacinia vel sagittis ut, consequat at libero. Sed faucibus aliquam mi, in pulvinar turpis pulvinar non. Duis varius molestie elementum. Proin fermentum luctus metus, et congue sem viverra vitae.
+                                            </p>
+                                            <p>
+                                            Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="Category1">
+                            <div id="accordion2" class="accordion">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive">
+                                        Purchasing process
+                                        </button>
+                                    </div>
+                                    <div id="collapseFive" class="collapse show content" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                Etiam ac molestie risus. Nullam nec neque eu nisl condimentum condimentum. Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam. Proin est nibh, tristique non magna non, eleifend euismod lorem. Integer dui quam, lacinia vel sagittis ut, consequat at libero. Sed faucibus aliquam mi, in pulvinar turpis pulvinar non. Duis varius molestie elementum. Proin fermentum luctus metus, et congue sem viverra vitae.
+                                            </p>
+                                            <p>
+                                            Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" >
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </button>
+                                    </div>
+                                    <div id="collapseSix" class="collapse content" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                Etiam ac molestie risus. Nullam nec neque eu nisl condimentum condimentum. Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam. Proin est nibh, tristique non magna non, eleifend euismod lorem. Integer dui quam, lacinia vel sagittis ut, consequat at libero. Sed faucibus aliquam mi, in pulvinar turpis pulvinar non. Duis varius molestie elementum. Proin fermentum luctus metus, et congue sem viverra vitae.
+                                            </p>
+                                            <p>
+                                                Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven">
+                                        Nullam nec neque eu nisl condimentum condimentum
+                                        </button>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse content">
+                                        <div class="card-body">
+                                            <p>
+                                                Etiam ac molestie risus. Nullam nec neque eu nisl condimentum condimentum. Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam. Proin est nibh, tristique non magna non, eleifend euismod lorem. Integer dui quam, lacinia vel sagittis ut, consequat at libero. Sed faucibus aliquam mi, in pulvinar turpis pulvinar non. Duis varius molestie elementum. Proin fermentum luctus metus, et congue sem viverra vitae.
+                                            </p>
+                                            <p>
+                                            Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight">
+                                            Purchasing process
+                                        </button>
+                                    </div>
+                                    <div id="collapseEight" class="collapse content">
+                                        <div class="card-body">
+                                            <p>
+                                                Etiam ac molestie risus. Nullam nec neque eu nisl condimentum condimentum. Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam. Proin est nibh, tristique non magna non, eleifend euismod lorem. Integer dui quam, lacinia vel sagittis ut, consequat at libero. Sed faucibus aliquam mi, in pulvinar turpis pulvinar non. Duis varius molestie elementum. Proin fermentum luctus metus, et congue sem viverra vitae.
+                                            </p>
+                                            <p>
+                                            Mauris mattis varius erat. Mauris at justo scelerisque, consequat ante vel, dictum tellus. Morbi id velit et ligula eleifend posuere. Aenean nec accumsan turpis. In non odio malesuada, posuere risus at, egestas tellus. Donec ex metus, dignissim ut fringilla eget, fermentum ut quam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="Category2">...</div>
                         <div class="tab-pane fade" id="Category3">...</div>
                         <div class="tab-pane fade" id="Category4">...</div>
@@ -89,7 +231,8 @@
                         <div class="tab-pane fade" id="Category7">...</div>
                     </div>
                 </div>
-            </div> 
+            </div>
+            <div class="bottomTitle">Can’t find what are you looking for? <a href="#">Contact Us</a></div>
         </div>    
     </div>
 </div>
