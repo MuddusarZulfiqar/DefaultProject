@@ -15,6 +15,7 @@
     <script src="src/js/jquery.mCustomScrollbar.js"></script>
     <script src="src/js/jquery.mousewheel.min.js"></script>
     <script src="src/js/jquery.lazyloadxt.js"></script>
+    <script src="src/js/bootstrap-datetimepicker.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="src/js/custom.js"></script> 
 

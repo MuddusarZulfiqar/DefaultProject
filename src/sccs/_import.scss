@@ -1,10 +1,8 @@
 // CORE
 // basic building blocks, typically single html tags
-
 @import 'utility/variables';
 @import 'utility/functions';
 @import 'base/base';
-
 @import 'core/_button.scss';
 //@import 'core/table.scss';
 @import 'core/_typography';
@@ -12,12 +10,11 @@
 @import 'core/form';
 @import 'common/_common';
 //@import 'core/table';
-
 // LAYOUT
 // distinct section of an interface
-
 @import 'layout/_site-header';
 @import 'layout/_site-footer';
 @import 'layout/home';
 @import 'ayan.scss';
+@import 'kashif.scss';
 // @import 'layout/_home';
