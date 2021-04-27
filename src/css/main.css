@@ -575,7 +575,9 @@ body {
   font-size: 1.25rem;
   text-transform: uppercase;
   font-weight: bold;
-  max-width: unset; }
+  max-width: unset;
+  position: relative;
+  overflow: hidden; }
   .btn i {
     font-size: 1.0625rem;
     padding-right: 0.9375rem; }
@@ -1189,7 +1191,7 @@ form {
     color: #2c2b33;
     font-size: 1rem;
     font-weight: 300;
-    font-weight: bold; }
+    font-weight: normal; }
   .bootstrap-select > .dropdown-toggle:after {
     border: 0;
     content: "";
@@ -2965,15 +2967,15 @@ footer {
 
 .lifestyle #lifestyle {
   justify-content: space-around;
-  margin-bottom: 30px;
+  margin: 2.5rem 0px 1.875rem;
   border: unset; }
   .lifestyle #lifestyle li {
     width: 100px;
     height: 100px; }
     .lifestyle #lifestyle li a {
-      display: inline-block;
+      display: inline-flex;
       border: unset;
-      padding: 25px;
+      padding: 1.5625rem;
       width: 100%;
       height: 100%;
       border-radius: 50%;
@@ -2986,7 +2988,7 @@ footer {
         position: absolute;
         bottom: -30px;
         text-align: center;
-        font-weight: bold;
+        font-weight: 500;
         color: #737373;
         left: 50%;
         transform: translateX(-50%);
@@ -3001,7 +3003,73 @@ footer {
         .lifestyle #lifestyle li a.active:hover {
           color: #fff !important; }
         .lifestyle #lifestyle li a.active::before {
-          color: var(--secondary); }
+          color: var(--secondary);
+          font-weight: bold; }
+
+.lifestyle .home__tab {
+  display: grid;
+  grid-template-areas: 'one one one two three' 'one one one four five';
+  grid-gap: 10px;
+  margin-top: 3.75rem; }
+  .lifestyle .home__tab--content:nth-child(1) {
+    grid-area: one;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; }
+  .lifestyle .home__tab--content:nth-child(2) {
+    grid-area: two; }
+  .lifestyle .home__tab--content:nth-child(3) {
+    grid-area: three;
+    overflow: hidden;
+    border-top-right-radius: 20px; }
+  .lifestyle .home__tab--content:nth-child(4) {
+    grid-area: four; }
+  .lifestyle .home__tab--content:nth-child(5) {
+    grid-area: five;
+    overflow: hidden;
+    border-bottom-right-radius: 20px; }
+  .lifestyle .home__tab img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; }
+  .lifestyle .home__tab--content {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .lifestyle .home__tab--content--overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(28, 90, 132, 0.7);
+      opacity: 0;
+      transition: 0.5s ease all; }
+      .lifestyle .home__tab--content--overlay a {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 20px;
+        background-size: contain;
+        background: #8496a3;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease all; }
+        .lifestyle .home__tab--content--overlay a:hover {
+          background: #3e4449; }
+        .lifestyle .home__tab--content--overlay a::before {
+          content: '';
+          background-image: url("data:image/svg+xml,%0A%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 426.67 426.67'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M651.33,325.28H480.67V154.61a21.34,21.34,0,0,0-42.67,0V325.28H267.33a21.33,21.33,0,1,0,0,42.66H438V538.61a21.34,21.34,0,0,0,42.67,0V367.94H651.33a21.33,21.33,0,1,0,0-42.66Zm0,0' transform='translate(-246 -133.28)'/%3E%3C/svg%3E");
+          position: absolute;
+          width: 50%;
+          height: 50%;
+          background-repeat: no-repeat; }
+    .lifestyle .home__tab--content:hover .home__tab--content--overlay {
+      opacity: 1; }
 
 .about h2 {
   font-weight: 300;
@@ -3277,7 +3345,8 @@ h3.sectionTitle {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: relative; }
   .modal-dialog .file-upload::before {
     content: attr(data-text);
     position: absolute;
@@ -3294,7 +3363,8 @@ h3.sectionTitle {
     margin-top: unset;
     width: 120px;
     height: 120px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    overflow: hidden; }
     .modal-dialog .file-upload__file::before {
       content: unset; }
     .modal-dialog .file-upload__file::after {
@@ -3392,6 +3462,38 @@ h3.sectionTitle {
   #registerland button {
     height: 48px;
     border: none; }
+  #registerland .uploadFile__item {
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    position: relative; }
+    #registerland .uploadFile__item::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #d2d2d2;
+      font-weight: bold;
+      text-transform: uppercase;
+      top: 64%;
+      width: 100%;
+      text-align: center;
+      font-size: 14px; }
+    #registerland .uploadFile__item--file {
+      border-radius: 50%;
+      overflow: unset; }
+      #registerland .uploadFile__item--file::before {
+        content: unset; }
+      #registerland .uploadFile__item--file::after {
+        z-index: 1;
+        top: 40%; }
+    #registerland .uploadFile__item--image {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; }
 
 .properties .property__item--image {
   position: relative; }
@@ -3508,7 +3610,13 @@ h3.sectionTitle {
   justify-content: center;
   align-items: center;
   padding: 9px;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #be1f2c;
+  background: #fff;
+  transition: .3s ease all; }
+  .properties .property__item--delete:hover {
+    color: #fff;
+    background: #be1f2c; }
 
 .properties .property__item:hover .overlay {
   visibility: visible !important;
@@ -3524,8 +3632,10 @@ h3.sectionTitle {
     text-transform: capitalize;
     color: #1c5a84;
     font-weight: bold;
-    margin: unset;
-    line-height: 0.8; }
+    line-height: 0.8;
+    margin: 0 0 1.25rem 0;
+    line-height: 1.3;
+    display: inline-block; }
   .properties .property__info--location {
     font-size: 1.125rem;
     color: #515151; }
@@ -3579,13 +3689,13 @@ h3.sectionTitle {
 
 .propertyFeatures {
   padding-left: 15px; }
-  .propertyFeatures .checkbox {
+  .propertyFeatures .checkbox, .propertyFeatures .radio {
     padding-bottom: 0px;
     margin-right: 0px; }
-    .propertyFeatures .checkbox label {
+    .propertyFeatures .checkbox label, .propertyFeatures .radio label {
       display: flex;
       align-items: center; }
-      .propertyFeatures .checkbox label span.icon {
+      .propertyFeatures .checkbox label span.icon, .propertyFeatures .radio label span.icon {
         width: 63px;
         height: 41px;
         display: inline-flex;
@@ -3594,16 +3704,28 @@ h3.sectionTitle {
         align-items: center;
         border-radius: 11px;
         color: var(--primary); }
-        .propertyFeatures .checkbox label span.icon svg {
+        .propertyFeatures .checkbox label span.icon img, .propertyFeatures .radio label span.icon img {
+          position: absolute;
+          max-width: 100%;
+          width: 30px; }
+          .propertyFeatures .checkbox label span.icon img.checked, .propertyFeatures .radio label span.icon img.checked {
+            opacity: 0; }
+          .propertyFeatures .checkbox label span.icon img.unchecked, .propertyFeatures .radio label span.icon img.unchecked {
+            opacity: 1; }
+        .propertyFeatures .checkbox label span.icon svg, .propertyFeatures .radio label span.icon svg {
           width: 100%;
           height: auto; }
-        .propertyFeatures .checkbox label span.icon::after {
+        .propertyFeatures .checkbox label span.icon::after, .propertyFeatures .radio label span.icon::after {
           content: unset; }
-      .propertyFeatures .checkbox label .label {
+      .propertyFeatures .checkbox label .label, .propertyFeatures .radio label .label {
         margin-left: 0.875rem; }
-    .propertyFeatures .checkbox input[type="checkbox"]:checked + span {
+    .propertyFeatures .checkbox input[type="checkbox"]:checked + span, .propertyFeatures .checkbox input[type="radio"]:checked + span, .propertyFeatures .radio input[type="checkbox"]:checked + span, .propertyFeatures .radio input[type="radio"]:checked + span {
       background: var(--primary);
       color: #fff; }
+      .propertyFeatures .checkbox input[type="checkbox"]:checked + span img.checked, .propertyFeatures .checkbox input[type="radio"]:checked + span img.checked, .propertyFeatures .radio input[type="checkbox"]:checked + span img.checked, .propertyFeatures .radio input[type="radio"]:checked + span img.checked {
+        opacity: 1; }
+      .propertyFeatures .checkbox input[type="checkbox"]:checked + span img.unchecked, .propertyFeatures .checkbox input[type="radio"]:checked + span img.unchecked, .propertyFeatures .radio input[type="checkbox"]:checked + span img.unchecked, .propertyFeatures .radio input[type="radio"]:checked + span img.unchecked {
+        opacity: 0; }
 
 .searchAddress {
   display: flex;
@@ -3828,44 +3950,13 @@ h3.sectionTitle {
       z-index: 2;
       left: 30px;
       padding: 0px 10px; }
-  .propertyListing .radio,
-  .propertyListing .checkbox {
-    padding-bottom: 0px;
-    margin-right: 0px; }
-    .propertyListing .radio label,
-    .propertyListing .checkbox label {
-      display: flex;
-      align-items: center; }
-      .propertyListing .radio label span.icon,
-      .propertyListing .checkbox label span.icon {
-        height: 41px;
-        display: inline-flex;
-        background: #fff;
-        padding: 1.125rem;
-        align-items: center;
-        border-radius: 11px;
-        color: #515151;
-        font-size: 1rem;
-        width: 100%;
-        padding: unset;
-        justify-content: center;
-        margin-bottom: 15px; }
-        .propertyListing .radio label span.icon svg,
-        .propertyListing .checkbox label span.icon svg {
-          width: 100%;
-          height: auto; }
-        .propertyListing .radio label span.icon::after,
-        .propertyListing .checkbox label span.icon::after {
-          content: unset; }
-      .propertyListing .radio label .label,
-      .propertyListing .checkbox label .label {
-        margin-left: 0.875rem; }
-    .propertyListing .radio input[type="radio"]:checked + span,
-    .propertyListing .radio input[type="checkbox"]:checked + span,
-    .propertyListing .checkbox input[type="radio"]:checked + span,
-    .propertyListing .checkbox input[type="checkbox"]:checked + span {
-      background: var(--primary);
-      color: #fff; }
+  .propertyListing .radio label span.icon,
+  .propertyListing .checkbox label span.icon {
+    color: #515151;
+    width: 100%;
+    padding: unset;
+    justify-content: center;
+    margin-bottom: 15px; }
   .propertyListing .checkbox label span.icon {
     width: 63px;
     padding: 0.9375rem; }
@@ -4020,5 +4111,43 @@ h3.sectionTitle {
     color: #0082ff; }
     .faq .bottomTitle a:hover {
       opacity: .7; }
+
+.dash-organization .form-group .uploadFile__item {
+  width: 120px;
+  height: 120px; }
+  .dash-organization .form-group .uploadFile__item--file {
+    overflow: unset;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid; }
+    .dash-organization .form-group .uploadFile__item--file::before {
+      content: attr(data-label) !important;
+      color: var(--primary);
+      z-index: 0;
+      border: unset;
+      width: unset;
+      height: unset;
+      transform: unset;
+      left: 50%;
+      transform: translateX(-50%);
+      top: unset;
+      bottom: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px; }
+  .dash-organization .form-group .uploadFile__item--image {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden; }
+    .dash-organization .form-group .uploadFile__item--image span.delete {
+      bottom: unset;
+      top: 7px;
+      right: -7px; }
+
+.save-properties .overlay .btn {
+  left: 70px !important; }
 
 /*# sourceMappingURL=main.css.map */

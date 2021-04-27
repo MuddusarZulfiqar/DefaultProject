@@ -126,7 +126,7 @@
                         <input type="file" class="form-control" name="file">
                     </div>
                     <div class="file-name">
-                        <span class="file_name">Logo-my-company.pdf</span>
+                        <span class="file_name"></span>
                         <span class="cross">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
                                 <use xlink:href="#cross"></use>
@@ -162,7 +162,7 @@
                                 <span class="property__item--type">buy</span>
                                 <span class="property__item--save"></span>
                                 <span class="property__item--delete">
-                                    <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    <svg width="30px" height="30px" fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                     viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
                                         <use xlink:href="#delete-icon"></use>
                                     </svg>
@@ -170,7 +170,7 @@
                                 <span class="property__item--verified"></span>
                             </div>
                             <div class="property__info">
-                                <p class="property__info--title mb-3">sui house</p>
+                                <a href="" class="property__info--title mb-3">sui house</a>
                                 <p class="property__info--location mb-3"><img class="icon" src="src/images/svg/location.svg" alt="" > Ahmed Al Jaber Street , Sahrq</p>
                                 <div class="property__info--features mb-3">
                                     <ul>

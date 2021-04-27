@@ -32,7 +32,7 @@
             
         </div>
     </div>
-    <div class="propertyListing__wrapper white-bg">
+    <div class="propertyListing__wrapper white-bg propertyFeatures">
         <div class="propertyListing__filter">
             <a class="propertyListing__filter--icon" href="javascript:void(0);">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 398.41 396.05">
@@ -330,9 +330,8 @@
                                             <label>
                                                 <input type="checkbox" name="Amenities" checked="">
                                                 <span class="icon">
-                                                    <svg fill="currentColor" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.8 512">
-                                                        <use xlink:href="#mosque"></use>
-                                                    </svg>
+                                                    <img src="src/images/icons/mosque_uncheck.png" alt="" class="unchecked img-fluid">
+                                                    <img src="src/images/icons/mosque_check.png" alt="" class="checked img-fluid">
                                                 </span>
                                                 <span class="label">Mosque</span>
                                             </label>
@@ -343,9 +342,8 @@
                                             <label>
                                                 <input type="checkbox" name="Amenities">
                                                 <span class="icon">
-                                                    <svg fill="currentColor" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.8 512">
-                                                        <use xlink:href="#mosque"></use>
-                                                    </svg>
+                                                    <img src="src/images/icons/mosque_uncheck.png" alt="" class="unchecked img-fluid">
+                                                    <img src="src/images/icons/mosque_check.png" alt="" class="checked img-fluid">
                                                 </span>
                                                 <span class="label">Mosque</span>
                                             </label>
@@ -356,9 +354,8 @@
                                             <label>
                                                 <input type="checkbox" name="Amenities">
                                                 <span class="icon">
-                                                    <svg fill="currentColor" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.8 512">
-                                                        <use xlink:href="#mosque"></use>
-                                                    </svg>
+                                                    <img src="src/images/icons/mosque_uncheck.png" alt="" class="unchecked img-fluid">
+                                                    <img src="src/images/icons/mosque_check.png" alt="" class="checked img-fluid">
                                                 </span>
                                                 <span class="label">Mosque</span>
                                             </label>
@@ -369,9 +366,8 @@
                                             <label>
                                                 <input type="checkbox" name="Amenities">
                                                 <span class="icon">
-                                                    <svg fill="currentColor" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.8 512">
-                                                        <use xlink:href="#mosque"></use>
-                                                    </svg>
+                                                    <img src="src/images/icons/mosque_uncheck.png" alt="" class="unchecked img-fluid">
+                                                    <img src="src/images/icons/mosque_check.png" alt="" class="checked img-fluid">
                                                 </span>
                                                 <span class="label">Mosque</span>
                                             </label>

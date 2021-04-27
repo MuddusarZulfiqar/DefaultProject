@@ -93,9 +93,18 @@
                                 <label>
                                     <input type="checkbox" name="radio" checked="">
                                     <span class="icon">
-                                        <svg fill="currentColor" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.8 512">
-                                            <use xlink:href="#mosque"></use>
-                                        </svg>
+                                        <img src="src/images/icons/office_uncheck.png" alt="" class="unchecked img-fluid">
+                                        <img src="src/images/icons/office_check.png" alt="" class="checked img-fluid">
+                                    </span>
+                                    <span class="label">Shopping Mall</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="radio" checked="">
+                                    <span class="icon">
+                                        <img src="src/images/icons/mosque_uncheck.png" alt="" class="unchecked img-fluid">
+                                        <img src="src/images/icons/mosque_check.png" alt="" class="checked img-fluid">
                                     </span>
                                     <span class="label">Mosque</span>
                                 </label>
@@ -104,9 +113,8 @@
                                 <label>
                                     <input type="checkbox" name="radio" checked="">
                                     <span class="icon">
-                                        <svg fill="currentColor" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.8 512">
-                                            <use xlink:href="#mosque"></use>
-                                        </svg>
+                                        <img src="src/images/icons/mosque_uncheck.png" alt="" class="unchecked img-fluid">
+                                        <img src="src/images/icons/mosque_check.png" alt="" class="checked img-fluid">
                                     </span>
                                     <span class="label">Mosque</span>
                                 </label>
@@ -115,9 +123,8 @@
                                 <label>
                                     <input type="checkbox" name="radio" checked="">
                                     <span class="icon">
-                                        <svg fill="currentColor" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.8 512">
-                                            <use xlink:href="#mosque"></use>
-                                        </svg>
+                                        <img src="src/images/icons/mosque_uncheck.png" alt="" class="unchecked img-fluid">
+                                        <img src="src/images/icons/mosque_check.png" alt="" class="checked img-fluid">
                                     </span>
                                     <span class="label">Mosque</span>
                                 </label>
@@ -126,20 +133,8 @@
                                 <label>
                                     <input type="checkbox" name="radio" checked="">
                                     <span class="icon">
-                                        <svg fill="currentColor" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.8 512">
-                                            <use xlink:href="#mosque"></use>
-                                        </svg>
-                                    </span>
-                                    <span class="label">Mosque</span>
-                                </label>
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" name="radio" checked="">
-                                    <span class="icon">
-                                        <svg fill="currentColor" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.8 512">
-                                            <use xlink:href="#mosque"></use>
-                                        </svg>
+                                        <img src="src/images/icons/mosque_uncheck.png" alt="" class="unchecked img-fluid">
+                                        <img src="src/images/icons/mosque_check.png" alt="" class="checked img-fluid">
                                     </span>
                                     <span class="label">Mosque</span>
                                 </label>

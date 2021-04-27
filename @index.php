@@ -65,44 +65,44 @@
                     <div class="lifestyle__content--head">
                         <ul class="nav nav-tabs" id="lifestyle" role="tablist">
                             <li class="nav-item">
-                                <a data-title="home" class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                <a data-title="home" class="nav-link active" id="home-tab" data-toggle="tab" href="#homes" role="tab" aria-controls="home" aria-selected="true">
                                     <svg fill="currentColor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
                                         <use xlink:href="#home"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a data-title="Commerical" class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                                <a data-title="Commerical" class="nav-link" id="building-tab" data-toggle="tab" href="#buildings" role="tab" aria-controls="building" aria-selected="false">
                                     <svg fill="currentColor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 324.49">
                                         <use xlink:href="#building"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a data-title="Shopping" class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
-                                <svg fill="currentColor" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 352">
+                                <a data-title="Shopping" class="nav-link" id="building-tab" data-toggle="tab" href="#shops" role="tab" aria-controls="building" aria-selected="false">
+                                    <svg fill="currentColor" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 352">
                                         <use xlink:href="#shop"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a data-title="Offices" class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
-                                    <svg fill="currentColor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
-                                        <use xlink:href="#home"></use>
+                                <a data-title="Offices" class="nav-link" id="office-tab" data-toggle="tab" href="#offices" role="tab" aria-controls="office" aria-selected="false">
+                                    <svg fill="currentColor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 415.03">
+                                        <use xlink:href="#office"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a data-title="Apartments" class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
-                                    <svg fill="currentColor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
-                                        <use xlink:href="#home"></use>
+                                <a data-title="Apartments" class="nav-link" id="apartment-tab" data-toggle="tab" href="#apartments" role="tab" aria-controls="apartment" aria-selected="false">
+                                    <svg fill="currentColor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 441.67 512">
+                                        <use xlink:href="#apartment"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a data-title="view all" href="" class="nav-link" aria-controls="contact" aria-selected="false">
-                                    <svg fill="currentColor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
-                                        <use xlink:href="#home"></use>
+                                <a data-title="view all" href="" class="nav-link">
+                                    <svg fill="currentColor" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.31 296.96">
+                                        <use xlink:href="#eye"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -110,10 +110,177 @@
                     </div>
                     <div class="lifestyle__content--body">
                         <div class="container">
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                            <div class="tab-content" id="lifestyle-tabContent">
+                                <div class="tab-pane fade show active" id="homes" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="home__tab">
+                                        <div class="home__tab--content">
+                                            <img src="src/images/home-tab-one.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/home-tab-two.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/home-tab-four.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/home-tab-five.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/home-tab-six.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="buildings" role="tabpanel" aria-labelledby="building-tab">
+                                    <div class="home__tab">
+                                        <div class="home__tab--content">
+                                            <img src="src/images/home-tab-one.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/home-tab-two.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/house.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/house.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/house.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="shops" role="tabpanel" aria-labelledby="shop-tab">
+                                    <div class="home__tab">
+                                        <div class="home__tab--content">
+                                            <img src="src/images/home-tab-one.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/home-tab-two.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/house.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/house.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/house.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="offices" role="tabpanel" aria-labelledby="office-tab">
+                                    <div class="home__tab">
+                                        <div class="home__tab--content">
+                                            <img src="src/images/home-tab-one.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/home-tab-two.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/house.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/house.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/house.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="apartments" role="tabpanel" aria-labelledby="apartment-tab">
+                                    <div class="home__tab">
+                                        <div class="home__tab--content">
+                                            <img src="src/images/home-tab-one.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/home-tab-two.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/house.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/house.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="home__tab--content">
+                                            <img src="src/images/house.png" alt="" class="img-fluid">
+                                            <div class="home__tab--content--overlay">
+                                                <a href=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

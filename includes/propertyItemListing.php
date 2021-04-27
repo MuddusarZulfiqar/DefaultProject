@@ -8,7 +8,7 @@
         <span class="property__item--save"></span>
     </div>
     <div class="property__info">
-        <p class="property__info--title mb-3">sui house</p>
+        <a href="" class="property__info--title mb-3">sui house</a>
         <p class="property__info--location mb-3"><img class="icon" src="src/images/svg/location.svg" alt="" > Ahmed Al Jaber Street , Sahrq</p>
         <div class="property__info--features mb-3">
             <ul>

@@ -234,19 +234,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="image_uploader--parent file-upload" data-text="add logo">
-                            <div class="file-upload__file">
+                        <div class="uploadFile__item" data-text="add logo">
+                            <div class="uploadFile__item--file">
                                 <input type="file" name="file">
                             </div>
-                            <div class="file-upload__image img-upload d-none">
-                                <img src="" alt="" class="img-fluid">
-                                <span class="delete">
-                                    <svg width="30px" height="30px" fill="#be1f2c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
-                                        <use xlink:href="#delete-icon"></use>
-                                    </svg>
-                                </span>
-                            </div>
+                            
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Business Name">
