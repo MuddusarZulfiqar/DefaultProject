@@ -6,7 +6,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row col-gap-90">
             <div class="col-5 left__side">
                 <h2>Thank you for writing to us! <span>We will get back shortly.</span></h2>
                 <img class="img-fluid" src="src/images/submision_letter.png" alt="home">
