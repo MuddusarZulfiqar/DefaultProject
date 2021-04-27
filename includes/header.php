@@ -15,6 +15,7 @@
     <script src="src/js/jquery.mCustomScrollbar.js"></script>
     <script src="src/js/jquery.mousewheel.min.js"></script>
     <script src="src/js/jquery.lazyloadxt.js"></script>
+    <script src="src/js/menu.js"></script>
     <script src="src/js/bootstrap-datetimepicker.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="src/js/custom.js"></script> 
@@ -27,6 +28,7 @@
     <link href="src/css/slick.css" rel="stylesheet">
     <link href="src/css/jquery.mCustomScrollbar.css" rel="stylesheet">
     <link rel="stylesheet" href="src/css/bootstrap-select.css">
+    <link rel="stylesheet" href="src/css/menu.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="src/css/main.css" rel="stylesheet"></link>
     <script src="https://kit.fontawesome.com/273df80109.js" crossorigin="anonymous"></script> 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -36,49 +38,105 @@
 <body <?php if(isset($ishome)){ echo "class='front-page'";}?> >
 <?php include_once "includes/svg.php";?>
 <?php include_once "includes/modals.php";?>
-<header>
-    <nav class="navbar navbar-expand-lg container">
-        <a class="navbar-brand" href="#">
-            <img src="./src/images/logo.png" alt="" class="img-fluid">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Buy <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">sell</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">rent</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">exchange</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">contact us</a>
-                </li>
+<nav class="cd-lateral-nav d-none show-on-lg">
+    <a href="#" class="back cd-menu-trigger">
+        <i class="material-icons">keyboard_arrow_left</i>
+        BACK
+    </a>
+    <ul class="cd-navigation list-unstyled">
+        <li><a href="#">Home</a></li>
+        <li class="item-has-children">
+            <a href="#">Ports</a>
+            <span class="icon">
+                <!-- <i class="fa fa-angle-right"></i> -->
+                <i class="fa fa-anchor"></i>
+            </span>
+            <ul class="sub-menu">
+                <li><a href="001_ports.php">Shuwaikh Port</a></li>
+                <li><a href="03_ports.php">Shuaiba Port</a></li>
+                <li><a href="02_ports.php">Dohan Port</a></li>
             </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">العربية</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link search-icon" href="#">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.54 511.26">
-                            <use xlink:href="#search-icon"></use>
-                        </svg>
-                    </a>
-                </li>
+        </li>
+        <li class="item-has-children">
+            <a href="#">E-KPA</a>
+            <span class="icon">
+                <!-- <i class="fa fa-angle-right"></i> -->
+                <i class="fa fa-anchor"></i>
+            </span>
+            <ul class="sub-menu">
+                <li><a href="12_vessels_search_details.php">Vessels Search</a></li>
+                <li><a href="12_containers_enquiry.php">Containers Enquiry</a></li>
+                <li><a href="12_containers_enquiry.php">Container Tracking</a></li>
+                <li><a href="07_traffic&Fees.php">Tariffs & Fees</a></li>
+                <li><a href="05_ecpected-vessels.php">Expected Vessels</a></li>
+                <li><a href="06_sailed-vessels.php">Sailed Vessels</a></li>
+                <li><a href="08_shipping_Agent_Process.php">Shipping Agent Process</a></li>
             </ul>
-            <div class="btn-group" role="group">
-                <a href="#" type="button" class="btn btn-primary">LOG IN</a>
-                <a href="#" type="button" class="btn btn-primary">register</a>
+        </li>
+        <li class="item-has-children">
+            <a href="#">Tenders</a>
+            <span class="icon">
+                <!-- <i class="fa fa-angle-right"></i> -->
+                <i class="fa fa-anchor"></i>
+            </span>
+            <ul class="sub-menu">
+                <li><a href="04_upcoming_tenders.php">Upcoming Tenders</a></li>
+                <li><a href="03_past_tenders.php">Past Tenders</a></li>
+            </ul>
+        </li>
+        <li><a href="007-news.php">News </a></li>
+        <li><a href="008_articles.php">Media</a></li>
+        <li class="d-none show-on-sm"><a href="contact-us.php">Contact Us</a></li>
+        <li class="d-none show-on-sm"><a href="complaints.php">Complaints</a></li>
+        <li class="d-none show-on-sm"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#signin">Sign Up/Login</a></li>
+    </ul>
+</nav>
+<div class="wrapper mp-pusher">
+    <header>
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand" href="#">
+                <img src="./src/images/logo.png" alt="" class="img-fluid">
+            </a>
+            <div class=" navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto hide-on-lg">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Buy <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">sell</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">rent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">exchange</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contact us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">العربية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link search-icon" href="#">
+                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.54 511.26">
+                                <use xlink:href="#search-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn-group" role="group">
+                    <a href="#" type="button" class="btn btn-primary">LOG IN</a>
+                    <a href="#" type="button" class="btn btn-primary">register</a>
+                </div>
+                <div class="menu-icon cd-menu-trigger show-on-lg">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 <!-- cd-cart -->
