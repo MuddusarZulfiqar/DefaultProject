@@ -4445,5 +4445,7 @@ h3.sectionTitle {
     .propertyDetails__details--amenities {
       background: var(--bg);
       padding: 2.5rem 0px; }
+      .propertyDetails__details--amenities .icon {
+        max-width: 30px; }
 
 /*# sourceMappingURL=main.css.map */

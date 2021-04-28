@@ -169,6 +169,105 @@
         <div class="propertyDetails__details--amenities">
             <div class="container">
                 <h4 class="propertyDetails__details--title">Amenities</h4>
+                <div class="row mt-40">
+                    <div class="col-2 mb-40 d-flex align-items-center">
+                        <span class="icon">
+                            <img src="src/images/icons/mosque_uncheck.png" alt="" class="img-fluid">
+                        </span>
+                        <span class="label ml-4">
+                            Mosque
+                        </span>
+                    </div>
+                    <div class="col-2 mb-40 d-flex align-items-center">
+                        <span class="icon">
+                            <img src="src/images/icons/food_uncheck.png" alt="" class="img-fluid">
+                        </span>
+                        <span class="label ml-4">
+                            Food Outlet
+                        </span>
+                    </div>
+                    <div class="col-2 mb-40 d-flex align-items-center">
+                        <span class="icon">
+                            <img src="src/images/icons/office_uncheck.png" alt="" class="img-fluid">
+                        </span>
+                        <span class="label ml-4">
+                            Shopping Mall
+                        </span>
+                    </div>
+                    <div class="col-2 mb-40 d-flex align-items-center">
+                        <span class="icon">
+                            <img src="src/images/icons/pool_uncheck.png" alt="" class="img-fluid">
+                        </span>
+                        <span class="label ml-4">
+                            Pool
+                        </span>
+                    </div>
+                    <div class="col-2 mb-40 d-flex align-items-center">
+                        <span class="icon">
+                            <img src="src/images/icons/garden_uncheck.png" alt="" class="img-fluid">
+                        </span>
+                        <span class="label ml-4">
+                            Garden
+                        </span>
+                    </div>
+                    <div class="col-2 mb-40 d-flex align-items-center">
+                        <span class="icon">
+                            <img src="src/images/icons/elevator_uncheck.png" alt="" class="img-fluid">
+                        </span>
+                        <span class="label ml-4">
+                            Elevator
+                        </span>
+                    </div>
+                    <div class="col-2 mb-40 d-flex align-items-center">
+                        <span class="icon">
+                            <img src="src/images/icons/chair_uncheck.png" alt="" class="img-fluid">
+                        </span>
+                        <span class="label ml-4">
+                            Wheelchair<br/>
+                            Accessible
+                        </span>
+                    </div>
+                    <div class="col-2 mb-40 d-flex align-items-center">
+                        <span class="icon">
+                            <img src="src/images/icons/ballcony_uncheck.png" alt="" class="img-fluid">
+                        </span>
+                        <span class="label ml-4">
+                            Balcony
+                        </span>
+                    </div>
+                    <div class="col-2 mb-40 d-flex align-items-center">
+                        <span class="icon">
+                            <img src="src/images/icons/storage_uncheck.png" alt="" class="img-fluid">
+                        </span>
+                        <span class="label ml-4">
+                            Storage
+                        </span>
+                    </div>
+                    <div class="col-2 mb-40 d-flex align-items-center">
+                        <span class="icon">
+                            <img src="src/images/icons/garden_uncheck.png" alt="" class="img-fluid">
+                        </span>
+                        <span class="label ml-4">
+                            View
+                        </span>
+                    </div>
+                    <div class="col-2 mb-40 d-flex align-items-center">
+                        <span class="icon">
+                            <img src="src/images/icons/parking_uncheck.png" alt="" class="img-fluid">
+                        </span>
+                        <span class="label ml-4">
+                            Parking Spot
+                        </span>
+                    </div>
+                    <div class="col-2 mb-40 d-flex align-items-center">
+                        <span class="icon">
+                            <img src="src/images/icons/doorman_uncheck.png" alt="" class="img-fluid">
+                        </span>
+                        <span class="label ml-4">
+                            Doorman
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

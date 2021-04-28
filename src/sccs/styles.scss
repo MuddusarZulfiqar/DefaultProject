@@ -1470,6 +1470,9 @@ h3.sectionTitle {
         &--amenities{
             background: var(--bg);
             padding: rem(40px) 0px;
+            .icon{
+                max-width: 30px;
+            }
         }
     }
 }
