@@ -106,9 +106,9 @@
                 <div class="contact">
                     <div class="contact__item">
                         <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
-                                <use xlink:href="#cell"></use>
-                            </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+                                    <use xlink:href="#cell"></use>
+                                </svg>
                         </span>
                         <span>00965  1234 5678</span>
                     </div>

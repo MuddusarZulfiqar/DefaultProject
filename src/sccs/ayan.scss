@@ -123,6 +123,36 @@
 		margin-left: rem(15px);
 	}
 }
+//agents
+
+.agents {
+	.card {
+		padding: rem(35px) rem(30px) rem(20px) rem(25px);
+		flex-direction: column;
+		.card-head {
+			.agent__info {
+				display: flex;
+				margin-bottom: rem(65px);
+				&--image {
+					max-width: 60px;
+				}
+				&--bio {
+					margin-left: rem(22px);
+				}
+				&--name {
+					color: var(--primary);
+					font-size: 18px;
+					font-weight: bold;
+				}
+				&--desc {
+					color: var(--primary);
+					font-size: 14px;
+					line-height: 1.4;
+				}
+			}
+		}
+	}
+}
 // generic
 .card {
 	flex-direction: row;
