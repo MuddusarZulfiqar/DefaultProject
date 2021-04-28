@@ -54,6 +54,89 @@ header {
                         width: 100%;
                     }
                 }
+                &.search {
+                    .form-group {
+                        margin: 0;
+                    }
+                    form {
+                        display: inline-block;
+                        position: relative;
+                        height: 22px;
+                        width: 22px;
+                        .form-control {
+                            height: 40px;
+                            display: inline-block;
+                            outline: none;
+                            box-shadow: none;
+                            padding: 3px;
+                            padding-left: rem(20px);
+                            padding-right: rem(28px);
+                            width: 0px;
+                            position: absolute;
+                            top: 0px;
+                            right: -12px;
+                            transition: width 0.5s cubic-bezier(0, 0.795, 0, 1);
+                            cursor: pointer;
+                            background: none;
+                            font-size: 0;
+                            visibility: hidden;
+                            @media screen and (max-width: 575px) {
+                                top: 35px;
+                                right: -52px;
+                            }
+                        }
+                        .close-search {
+                            z-index: 500;
+                            color: #003160;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(50%);
+                            right: 0;
+                            font-size: 0;
+                            opacity: 0;
+                            visibility: hidden;
+                            cursor: pointer;
+                            transition: .4s ease all;
+                            &:hover {
+                                transform: translateY(50%) rotate(180deg);
+                            }
+                            @media screen and (max-width: 991px) {
+                                top: 8px;
+                            }
+                            @media screen and (max-width: 575px) {}
+                        }
+                        &.search-active {
+                            .form-control {
+                                width: 670px;
+                                z-index: 200;
+                                cursor: text;
+                                outline: none;
+                                background: #fff;
+                                font-size: rem(18px);
+                                visibility: visible;
+                                transition: width 0.5s cubic-bezier(0, 0.795, 0, 1);
+                                @media screen and (max-width: 1199px) {
+                                    width: 510px;
+                                }
+                                @media screen and (max-width: 991px) {
+                                    width: 320px;
+                                    top: -5px;
+                                }
+                                @media screen and (max-width: 767px) {
+                                    width: 100%;
+                                    position: fixed;
+                                    top: 75px;
+                                    left: 0;
+                                }
+                            }
+                            .close-search {
+                                font-size: rem(18px);
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

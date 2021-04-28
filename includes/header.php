@@ -79,12 +79,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">العربية</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link search-icon" href="#">
-                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.54 511.26">
-                                <use xlink:href="#search-icon"></use>
-                            </svg>
-                        </a>
+                    <li class="nav-item search">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="What're we looking for ?">
+                                <i class="close-search fas fa-times"></i>
+                            </div>
+                            <a class="nav-link search-icon" href="#">
+                                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.54 511.26">
+                                    <use xlink:href="#search-icon"></use>
+                                </svg>
+                            </a>
+                        </form>
                     </li>
                 </ul>
                 <div class="d-flex align-items-center">
