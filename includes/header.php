@@ -35,60 +35,20 @@
 
     <title>Aqarat</title>
 </head>
-<body <?php if(isset($ishome)){ echo "class='front-page'";}?> >
+<body <?php if(isset($ishome)){ echo "class='front-page'";}?> > 
 <?php include_once "includes/svg.php";?>
 <?php include_once "includes/modals.php";?>
 <nav class="cd-lateral-nav d-none show-on-lg">
     <a href="#" class="back cd-menu-trigger">
-        <i class="material-icons">keyboard_arrow_left</i>
+        <i class="fa fa-angle-left"></i>
         BACK
     </a>
     <ul class="cd-navigation list-unstyled">
-        <li><a href="#">Home</a></li>
-        <li class="item-has-children">
-            <a href="#">Ports</a>
-            <span class="icon">
-                <!-- <i class="fa fa-angle-right"></i> -->
-                <i class="fa fa-anchor"></i>
-            </span>
-            <ul class="sub-menu">
-                <li><a href="001_ports.php">Shuwaikh Port</a></li>
-                <li><a href="03_ports.php">Shuaiba Port</a></li>
-                <li><a href="02_ports.php">Dohan Port</a></li>
-            </ul>
-        </li>
-        <li class="item-has-children">
-            <a href="#">E-KPA</a>
-            <span class="icon">
-                <!-- <i class="fa fa-angle-right"></i> -->
-                <i class="fa fa-anchor"></i>
-            </span>
-            <ul class="sub-menu">
-                <li><a href="12_vessels_search_details.php">Vessels Search</a></li>
-                <li><a href="12_containers_enquiry.php">Containers Enquiry</a></li>
-                <li><a href="12_containers_enquiry.php">Container Tracking</a></li>
-                <li><a href="07_traffic&Fees.php">Tariffs & Fees</a></li>
-                <li><a href="05_ecpected-vessels.php">Expected Vessels</a></li>
-                <li><a href="06_sailed-vessels.php">Sailed Vessels</a></li>
-                <li><a href="08_shipping_Agent_Process.php">Shipping Agent Process</a></li>
-            </ul>
-        </li>
-        <li class="item-has-children">
-            <a href="#">Tenders</a>
-            <span class="icon">
-                <!-- <i class="fa fa-angle-right"></i> -->
-                <i class="fa fa-anchor"></i>
-            </span>
-            <ul class="sub-menu">
-                <li><a href="04_upcoming_tenders.php">Upcoming Tenders</a></li>
-                <li><a href="03_past_tenders.php">Past Tenders</a></li>
-            </ul>
-        </li>
-        <li><a href="007-news.php">News </a></li>
-        <li><a href="008_articles.php">Media</a></li>
-        <li class="d-none show-on-sm"><a href="contact-us.php">Contact Us</a></li>
-        <li class="d-none show-on-sm"><a href="complaints.php">Complaints</a></li>
-        <li class="d-none show-on-sm"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#signin">Sign Up/Login</a></li>
+        <li><a href="#">Buy <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">sell</a></li>
+        <li><a href="#">rent</a></li>
+        <li><a href="#">exchange</a></li>
+        <li><a href="#">contact us</a></li>
     </ul>
 </nav>
 <div class="wrapper mp-pusher">
@@ -127,14 +87,16 @@
                         </a>
                     </li>
                 </ul>
-                <div class="btn-group" role="group">
-                    <a href="#" type="button" class="btn btn-primary">LOG IN</a>
-                    <a href="#" type="button" class="btn btn-primary">register</a>
-                </div>
-                <div class="menu-icon cd-menu-trigger show-on-lg">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="d-flex align-items-center">
+                    <div class="btn-group" role="group">
+                        <a href="#" type="button" class="btn btn-primary">LOG IN</a>
+                        <a href="#" type="button" class="btn btn-primary">register</a>
+                    </div>
+                    <div class="menu-icon cd-menu-trigger show-on-lg">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </nav>

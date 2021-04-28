@@ -136,6 +136,29 @@ header {
         .navbar-nav {
             flex-direction: row;
         }
+        .btn-group {
+            .btn {
+                padding: rem(16px);
+                font-size: rem(15px);
+            }
+        }
+    }
+    @media screen and (max-width:500px) {
+        .navbar {
+            flex-wrap: wrap;
+        }
+        .navbar-nav {
+            margin-left: 0 !important;
+        }
+        .navbar-collapse {
+            justify-content: space-between;
+        }
+        .navbar-brand {
+            width: 100%;
+            text-align: center;
+            margin: 0 0 rem(16px) 0;
+            padding: 0;
+        }
     }
 }
 

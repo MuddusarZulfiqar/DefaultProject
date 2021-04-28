@@ -44,7 +44,7 @@
                         <div class="table__row--cell">
                         Deal Price (KD)
                         </div>
-                        <div class="table__row--cell  text-left">
+                        <div class="table__row--cell  text-left" data-width="17">
                         Status
                         </div>
                         <div class="table__row--cell">
@@ -70,7 +70,7 @@
                         <div class="table__row--cell" data-label="Deal Price (KD)">
                         0
                         </div>
-                        <div class="table__row--cell text-left" data-label="Status">
+                        <div class="table__row--cell text-left" data-label="Status" data-width="17">
                             <div class="status green">
                                 <svg fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
                                 <use xlink:href="#play-icon"></use>
@@ -115,7 +115,7 @@
                         <div class="table__row--cell" data-label="Deal Price (KD)">
                         34.500
                         </div>
-                        <div class="table__row--cell text-left" data-label="Status">
+                        <div class="table__row--cell text-left" data-label="Status" data-width="17">
                             <div class="status blue">
                             <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="52.8014mm" height="59.3963mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 1227 1380.25" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
                                 <use xlink:href="#progress-icon"></use>
@@ -159,7 +159,7 @@
                         <div class="table__row--cell" data-label="Deal Price (KD)">
                         12000
                         </div>
-                        <div class="table__row--cell text-left" data-label="Status">
+                        <div class="table__row--cell text-left" data-label="Status" data-width="17">
                             <div class="status red">
                             <svg fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="973.199px" height="973.199px" viewBox="0 0 973.199 973.199" style="enable-background:new 0 0 973.199 973.199;" xml:space="preserve">
                                 <use xlink:href="#archiev-icon"></use>
@@ -203,7 +203,7 @@
                         <div class="table__row--cell" data-label="Deal Price (KD)">
                         0
                         </div>
-                        <div class="table__row--cell text-left" data-label="Status">
+                        <div class="table__row--cell text-left" data-label="Status" data-width="17">
                             <div class="status darkblue">
                             <svg fill="currentColor" height="417pt" viewBox="0 -46 417.81333 417" width="417pt" xmlns="http://www.w3.org/2000/svg">
                                 <use xlink:href="#check-icon"></use>
