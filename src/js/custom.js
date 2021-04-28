@@ -153,6 +153,7 @@ var aqarat = {
                 if (file.type.match('image.*')) {
                     readImg.onload = (function(file) {
                         return function(e) {
+                            $(prnt).addClass('imageAdd')
                             $(prnt).find(".uploadFile__item--image").remove();
                             $(prnt).append(`<div class="uploadFile__item--image"><img src="${e.target.result}"><span class="delete"></span></div>`);
                         };
@@ -165,6 +166,7 @@ var aqarat = {
             }
         });
         $(document).on("click", '.uploadFile__item--image .delete', function(e){
+            $(this).parents('.uploadFile__item--file').removeClass('imageAdd')
             var prnt = $(this).parents(".uploadFile__item--file");
             $(this).parent().remove();
             $(prnt).find('input[type="file"]').val('')
