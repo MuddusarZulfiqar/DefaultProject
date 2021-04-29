@@ -16,14 +16,14 @@
                                     <img  src="src/images/card_logo.png" alt="" class="img-fluid rounded-circle">
                                 </div>
                                 <div class="agent__info--bio">
-                                    <div class="agent__info--bio--name">sakina shabbir</div>
-                                    <div class="agent__info--bio--desc">Guaranteed Deals in Offices, Apartments</div>
+                                    <div class="agent__bio--name">sakina shabbir</div>
+                                    <div class="agent__bio--desc">Guaranteed Deals in Offices, Apartments</div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="agent__contactInfo">
-                                <div class="agent__contactInfo__item">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
                                             <use xlink:href="#cell"></use>
@@ -31,7 +31,7 @@
                                     </span>
                                     <span>00965  1234 5678</span>
                                 </div>
-                                <div class="agent__contactInfo__item mt-20">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
                                             <use xlink:href="#letter"></use>
@@ -52,14 +52,14 @@
                                     <img  src="src/images/card_logo.png" alt="" class="img-fluid rounded-circle">
                                 </div>
                                 <div class="agent__info--bio">
-                                    <div class="agent__info--bio--name">sakina shabbir</div>
-                                    <div class="agent__info--bio--desc">Guaranteed Deals in Offices, Apartments</div>
+                                    <div class="agent__bio--name">sakina shabbir</div>
+                                    <div class="agent__bio--desc">Guaranteed Deals in Offices, Apartments</div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="agent__contactInfo">
-                                <div class="agent__contactInfo__item">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
                                             <use xlink:href="#cell"></use>
@@ -67,7 +67,7 @@
                                     </span>
                                     <span>00965  1234 5678</span>
                                 </div>
-                                <div class="agent__contactInfo__item mt-20">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
                                             <use xlink:href="#letter"></use>
@@ -88,14 +88,14 @@
                                     <img  src="src/images/card_logo.png" alt="" class="img-fluid rounded-circle">
                                 </div>
                                 <div class="agent__info--bio">
-                                    <div class="agent__info--bio--name">sakina shabbir</div>
-                                    <div class="agent__info--bio--desc">Guaranteed Deals in Offices, Apartments</div>
+                                    <div class="agent__bio--name">sakina shabbir</div>
+                                    <div class="agent__bio--desc">Guaranteed Deals in Offices, Apartments</div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="agent__contactInfo">
-                                <div class="agent__contactInfo__item">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
                                             <use xlink:href="#cell"></use>
@@ -103,7 +103,7 @@
                                     </span>
                                     <span>00965  1234 5678</span>
                                 </div>
-                                <div class="agent__contactInfo__item mt-20">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
                                             <use xlink:href="#letter"></use>
@@ -124,14 +124,14 @@
                                     <img  src="src/images/card_logo.png" alt="" class="img-fluid rounded-circle">
                                 </div>
                                 <div class="agent__info--bio">
-                                    <div class="agent__info--bio--name">sakina shabbir</div>
-                                    <div class="agent__info--bio--desc">Guaranteed Deals in Offices, Apartments</div>
+                                    <div class="agent__bio--name">sakina shabbir</div>
+                                    <div class="agent__bio--desc">Guaranteed Deals in Offices, Apartments</div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="agent__contactInfo">
-                                <div class="agent__contactInfo__item">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
                                             <use xlink:href="#cell"></use>
@@ -139,7 +139,7 @@
                                     </span>
                                     <span>00965  1234 5678</span>
                                 </div>
-                                <div class="agent__contactInfo__item mt-20">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
                                             <use xlink:href="#letter"></use>
@@ -160,14 +160,14 @@
                                     <img  src="src/images/card_logo.png" alt="" class="img-fluid rounded-circle">
                                 </div>
                                 <div class="agent__info--bio">
-                                    <div class="agent__info--bio--name">sakina shabbir</div>
-                                    <div class="agent__info--bio--desc">Guaranteed Deals in Offices, Apartments</div>
+                                    <div class="agent__bio--name">sakina shabbir</div>
+                                    <div class="agent__bio--desc">Guaranteed Deals in Offices, Apartments</div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="agent__contactInfo">
-                                <div class="agent__contactInfo__item">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
                                             <use xlink:href="#cell"></use>
@@ -175,7 +175,7 @@
                                     </span>
                                     <span>00965  1234 5678</span>
                                 </div>
-                                <div class="agent__contactInfo__item mt-20">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
                                             <use xlink:href="#letter"></use>
@@ -196,14 +196,14 @@
                                     <img  src="src/images/card_logo.png" alt="" class="img-fluid rounded-circle">
                                 </div>
                                 <div class="agent__info--bio">
-                                    <div class="agent__info--bio--name">sakina shabbir</div>
-                                    <div class="agent__info--bio--desc">Guaranteed Deals in Offices, Apartments</div>
+                                    <div class="agent__bio--name">sakina shabbir</div>
+                                    <div class="agent__bio--desc">Guaranteed Deals in Offices, Apartments</div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="agent__contactInfo">
-                                <div class="agent__contactInfo__item">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
                                             <use xlink:href="#cell"></use>
@@ -211,7 +211,7 @@
                                     </span>
                                     <span>00965  1234 5678</span>
                                 </div>
-                                <div class="agent__contactInfo__item mt-20">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
                                             <use xlink:href="#letter"></use>
@@ -232,14 +232,14 @@
                                     <img  src="src/images/card_logo.png" alt="" class="img-fluid rounded-circle">
                                 </div>
                                 <div class="agent__info--bio">
-                                    <div class="agent__info--bio--name">sakina shabbir</div>
-                                    <div class="agent__info--bio--desc">Guaranteed Deals in Offices, Apartments</div>
+                                    <div class="agent__bio--name">sakina shabbir</div>
+                                    <div class="agent__bio--desc">Guaranteed Deals in Offices, Apartments</div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="agent__contactInfo">
-                                <div class="agent__contactInfo__item">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
                                             <use xlink:href="#cell"></use>
@@ -247,7 +247,7 @@
                                     </span>
                                     <span>00965  1234 5678</span>
                                 </div>
-                                <div class="agent__contactInfo__item mt-20">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
                                             <use xlink:href="#letter"></use>
@@ -268,14 +268,14 @@
                                     <img  src="src/images/card_logo.png" alt="" class="img-fluid rounded-circle">
                                 </div>
                                 <div class="agent__info--bio">
-                                    <div class="agent__info--bio--name">sakina shabbir</div>
-                                    <div class="agent__info--bio--desc">Guaranteed Deals in Offices, Apartments</div>
+                                    <div class="agent__bio--name">sakina shabbir</div>
+                                    <div class="agent__bio--desc">Guaranteed Deals in Offices, Apartments</div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="agent__contactInfo">
-                                <div class="agent__contactInfo__item">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
                                             <use xlink:href="#cell"></use>
@@ -283,7 +283,7 @@
                                     </span>
                                     <span>00965  1234 5678</span>
                                 </div>
-                                <div class="agent__contactInfo__item mt-20">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
                                             <use xlink:href="#letter"></use>
@@ -304,14 +304,14 @@
                                     <img  src="src/images/card_logo.png" alt="" class="img-fluid rounded-circle">
                                 </div>
                                 <div class="agent__info--bio">
-                                    <div class="agent__info--bio--name">sakina shabbir</div>
-                                    <div class="agent__info--bio--desc">Guaranteed Deals in Offices, Apartments</div>
+                                    <div class="agent__bio--name">sakina shabbir</div>
+                                    <div class="agent__bio--desc">Guaranteed Deals in Offices, Apartments</div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="agent__contactInfo">
-                                <div class="agent__contactInfo__item">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
                                             <use xlink:href="#cell"></use>
@@ -319,7 +319,7 @@
                                     </span>
                                     <span>00965  1234 5678</span>
                                 </div>
-                                <div class="agent__contactInfo__item mt-20">
+                                <div class="agent__contactInfo--item">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
                                             <use xlink:href="#letter"></use>
@@ -331,7 +331,7 @@
                         </div>
                         <a href="#" class="abs-link"></a>
                     </div>
-                </div>   
+                </div>
             </div>
             <div class="loader-holder marker-end">
                 <img src="src/images/svg/loader.svg" alt="">
