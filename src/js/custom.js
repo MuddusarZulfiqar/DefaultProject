@@ -21,6 +21,7 @@ var aqarat = {
         this.settings = options;
         self = this;
         lazyload.load(" .table__body", 'src/data/properties.html');
+        lazyload.load(" .agent-listing .listing-wrapper .row", 'src/data/agent-listing.html');
         this.bindEvents();
         this.utilities();
         this.loader();
@@ -129,6 +130,13 @@ var aqarat = {
         $(".close-search").click(function(e) {
             e.preventDefault();
             $("li.search form").removeClass("search-active");
+        });
+        $(".toggler-filter .nav-link").on("click", function(e) {
+            if ($(window).width() <= 991) {
+                $(".toggler-filter .nav-tabs").slideToggle();
+                var title = $(this).text();
+                $(".toggle-filter-btn").text(title);
+            }
         });
     },
     uploadControls: function() {
