@@ -1,0 +1,19 @@
+.search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: rem(60px);
+	&__content {
+		text-align: center;
+		font-size: 20px;
+		font-weight: 500;
+		margin-top: rem(35px);
+		p {
+			margin-bottom: rem(10px);
+		}
+		span {
+			font-weight: bold;
+		}
+	}
+}

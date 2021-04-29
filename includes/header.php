@@ -8,7 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="src/js/bootstrap-select.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
     <script src="src/js/jquery.carousel-1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css" integrity="sha512-Fppbdpv9QhevzDE+UHmdxL4HoW8HantO+rC8oQB2hCofV+dWV2hePnP5SgiWR1Y1vbJeYONZfzQc5iII6sID2Q==" crossorigin="anonymous" />
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="src/css/bootstrap-select.css">
     <link rel="stylesheet" href="src/css/menu.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="src/css/main.css" rel="stylesheet"></link>
+    <link href="src/css/main.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/273df80109.js" crossorigin="anonymous"></script> 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <title>Aqarat</title>
@@ -97,8 +97,8 @@
                 </ul>
                 <div class="d-flex align-items-center">
                     <div class="btn-group" role="group">
-                        <a href="#" type="button" class="btn btn-primary">LOG IN</a>
-                        <a href="#" type="button" class="btn btn-primary">register</a>
+                        <a href="#" class="btn btn-primary">LOG IN</a>
+                        <a href="#" class="btn btn-primary">register</a>
                     </div>
                     <div class="menu-icon cd-menu-trigger show-on-lg">
                         <span></span>

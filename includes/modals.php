@@ -1,9 +1,9 @@
 <div class="container">
-    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                    <h5 class="modal-title">Register</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -23,7 +23,7 @@
                         <div class="registerTypes__item">
                             <div class="registerTypes__item--icon">
                                 <a href="#">
-                                    <svg fill="currentColor" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <svg fill="currentColor" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
                                             <use xlink:href="#house-icon"></use>
                                     </svg>
                                 </a>
@@ -48,7 +48,7 @@
                             <div class="circle-parent">
                                 <div class="upper_circle">
                                     <div class="icon">
-                                        <svg fill="currentColor" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                        <svg fill="currentColor" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
                                             
                                         </svg>
                                     </div>
@@ -74,7 +74,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Forget your password</h5>
+                    <h5 class="modal-title">Forget your password</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -86,7 +86,7 @@
                     <div class="form-group">
                         <input type="email" class="form-control icon_input" placeholder="Email">
                         <div class="icon">
-                            <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 230.17 230.17" style="enable-background:new 0 0 230.17 230.17;" xml:space="preserve">
                                 <use xlink:href="#email"></use>
                             </svg>
@@ -107,7 +107,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                    <h5 class="modal-title">Sign In</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -116,7 +116,7 @@
                     <div class="form-group">
                         <input type="email" class="form-control icon_input" placeholder="Email">
                         <div class="icon">
-                            <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 230.17 230.17" style="enable-background:new 0 0 230.17 230.17;" xml:space="preserve">
                                 <use xlink:href="#email"></use>
                             </svg>
@@ -125,7 +125,7 @@
                     <div class="form-group">
                         <input type="password" class="form-control icon_input" placeholder="Password">
                         <div class="icon">
-                            <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                     viewBox="0 0 47 47" style="enable-background:new 0 0 47 47;" xml:space="preserve">
                                     <use xlink:href="#password"></use>
                             </svg>
@@ -150,7 +150,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Registration <span>(Individual)</span></h5>
+                        <h5 class="modal-title">Registration <span>(Individual)</span></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -228,7 +228,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Registration <span>(Landlords/Organization)</span></h5>
+                    <h5 class="modal-title">Registration <span>(Landlords/Organization)</span></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -310,7 +310,7 @@
 
 
 
-    <div class="modal fade gallery" id="gallery1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade gallery" id="gallery1" tabindex="-1" role="dialog" aria-labelledby="gallery1" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
@@ -321,36 +321,38 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="carousel">
-                    <div class="slides">
-                        <div class="slideItem">
-                            <a href="#"> <img src="src/images/home-tab-five.png" class="img-fluid"> </a>
-                            <div class="shadow"></div>
+                <div class="container">
+                    <div class="carousel">
+                        <div class="slides">
+                            <div class="slideItem">
+                                <a href="#"> <img src="src/images/home-tab-five.png" alt="" class="img-fluid"> </a>
+                                <div class="shadow"></div>
+                            </div>
+                            <div class="slideItem">
+                                <a href="#"> <img src="src/images/home-tab-five.png" alt="" class="img-fluid"> </a>
+                                <div class="shadow"></div>
+                            </div>
+                            <div class="slideItem">
+                                <a href="#"> <img src="src/images/home-tab-five.png" alt=""> </a>
+                                <div class="shadow"></div>
+                            </div>
+                            <div class="slideItem">
+                                <a href="#"> <img src="src/images/property-details/ModelImage.png" alt="" class="img-fluid"> </a>
+                                <div class="shadow"></div>
+                            </div>
+                            <div class="slideItem">
+                                <a href="#"> <img src="src/images/property-details/ModelImage.png" alt="" class="img-fluid"> </a>
+                                <div class="shadow"></div>
+                            </div>
+                            <div class="slideItem">
+                                <a href="#"> <img src="src/images/property-details/ModelImage.png" alt="" class="img-fluid"> </a>
+                                <div class="shadow"></div>
+                            </div>
+                            
                         </div>
-                        <div class="slideItem">
-                            <a href="#"> <img src="src/images/home-tab-five.png" class="img-fluid"> </a>
-                            <div class="shadow"></div>
+                        <div class="slidesCounter">
+                            <span class="current">1</span> / <span class="total">5</span>
                         </div>
-                        <div class="slideItem">
-                            <a href="#"> <img src="src/images/home-tab-five.png"> </a>
-                            <div class="shadow"></div>
-                        </div>
-                        <div class="slideItem">
-                            <a href="#"> <img src="src/images/property-details/ModelImage.png" class="img-fluid"> </a>
-                            <div class="shadow"></div>
-                        </div>
-                        <div class="slideItem">
-                            <a href="#"> <img src="src/images/property-details/ModelImage.png" class="img-fluid"> </a>
-                            <div class="shadow"></div>
-                        </div>
-                        <div class="slideItem">
-                            <a href="#"> <img src="src/images/property-details/ModelImage.png" class="img-fluid"> </a>
-                            <div class="shadow"></div>
-                        </div>
-                        
-                    </div>
-                    <div class="slidesCounter">
-                         <span class="current">1</span> / <span class="total">5</span>
                     </div>
                 </div>
             </div>
