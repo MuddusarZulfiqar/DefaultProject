@@ -1026,6 +1026,9 @@ h3.sectionTitle {
     .nav-tabs {
         border: 0;
         justify-content: space-around;
+        @media screen and (min-width: 768px) {
+            display: flex !important;
+        }
         >div {
             position: relative;
         }
@@ -1070,7 +1073,7 @@ h3.sectionTitle {
                 background: transparent;
                 border: 0;
                 border-radius: 0;
-                padding: rem(20px) 0;
+                padding: rem(17px) 0;
                 padding-top: rem(24px);
                 .btn-link {
                     width: 100%;
@@ -1081,8 +1084,10 @@ h3.sectionTitle {
                     text-align: left;
                     padding: 0;
                     position: relative;
-                    padding: 0 25px;
+                    padding: 4px rem(25px);
                     text-decoration: none;
+                    white-space: inherit;
+                    line-height: 1.2;
                     &:before {
                         content: '';
                         position: absolute;
@@ -1091,7 +1096,7 @@ h3.sectionTitle {
                         background: #00305f;
                         border-radius: 100%;
                         left: 0;
-                        top: 5px;
+                        top: 8px;
                     }
                     &:after {
                         content: '';
@@ -1284,11 +1289,17 @@ h3.sectionTitle {
     h2 {
         font-weight: 300;
         color: var(--primary);
+        @media screen and (max-width: 767px) {
+            font-size: rem(28px);
+        }
     }
     h3 {
         font-size: rem(35px);
         color: var(--primary);
         margin-bottom: rem(50px);
+        @media screen and (max-width: 767px) {
+            font-size: rem(25px);
+        }
     }
     .image {
         margin-top: rem(50px);
@@ -1307,11 +1318,18 @@ h3.sectionTitle {
                 @media screen and (max-width: 767px) {
                     font-size: rem(35px);
                 }
+                @media screen and (max-width: 414px) {
+                    font-size: rem(28px);
+                }
                 svg {
                     color: var(--primary);
                     margin-right: rem(15px);
                     @media screen and (max-width: 767px) {
                         width: 40px;
+                        height: auto;
+                    }
+                    @media screen and (max-width: 414px) {
+                        width: 32px;
                     }
                 }
             }
@@ -1406,10 +1424,14 @@ h3.sectionTitle {
                 text-align: center;
             }
             p {
-                margin-top: rem(20px);
                 font-size: rem(18px);
                 font-weight: 500;
-                color: #5e5f60;
+                color: #515151;
+                text-align: center;
+                max-width: 300px;
+                &:not(:last-child) {
+                    marg
+                }
             }
         }
     }
@@ -1521,6 +1543,9 @@ h3.sectionTitle {
                 margin-bottom: rem(25px);
             }
         }
+        .text-right {
+            text-align: center !important;
+        }
     }
 }
 
@@ -1593,9 +1618,7 @@ h3.sectionTitle {
         .image {
             text-align: center;
             img {
-                max-width: 70%;
-                margin: auto;
-                text-align: center;
+                max-width: 65%;
             }
         }
     }
