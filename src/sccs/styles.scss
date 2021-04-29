@@ -330,7 +330,7 @@ h3.sectionTitle {
         height: 48px;
         border: none;
     }
-    .uploadFile__item{
+    .uploadFile__item {
         width: 120px;
         height: 120px;
         margin-left: auto;
@@ -350,31 +350,28 @@ h3.sectionTitle {
             text-align: center;
             font-size: 14px;
         }
-        &--file{
+        &--file {
             border-radius: 50%;
             overflow: unset;
-            &::before{
+            &::before {
                 content: unset;
             }
-            
-            &::after{
+            &::after {
                 z-index: 1;
                 top: 40%;
             }
-            &.imageAdd{
-                &::after{
+            &.imageAdd {
+                &::after {
                     z-index: -1;
                 }
-                
             }
-            
         }
-        &--image{
+        &--image {
             overflow: hidden;
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            span.delete{
+            span.delete {
                 right: -7px;
             }
         }
@@ -516,11 +513,11 @@ h3.sectionTitle {
                 align-items: center;
                 padding: 9px;
                 cursor: pointer;
-                color: #be1f2c ;
+                color: #be1f2c;
                 background: #fff;
                 transition: .3s ease all;
-                &:hover{
-                    color: #fff ;
+                &:hover {
+                    color: #fff;
                     background: #be1f2c;
                 }
             }
@@ -631,7 +628,8 @@ h3.sectionTitle {
 
 .propertyFeatures {
     padding-left: 15px;
-    .checkbox,.radio {
+    .checkbox,
+    .radio {
         padding-bottom: 0px;
         margin-right: 0px;
         label {
@@ -646,14 +644,14 @@ h3.sectionTitle {
                 align-items: center;
                 border-radius: 11px;
                 color: var(--primary);
-                img{
+                img {
                     position: absolute;
                     max-width: 100%;
                     width: 30px;
-                    &.checked{
+                    &.checked {
                         opacity: 0;
                     }
-                    &.unchecked{
+                    &.unchecked {
                         opacity: 1;
                     }
                 }
@@ -669,15 +667,16 @@ h3.sectionTitle {
                 margin-left: rem(14px);
             }
         }
-        input[type="checkbox"]:checked,input[type="radio"]:checked {
+        input[type="checkbox"]:checked,
+        input[type="radio"]:checked {
             +span {
                 background: var(--primary);
                 color: #fff;
-                img{
-                    &.checked{
+                img {
+                    &.checked {
                         opacity: 1;
                     }
-                    &.unchecked{
+                    &.unchecked {
                         opacity: 0;
                     }
                 }
@@ -948,7 +947,7 @@ h3.sectionTitle {
     .checkbox {
         label {
             span.icon {
-                color: #515151; 
+                color: #515151;
                 width: 100%;
                 padding: unset;
                 justify-content: center;
@@ -1130,7 +1129,12 @@ h3.sectionTitle {
         text-align: center;
         svg {
             max-width: 50px;
+            width: 50px;
             height: auto;
+            @media screen and (max-width: 767px) {
+                max-width: 40px;
+                width: 40px;
+            }
         }
     }
 }
@@ -1160,21 +1164,19 @@ h3.sectionTitle {
 }
 
 // End faq page css
-
-.dash-organization{
-    .form-group{
-        .uploadFile__item{
+.dash-organization {
+    .form-group {
+        .uploadFile__item {
             width: 120px;
             height: 120px;
-            
-            &--file{
+            &--file {
                 overflow: unset;
                 width: 120px;
                 height: 120px;
                 border-radius: 50%;
                 border-width: 1px;
                 border-style: solid;
-                &::before{
+                &::before {
                     content: attr(data-label) !important;
                     color: var(--primary);
                     z-index: 0;
@@ -1187,17 +1189,16 @@ h3.sectionTitle {
                     top: unset;
                     bottom: 10px;
                     text-transform: uppercase;
-                    font-weight: bold; 
+                    font-weight: bold;
                     font-size: 14px;
-                    
                 }
             }
-            &--image{
+            &--image {
                 height: 100%;
                 width: 100%;
                 border-radius: 50%;
                 overflow: hidden;
-                span.delete{
+                span.delete {
                     bottom: unset;
                     top: 7px;
                     right: -7px;
@@ -1207,24 +1208,24 @@ h3.sectionTitle {
     }
 }
 
-.save-properties{
-    .overlay{
-        .btn{
+.save-properties {
+    .overlay {
+        .btn {
             left: 70px !important;
         }
     }
 }
 
-.sell-page{
+.sell-page {
     background: #f2f7ff;
-    h2{
+    h2 {
         font-weight: 300;
         margin-bottom: 2.5rem;
-        span{
+        span {
             font-weight: 600;
         }
     }
-    p{
+    p {
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.5;
@@ -1232,13 +1233,13 @@ h3.sectionTitle {
         max-width: 100%;
         text-align: left;
     }
-    .card-wrapper{
+    .card-wrapper {
         margin-top: rem(60px);
         max-width: 850px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: rem(60px);
-        .card{
+        .card {
             flex-direction: column;
             // max-height: 260px;
             padding: 2.625rem 2.4375rem;
@@ -1246,14 +1247,14 @@ h3.sectionTitle {
             border: 1px solid transparent;
             transition: .5s ease all;
             height: 100%;
-            &-title{
+            &-title {
                 font-size: rem(25px);
                 color: var(--primary);
             }
-            &-description{
+            &-description {
                 text-align: center;
             }
-            &-button{
+            &-button {
                 padding-left: 0.9375rem;
                 padding-right: 0.9375rem;
                 font-weight: normal;
@@ -1262,10 +1263,10 @@ h3.sectionTitle {
                 position: absolute;
                 bottom: 19px;
             }
-            &:hover{
+            &:hover {
                 border: 1px solid #52a7fb;
-                box-shadow: 0 0 11px 4px rgba(82,167,251,0.2);
-                .card-button{
+                box-shadow: 0 0 11px 4px rgba(82, 167, 251, 0.2);
+                .card-button {
                     opacity: 1;
                     visibility: visible;
                 }
@@ -1274,3 +1275,62 @@ h3.sectionTitle {
     }
 }
 
+// responsive code
+@media screen and (max-width:767px) {
+    .toggler-filter {
+        position: relative;
+        margin-bottom: rem(30px);
+        .toggle-filter-btn {
+            display: block !important;
+            font-size: 1.25rem;
+            background-color: #46a7d8;
+            color: white !important;
+            border-radius: 5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 2px solid #fff;
+            align-items: center;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: rem(30px);
+            padding: rem(14px) rem(10px);
+            &:after {
+                content: "\f0dd";
+                font-family: FontAwesome;
+                position: absolute;
+                right: 17px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                height: 24px;
+                width: auto;
+            }
+        }
+    }
+    .category {
+        .nav-tabs {
+            flex-direction: column;
+            display: none;
+            .nav-link {
+                max-width: 100%;
+                width: 100%;
+                flex: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                padding: rem(16px);
+            }
+        }
+        &--icon {
+            min-height: auto;
+        }
+    }
+    .pageHead {
+        min-height: 80px;
+    }
+}
+
+// End responsive Code
