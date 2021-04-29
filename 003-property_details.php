@@ -166,7 +166,7 @@
             </div>
             
         </div>
-        <div class="propertyDetails__details--amenities">
+        <div class="propertyDetails__details--amenities mb-30">
             <div class="container">
                 <h4 class="propertyDetails__details--title">Amenities</h4>
                 <div class="row mt-40">
@@ -266,6 +266,57 @@
                         <span class="label ml-4">
                             Doorman
                         </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="propertyDetails__details--contact">
+            <div class="container">
+                <div class="row mb-30">
+                    <div class="col-3">
+                        <h4 class="propertyDetails__details--title">Get In Touch<br/><span>Gulf Investment Co.</span></h4>
+                    </div>
+                    <div class="col-2 custom_icons">
+                        <div class="icon_wrapper">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+                                    <use xlink:href="#cell"></use>
+                                </svg>
+                            </span>
+                            <span class="d-block mt-10">
+                                00965  1234 5678
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-4 ">
+                        <div class="icon_wrapper mx-auto">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+                                    <use xlink:href="#letter"></use>
+                                </svg>
+                            </span>
+                            <span class="d-block mt-10">
+                                Info@Gulf.Investment@gmail.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <a href="" class="btn btn-primary">
+                            <div class="d-flex">
+                                <span class="mr-3">
+                                <svg fill="currentColor" id="Layer_1" data-name="Layer 1" width="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464 599.96">
+                                        <use xlink:href="#pdf-icon"></use>
+                                    </svg>
+                                </span>
+                                <span>Leasing Terms<b class="d-block font-weight-bold">( Download PDF) </b></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="src/images/property-details/contact-banner.jpg" alt="" class="img-fluid">
+                    <div class="content">
+                        <h2>Your <span>AD.</span></h2>
                     </div>
                 </div>
             </div>
