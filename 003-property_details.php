@@ -82,7 +82,7 @@
                     <div class="gallery__image">
                         <img src="src/images/home-tab-four.png" alt="" class="img-fluid">
                         <div class="gallery__image--overlay">
-                            <a href="">5 More</a>
+                            <button type="button" data-toggle="modal" data-target="#gallery1">5 More</button>
                         </div>
                     </div>
                     <div class="gallery__image">
@@ -107,7 +107,7 @@
             </div>
         </div>
     </div>
-    <div class="propertyDetails__details">
+    <div class="propertyDetails__details ">
         <div class="container">
             <div class="row align-items-center mb-20">
                 <div class="col-6 mb-20">
@@ -270,7 +270,7 @@
                 </div>
             </div>
         </div>
-        <div class="propertyDetails__details--contact">
+        <div class="propertyDetails__details--contact mb-40">
             <div class="container">
                 <div class="row mb-30">
                     <div class="col-3">
@@ -313,10 +313,32 @@
                         </a>
                     </div>
                 </div>
-                <div class="image-wrapper">
+                <div class="image-wrapper mb-30">
                     <img src="src/images/property-details/contact-banner.jpg" alt="" class="img-fluid">
                     <div class="content">
                         <h2>Your <span>AD.</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="editProperty">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620721.5190696276!2d47.67357481886846!3d29.314293746622194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fc5363fbeea51a1%3A0x74726bcd92d8edd2!2sKuwait!5e0!3m2!1sen!2s!4v1619290857955!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="propertyDetails__details--warning">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <a href="" class="warning text-danger">
+                            <span>
+                                <img src="src/images/icons/danger.png" alt="" class="img-fluid">
+                            </span> 
+                            <span>See Something Incorrect , Please inform us</span>
+                        </a>
+                    </div>
+                    <div class="col-6 text-right">
+                        <a href="" class="btn btn-primary">Report abuse</a>
                     </div>
                 </div>
             </div>

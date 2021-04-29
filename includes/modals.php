@@ -307,4 +307,53 @@
             </div>
         </div>
     </div>
+
+
+
+    <div class="modal fade gallery" id="gallery1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg fill="currentColor" id="Capa_121" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <use xlink:href="#modal-cross"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="carousel">
+                    <div class="slides">
+                        <div class="slideItem">
+                            <a href="#"> <img src="src/images/home-tab-five.png" class="img-fluid"> </a>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="slideItem">
+                            <a href="#"> <img src="src/images/home-tab-five.png" class="img-fluid"> </a>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="slideItem">
+                            <a href="#"> <img src="src/images/home-tab-five.png"> </a>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="slideItem">
+                            <a href="#"> <img src="src/images/property-details/ModelImage.png" class="img-fluid"> </a>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="slideItem">
+                            <a href="#"> <img src="src/images/property-details/ModelImage.png" class="img-fluid"> </a>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="slideItem">
+                            <a href="#"> <img src="src/images/property-details/ModelImage.png" class="img-fluid"> </a>
+                            <div class="shadow"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="slidesCounter">
+                         <span class="current">1</span> / <span class="total">5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

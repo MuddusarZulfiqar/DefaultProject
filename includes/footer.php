@@ -39,9 +39,9 @@
 </div>
 </body>
 <!-- cd-cart -->
-<script>document.getElementsByTagName("html")[0].className += " js";</script>
+<!-- <script>document.getElementsByTagName("html")[0].className += " js";</script>
 <script src="src/js/util.js"></script>
-<script src="src/js/cart.js"></script> 
+<script src="src/js/cart.js"></script>  -->
 <!-- cd-cart -->
 
 </html>

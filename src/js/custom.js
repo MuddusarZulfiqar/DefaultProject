@@ -289,3 +289,21 @@ var lazyload = {
             .lazyLoadXT({ visibleOnly: false });
     }
 };
+$(document).ready(function(){
+    $('.carousel').carousel({
+        carouselWidth:1200,
+        carouselHeight:330,
+        directionNav:true,
+        reflection: false,
+        shadow:true,
+        buttonNav:'bullets',
+        pauseOnHover:true,
+        before:function(carousel) {
+            var current = carousel.current;
+            var total = carousel.length;
+            console.log(carousel)
+            $('.slidesCounter span.total').text(`${total} `)
+            $('.slidesCounter span.current').text(` ${current + 1}`) 
+        }
+    });
+});
