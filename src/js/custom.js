@@ -297,7 +297,7 @@ $(document).ready(function(){
         reflection: false,
         shadow:true,
         buttonNav:'bullets',
-        pauseOnHover:true,
+        pauseOnHover:false,
         before:function(carousel) {
             var current = carousel.current;
             var total = carousel.length;

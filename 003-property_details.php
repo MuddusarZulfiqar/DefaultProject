@@ -1,5 +1,5 @@
 <?php include_once "includes/header.php";?>
-<div class="content-wrapper propertyDetails">
+<div class="content-wrapper propertyDetails pb-30">
     <div class="propertyDetails__banner">
         <div class="propertyDetails__banner--image">
             <img src="src/images/property-details/banner.png" alt="" class="img-fluid">
@@ -88,19 +88,19 @@
                     <div class="gallery__image">
                         <img src="src/images/home-tab-four.png" alt="" class="img-fluid">
                         <div class="gallery__image--overlay">
-                            <a href="">5 More</a>
+                             <button type="button" data-toggle="modal" data-target="#gallery1">5 More</button>
                         </div>
                     </div>
                     <div class="gallery__image">
                         <img src="src/images/home-tab-four.png" alt="" class="img-fluid">
                         <div class="gallery__image--overlay">
-                            <a href="">5 More</a>
+                             <button type="button" data-toggle="modal" data-target="#gallery1">5 More</button>
                         </div>  
                     </div>
                     <div class="gallery__image">
                         <img src="src/images/home-tab-four.png" alt="" class="img-fluid">
                         <div class="gallery__image--overlay">
-                            <a href="">5 More</a>
+                             <button type="button" data-toggle="modal" data-target="#gallery1">5 More</button>
                         </div>
                     </div>
                 </div>
