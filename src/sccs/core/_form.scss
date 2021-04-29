@@ -1,6 +1,7 @@
 form {
     margin-bottom: 0;
 }
+
 .form-group {
     margin-bottom: rem(35px);
     position: relative;
@@ -13,7 +14,7 @@ form {
         padding: 0;
         display: block;
         font-weight: bold;
-        margin-left:15px;
+        margin-left: 15px;
         span {
             color: #a8372d;
             font-size: rem(15px);
@@ -24,10 +25,10 @@ form {
                     max-width: 11px;
                 }
             }
-            &.note{
+            &.note {
                 display: block;
                 color: #1c5a84;
-                font-size:rem(16px);
+                font-size: rem(16px);
                 font-style: italic;
                 font-weight: 400;
                 padding-top: rem(5px);
@@ -47,14 +48,17 @@ form {
         border: solid 1px #d2d2d2;
         border-radius: 30px;
         -webkit-appearance: none;
+        @media screen and (max-width: 767px) {
+            height: 40px;
+        }
         &.active {
             outline: none;
             box-shadow: none;
             border-radius: 0;
         }
         &:disabled {
-			background: #e5edf5;
-		}
+            background: #e5edf5;
+        }
         &:focus {
             outline: none;
             box-shadow: none;
@@ -74,7 +78,6 @@ form {
                 opacity: 1;
             }
         }
-        
     }
     .fields-group {
         @include flex(center, space-between);
@@ -104,9 +107,9 @@ form {
             width: 20px;
         }
     }
-    .has-label{
+    .has-label {
         position: relative;
-        .icon-date{
+        .icon-date {
             width: 20px;
             height: 20px;
             position: absolute;
@@ -151,12 +154,12 @@ form {
             padding-left: rem(20px);
         }
     }
-    .has-label{
+    .has-label {
         position: relative;
-        .form-control{
+        .form-control {
             padding-right: rem(60px);
         }
-        .info-label{
+        .info-label {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -165,14 +168,14 @@ form {
             color: #0095dc;
         }
     }
-    &.type-file{
-        .file-wrapper{
+    &.type-file {
+        .file-wrapper {
             border-radius: 30px;
             width: 100%;
             height: 48px;
             border: solid 1px #d2d2d2;
             position: relative;
-            &::before{
+            &::before {
                 content: '';
                 width: 25px;
                 height: 22px;
@@ -184,7 +187,6 @@ form {
                 top: 50%;
                 transform: translateY(-50%);
                 left: 22px;
-    
             }
         }
         .file-name {
@@ -199,7 +201,7 @@ form {
             left: 18px;
             top: 16px;
             padding: 0px 16px;
-            span.file_name{
+            span.file_name {
                 font-size: rem(13px);
             }
             span.cross {
@@ -210,16 +212,16 @@ form {
                 position: absolute;
                 right: 16px;
             }
-            &.active{   
+            &.active {
                 display: flex;
             }
         }
     }
-    &.image-uploader{
-        label{
+    &.image-uploader {
+        label {
             margin-bottom: unset;
         }
-        i{
+        i {
             margin-left: 15px;
             font-size: 14px;
             color: #18335e;
@@ -253,7 +255,7 @@ form {
             &:disabled,
             &:active,
             &:focus {
-                background: transparent ;
+                background: transparent;
             }
         }
         .filter-option {

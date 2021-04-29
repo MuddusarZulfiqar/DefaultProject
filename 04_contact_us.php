@@ -7,7 +7,7 @@
     </div>
     <div class="container">
         <div class="row col-gap-70">
-            <div class="col-5">
+            <div class="col-xl-5 col-md-5">
                 <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Name"/>
@@ -88,7 +88,7 @@
                 </form>
                 
             </div>
-            <div class="col-6 card_position">
+            <div class="col-xl-6 col-md-7 card_position">
                 <div class="card">
                     <div class="card--icon">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="43" viewBox="0 0 32 43">
@@ -96,8 +96,9 @@
                         </svg>
                     </div>
                     <div class="card--title">
-                        <p>15th Floor, Jassim Al Mahmoud Tower,<br/>Part A<br/>Ahmad Al Jaber Street Block 11<br/>Shaheed Gardens, Kuwait City, Kuwait 
+                        <p>15th Floor, Jassim Al Mahmoud Tower,<br/>Part A<br/>Ahmad Al Jaber Street Block 11  
                         </p>
+                        <p>Shaheed Gardens, Kuwait City, Kuwait</p>
                     </div>
                 </div>
                 <div class="map">

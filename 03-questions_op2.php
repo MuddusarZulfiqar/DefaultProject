@@ -10,7 +10,10 @@
             <div class="category-wrapper">
                 <p >Here are some frequently asked questions. Some support we provide. Look at the topics to help you navigate.</p>
                 <div class="category">
-                    <nav>
+                    <div class="toggler-filter">
+                        <a class="toggle-filter-btn nav-item nav-link active d-none">
+                            Categories
+                        </a>
                         <div class="nav nav-tabs" role="tablist">
                             <a class="nav-item nav-link active" data-toggle="tab" href="#Category">
                                 <span class="category--icon">
@@ -77,7 +80,7 @@
                                 Category7
                             </a>
                         </div>
-                    </nav>
+                    </div>
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="Category">
                             <div id="accordion" class="accordion">

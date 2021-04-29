@@ -57,6 +57,20 @@ header {
                 &.search {
                     .form-group {
                         margin: 0;
+                        width: 0px;
+                        position: absolute;
+                        top: 0px;
+                        right: -12px;
+                        transition: width 0.5s cubic-bezier(0, 0.795, 0, 1);
+                        font-size: 0;
+                        visibility: hidden;
+                        @media screen and (max-width: 575px) {
+                            top: 35px;
+                            right: -52px;
+                        }
+                        @media screen and (max-width: 500px) {
+                            top: 142px;
+                        }
                     }
                     form {
                         display: inline-block;
@@ -71,50 +85,30 @@ header {
                             padding: 3px;
                             padding-left: rem(20px);
                             padding-right: rem(28px);
-                            width: 0px;
-                            position: absolute;
-                            top: 0px;
-                            right: -12px;
-                            transition: width 0.5s cubic-bezier(0, 0.795, 0, 1);
+                            width: 100%;
                             cursor: pointer;
                             background: none;
-                            font-size: 0;
-                            visibility: hidden;
-                            @media screen and (max-width: 575px) {
-                                top: 35px;
-                                right: -52px;
-                            }
                         }
                         .close-search {
                             z-index: 500;
                             color: #003160;
                             position: absolute;
                             top: 50%;
-                            transform: translateY(50%);
-                            right: 0;
+                            transform: translateY(-50%);
+                            right: 10px;
                             font-size: 0;
                             opacity: 0;
                             visibility: hidden;
                             cursor: pointer;
-                            transition: .4s ease all;
                             &:hover {
-                                transform: translateY(50%) rotate(180deg);
+                                transform: translateY(-50%) rotate(180deg);
                             }
-                            @media screen and (max-width: 991px) {
-                                top: 8px;
-                            }
-                            @media screen and (max-width: 575px) {}
                         }
                         &.search-active {
-                            .form-control {
+                            .form-group {
                                 width: 670px;
                                 z-index: 200;
-                                cursor: text;
-                                outline: none;
-                                background: #fff;
-                                font-size: rem(18px);
                                 visibility: visible;
-                                transition: width 0.5s cubic-bezier(0, 0.795, 0, 1);
                                 @media screen and (max-width: 1199px) {
                                     width: 510px;
                                 }
@@ -128,6 +122,15 @@ header {
                                     top: 75px;
                                     left: 0;
                                 }
+                                @media screen and (max-width: 500px) {
+                                    top: 142px;
+                                }
+                            }
+                            .form-control {
+                                cursor: text;
+                                outline: none;
+                                background: #fff;
+                                font-size: rem(18px);
                             }
                             .close-search {
                                 font-size: rem(18px);

@@ -7,17 +7,17 @@
     </div>
     <div class="about">
         <div class="container">
-            <h2>Looking for a Home? Exchange of a Place?<br/>Want to Lease?</h2>
-            <h3>You are on the right place.</h3>
-            <div class="row col-gap-40">
-                <div class="col-6">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Looking for a Home? Exchange of a Place? Want to Lease?</h2>
+                    <h3>You are on the right place.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                    <p>Proin et cursus est, nec viverra arcu. Maecenas purus quam, auctor et purus in, ullamcorper malesuada turpis. Nulla facilisi. Sed posuere, lacus nec sagittis aliquet, erat tortor congue sapien, at tempor elit lacus eu orci. Donec gravida enim non enim suscipit convallis. Sed mauris ex, venenatis in vestibulum suscipit, commodo eu magna. </p>
-                    <p>Cras finibus sollicitudin elit. Morbi convallis magna in dolor eleifend porttitor.</p>
-                    <p>Etiam volutpat pharetra urna, id bibendum nisi porta ut. Nulla velit arcu, lacinia </p>
+                    <p>Proin et cursus est, nec viverra arcu. Maecenas purus quam, auctor et purus in, ullamcorper malesuada turpis. Nulla facilisi. Sed posuere, lacus nec sagittis aliquet, erat tortor congue sapien, at tempor elit lacus eu orci. Donec gravida enim non enim suscipit convallis. Sed mauris ex, venenatis in vestibulum suscipit, commodo eu magna. Cras finibus sollicitudin elit. Morbi convallis magna in dolor eleifend porttitor. </p>
                 </div>
-                <div class="col-6 text-right">
-                    <img class="img-fluid" src="src/images/about_img.png" alt="home">
+                <div class="col-md-6 text-right">
+                    <div class="image">
+                        <img class="img-fluid" src="src/images/about_img.png" alt="home">
+                    </div>
                 </div>
             </div>
             <div class="statistics">
