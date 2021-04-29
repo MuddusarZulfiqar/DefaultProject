@@ -1304,9 +1304,15 @@ h3.sectionTitle {
             span {
                 font-size: rem(55px);
                 color: var(--secondary);
+                @media screen and (max-width: 767px) {
+                    font-size: rem(35px);
+                }
                 svg {
                     color: var(--primary);
                     margin-right: rem(15px);
+                    @media screen and (max-width: 767px) {
+                        width: 40px;
+                    }
                 }
             }
         }
@@ -1468,88 +1474,6 @@ h3.sectionTitle {
 }
 
 //agents
-.agent-listing {
-    background: url(../images/agent-background-bottomLeft-img.png) no-repeat 0% 25%, url(../images/agent-background-bottomRight-img.png) no-repeat right bottom;
-    @media screen and (max-width: 991px) {
-        background: url(../images/agent-background-bottomLeft-img.png) no-repeat 0% 2%, url(../images/agent-background-bottomRight-img.png) no-repeat right bottom;
-    }
-    .card {
-        flex-direction: column;
-        align-items: start;
-        padding: rem(32px) rem(30px) rem(22px);
-        box-shadow: 0px 8px 8px 4px rgba(0, 0, 0, 0.1);
-        transition: 0.5s;
-        border-radius: 25px;
-        overflow: hidden;
-        &::before {
-            position: absolute;
-            content: '';
-            top: 0%;
-            left: 0%;
-            width: 100%;
-            height: 50%;
-            background-color: #f8f9fa;
-        }
-        &:hover {
-            box-shadow: 0px 8px 8px 4px rgba(0, 130, 255, 0.3);
-        }
-        .card-head {
-            width: 100%;
-            position: relative;
-            .agent__info {
-                display: flex;
-                margin-bottom: rem(56px);
-                &--image {
-                    width: rem(60px);
-                    min-width: rem(60px);
-                    height: rem(60px);
-                    border-radius: 50%;
-                    border: 2px solid #0082ff;
-                }
-                &--bio {
-                    margin-left: rem(25px);
-                    &--name {
-                        color: var(--primary);
-                        font-size: rem(18px);
-                        font-weight: bold;
-                        text-transform: uppercase;
-                    }
-                    &--desc {
-                        color: #598ea9;
-                        font-size: rem(14px);
-                        line-height: 1.4;
-                        max-width: 200px;
-                    }
-                }
-            }
-        }
-        .card-body {
-            width: 100%;
-            padding-left: rem(20px);
-            .agent__contactInfo {
-                display: flex;
-                flex-direction: column;
-                &__item {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    span {
-                        &:first-child {
-                            flex: 0 0 65px;
-                            max-width: 65px;
-                        }
-                        svg {
-                            width: 32px;
-                        }
-                        font-size: rem(18px);
-                        flex: 1;
-                    }
-                }
-            }
-        }
-    }
-}
-
 // responsive code
 @media screen and (max-width: 1199px) {
     .changePassword {
@@ -1662,6 +1586,16 @@ h3.sectionTitle {
             img {
                 max-width: 55%;
                 margin: auto;
+            }
+        }
+    }
+    .about {
+        .image {
+            text-align: center;
+            img {
+                max-width: 70%;
+                margin: auto;
+                text-align: center;
             }
         }
     }
