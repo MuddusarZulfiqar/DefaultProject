@@ -84,7 +84,9 @@
                     <div class="form-group">
                         <div class="g-recaptcha" data-theme="light" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
                     </div>
-                    <button class="btn btn-secondary btn-lg">Submit</button>
+                    <div class="button-row">
+                        <button class="btn btn-secondary">Submit</button>
+                    </div>
                 </form>
                 
             </div>

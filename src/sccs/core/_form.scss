@@ -10,7 +10,7 @@ form {
         font-size: rem(16px);
         margin-bottom: 0px;
         color: $primary;
-        margin-bottom: rem(15px);
+        margin-bottom: rem(17px);
         padding: 0;
         display: block;
         font-weight: bold;
@@ -86,11 +86,17 @@ form {
                 border-top-right-radius: 0;
                 border-bottom-right-radius: 0;
                 width: 20%;
+                @media screen and (max-width: 575px) {
+                    width: 27%;
+                }
             }
             &:last-child {
                 border-top-left-radius: 0;
                 border-bottom-left-radius: 0;
                 width: 77%;
+                @media screen and (max-width: 575px) {
+                    width: 70%
+                }
             }
         }
     }

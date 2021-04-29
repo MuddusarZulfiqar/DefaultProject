@@ -1348,6 +1348,7 @@ h3.sectionTitle {
     .contentWrapper {
         h3 {
             color: var(--primary);
+            margin-bottom: 8px;
         }
         p {
             text-align: justify;
@@ -1358,6 +1359,9 @@ h3.sectionTitle {
 
 // contact_us
 .contact_us {
+    .button-row {
+        justify-content: start;
+    }
     .left__side {
         margin-top: rem(118px);
         h2 {
@@ -1451,6 +1455,7 @@ h3.sectionTitle {
     align-items: center;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
     padding: rem(42px) rem(55px);
+    margin-bottom: rem(40px);
     &__left {
         flex: 0 0 310px;
         max-width: 310px;
@@ -1468,6 +1473,7 @@ h3.sectionTitle {
                 font-weight: 300;
                 color: var(--primary);
                 margin-bottom: 0;
+                line-height: 1.2;
                 span {
                     font-weight: 600;
                     color: var(--primary);
@@ -1479,11 +1485,47 @@ h3.sectionTitle {
         flex: 1;
         &--detail {
             p {
-                line-height: 1.6;
+                line-height: 1.7;
                 text-align: justify;
+                margin: 0;
+                &:not(:last-child) {
+                    margin-bottom: rem(28px);
+                }
             }
             p:last-child {
                 margin-bottom: 0;
+            }
+        }
+    }
+    @media screen and (max-width:767px) {
+        padding: rem(30px);
+        &__left {
+            flex: 0 0 220px;
+            max-width: 220px;
+            &--title {
+                max-width: 100%;
+                p {
+                    font-size: rem(28px);
+                }
+            }
+            &--icon {
+                svg {
+                    width: 35px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:575px) {
+        flex-direction: column;
+        &__left {
+            max-width: 100%;
+            flex: 0 0 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: rem(20px);
+            &--icon {
+                margin: 0 rem(20px) 0 0;
             }
         }
     }
