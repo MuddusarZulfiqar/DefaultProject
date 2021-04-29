@@ -11,7 +11,7 @@
                     <div class="col-6">
                         <a href="" class="transparent text-white">
                             <span class="text-white">
-                                <svg fill="currentColor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290.69 491.99">
+                                <svg fill="currentColor" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290.69 491.99">
                                     <use xlink:href="#leftArrow"></use>
                                 </svg>
                             </span>Back To Search
@@ -20,7 +20,7 @@
                     <div class="col-6 text-right">
                         <a href="" class="transparent text-white">
                             <span class="text-white">
-                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 444.49 639.38">
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 444.49 639.38">
                                     <use xlink:href="#location"></use>
                                 </svg>
                             </span>Ahmed Al Jaber Street , Sahrq
@@ -71,7 +71,7 @@
                         </div>
                         <div class="heart">
                             <a href="" class="text-white">
-                                <svg fill="currentColor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 334.02">
+                                <svg fill="currentColor" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 334.02">
                                     <use xlink:href="#heart"></use>
                                 </svg>
                             </a>
@@ -304,7 +304,7 @@
                         <a href="" class="btn btn-primary">
                             <div class="d-flex">
                                 <span class="mr-3">
-                                <svg fill="currentColor" id="Layer_1" data-name="Layer 1" width="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464 599.96">
+                                <svg fill="currentColor" data-name="Layer 1" width="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464 599.96">
                                         <use xlink:href="#pdf-icon"></use>
                                     </svg>
                                 </span>
