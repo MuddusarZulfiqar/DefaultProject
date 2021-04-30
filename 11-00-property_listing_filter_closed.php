@@ -11,7 +11,7 @@
                         </svg>
                     </span>
                     <span>
-                        Amman Street , Salmiya , hawlly, Salmiya , hawlly, Salmiya , hawlly
+                        Amman Street , Salmiya , hawlly
                     </span>
                 </div>
                 <div class="listingTabs">
