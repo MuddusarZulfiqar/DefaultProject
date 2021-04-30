@@ -1,6 +1,6 @@
 @import 'import';
 .inner-scroll {
-    --scrollheight: 250px;
+    --scrollheight: 400px;
     max-height: var(--scrollheight);
 }
 
@@ -406,6 +406,10 @@ h3.sectionTitle {
             //     min-width: auto;
             //     max-width: 320px;
             // }
+            @media screen and (max-width: 575px) {
+                max-width: 320px;
+                margin: auto auto rem(40px) auto;
+            }
             &--image {
                 position: relative;
                 img {
@@ -673,7 +677,7 @@ h3.sectionTitle {
                     position: absolute;
                     max-width: 100%;
                     width: 30px;
-                    @media screen and (max-width:767px){
+                    @media screen and (max-width: 767px) {
                         width: 25px;
                     }
                     &.checked {
@@ -714,7 +718,8 @@ h3.sectionTitle {
 }
 
 .searchAddress {
-    @include flex(center,flex-start);
+    @include flex(center,
+    flex-start);
     .form-control {
         // flex: 0 0 33.3%;
         // max-width: 33.3%;
@@ -1018,6 +1023,24 @@ h3.sectionTitle {
             bottom: calc(10px + 50px);
             border-radius: unset;
             left: 0;
+        }
+    }
+    @media screen and (max-width:1500px) {
+        .tab-content {
+            padding-left: rem(50px);
+        }
+    }
+    @media screen and (max-width:1300px) {
+        .pageHead {
+            .listingTabs {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+        }
+    }
+    @media screen and (max-width:1199px) {
+        .tab-content {
+            padding-left: rem(60px);
         }
     }
 }
@@ -1686,6 +1709,14 @@ h3.sectionTitle {
             padding-top: 0;
             max-width: 80%;
             margin: auto auto rem(40px) auto;
+        }
+    }
+}
+
+.save-properties {
+    .property {
+        &__item {
+            margin-bottom: rem(40px);
         }
     }
 }
