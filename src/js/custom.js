@@ -193,7 +193,7 @@ var aqarat = {
         $(this).parents(".propertyListing__filter").toggleClass("toggle");
     },
     updateScroll: function() {
-        alert();
+        
         $(".inner-scroll").mCustomScrollbar('update');
     },
     configureModal: function() {

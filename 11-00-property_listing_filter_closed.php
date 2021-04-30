@@ -386,11 +386,19 @@
         <div class="container">
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="propertyListing" role="tabpanel">
-                    <div class="grid properties " data-grid-item-width="1/3" data-item-gap="30">
-                        <?php include "includes/propertyItemListing.php";?>
-                        <?php include "includes/propertyItemListing.php";?>
-                        <?php include "includes/propertyItemListing.php";?>
-                        <?php include "includes/propertyItemListing.php";?>
+                    <div class="row properties ">
+                        <div class="col-md-4 mb-25">
+                            <?php include "includes/propertyItemListing.php";?>
+                        </div>
+                        <div class="col-md-4 mb-25">
+                            <?php include "includes/propertyItemListing.php";?>
+                        </div>
+                        <div class="col-md-4 mb-25">
+                            <?php include "includes/propertyItemListing.php";?>
+                        </div>
+                        <div class="col-md-4 mb-25">
+                            <?php include "includes/propertyItemListing.php";?>
+                        </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="map" role="tabpanel" >
