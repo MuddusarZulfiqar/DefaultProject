@@ -13,7 +13,7 @@
             <div class="search__wrapper--search">
                 <div class="properties">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-sm-5">
                             <div class="property__item">
                                 <div class="property__item--image">
                                     <img src="src/images/house.png" alt="" class="img-fluid">
@@ -77,7 +77,7 @@
         <div class="container">
             <div class="about__wrapper--content">
                 <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium hic eius voluptates aliquam perspiciatis quod amet incidunt corrupti veritatis provident dolor vel velit enim unde cupiditate sint, quibusdam neque cum ad consequatur ipsum nesciunt facere accusantium vero! Repellendus cupiditate nobis quos facilis, et voluptatum fugiat ex dolore non quibusdam pariatur animi temporibus veritatis quidem libero qui ipsa vitae, ducimus enim modi dolorum nulla. Natus temporibus voluptatum aliquid, iste harum, soluta quas porro, dolore nam beatae ipsum! Dignissimos earum quo fugiat perspiciatis enim architecto reprehenderit perferendis hic? Fugiat, beatae officiis pariatur omnis <span>repellat</span> cum tempore vero, similique sint, quas odit nostrum.</p>
+                <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type <span>properties</span> book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more <span>properties</span> with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 <div class="text-center">
                     <a href="">View More</a>
                 </div>

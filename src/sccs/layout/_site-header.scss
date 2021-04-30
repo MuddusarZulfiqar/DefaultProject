@@ -236,6 +236,7 @@ header {
     @media screen and (max-width:500px) {
         .navbar {
             flex-wrap: wrap;
+            padding: 0;
         }
         .navbar-nav {
             margin-left: 0 !important;

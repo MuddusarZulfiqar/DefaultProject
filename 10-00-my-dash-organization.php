@@ -7,10 +7,12 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                <img class="img-fluid" src="src/images/dash_organization_img.png" alt="">
+            <div class="col-xl-6 col-md-6">
+               <div class="image">
+                 <img class="img-fluid" src="src/images/dash_organization_img.png" alt="">
+               </div>
             </div>
-            <div class="col-5">
+            <div class="col-xl-5 col-md-6">
                 <form>
                     <div class="form-group">
                         <div class="uploadFile__item">
@@ -63,11 +65,9 @@
                             </label>
                         </div>
                     </div>
-                    <div class="button-row">
-                        <div class="inline-btn">
-                            <button class="btn btn-secondary btn-lg">update</button>
-                            <button class="btn btn-cancel btn-lg">cancel</button>
-                        </div>
+                    <div class="inline-btn">
+                        <button class="btn btn-secondary btn-lg">update</button>
+                        <button class="btn btn-cancel btn-lg">cancel</button>
                     </div>
                 </form>
                 
