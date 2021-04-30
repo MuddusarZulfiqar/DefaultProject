@@ -9,24 +9,24 @@
         <h2>Property Details</h2>
         <form>
             <div class="row">
-                <div class="col-6">
+                <div class="col-sm-6">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Property Name (English)">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Property Name (Arabic)">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Property Name (English)">
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-sm-12">
                     <div class="form-group">
-                        <ul class="list-inline">
+                        <ul class="list-inline d-sm-inline-block d-flex">
                             <li class="radio list-inline-item">
                                 <label>
                                     <input type="radio" name="radio" checked="">
@@ -54,7 +54,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6">
                     <div class="form-group">
                         <label class="control-label">Property Category</label>
                         <div>
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6">
                     <div class="form-group">
                         <label class="control-label">Property Sub-Category</label>
                         <select class="selectpicker">
@@ -142,22 +142,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Beds ">  
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Baths ">  
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Kitchen ">  
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <div class="form-group">
                         <div class="has-label">
                             <input type="text" class="form-control" placeholder="Area">
@@ -174,7 +174,9 @@
                     <div class="form-group">
                         <label class="control-label">Google Map Location</label>
                         <div class="searchAddress">
-                            <input type="text" class="form-control">
+                            <div class="form-group mb-0">
+                            <input type="text" class="form-control ">
+                            </div>
                             <button class="searchAddress--search">
                                 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.966 56.966" xml:space="preserve">
                                     <use xlink:href="#search-icon-google"></use>
@@ -191,7 +193,7 @@
     </div>
     <div class="container-md">
         <div class="row">
-            <div class="col-6">
+            <div class="col-sm-6">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="PACI Number">
                 </div>
@@ -199,17 +201,17 @@
             
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-sm-6">
                 <div class="form-group">
                     <textarea class="form-control" placeholder="Description (English)"></textarea>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-6">
                 <div class="form-group">
                     <textarea class="form-control" placeholder="Description (Arabic)"></textarea>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4">
                 <div class="form-group">
                     <div class="has-label">
                         <input type="text" class="form-control" placeholder="Price">
@@ -217,10 +219,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">       
+            <div class="col-sm-12">       
                 <div class="form-group">
                     <label class="control-label">Images <span class="note">(upto 4 images)</span></label>
-                    <div class="grid uploadFile" data-item-gap="20" data-grid-item-width="1/4">
+                    <div class="grid uploadFile" data-item-gap="20" data-grid-item-width-sm="1/4">
                         <div class="uploadFile__item">
                             <div class="uploadFile__item--file">
                                 <input type="file" name="file">
@@ -244,7 +246,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-sm-12">
                 <div class="form-group">
                     <div class="checkbox">
                         <label>
@@ -259,7 +261,7 @@
     <div class="white-bg pt-30 pb-30">
         <div class="container-md">
             <div class="row">
-                <div class="col-6">
+                <div class="col-sm-6">
                     <h3>Property Allocation Details 
                         <span>for your use only</span>
                     </h3>
@@ -289,7 +291,7 @@
                         <textarea class="form-control" placeholder="Notes"></textarea>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6">
                     <h3>Client Details 
                         <span>for your use only</span>
                     </h3>

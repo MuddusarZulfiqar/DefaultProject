@@ -356,6 +356,32 @@
         </div>
     </div>
 
+    
+    <div class="modal fade" id="done" tabindex="-1" role="dialog" aria-labelledby="register" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">You are almost done!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="img-container text-center">
+                        <img src="src/images/footer__icon.png" alt="">
+                    </div>
+                    <h4>Registration completed!</h4>
+                    <p>We have sent you a verification link, please follow
+                    that and verify you email account to log in.</p>
+                    <div class="button-row">
+                        <button class="btn btn-secondary ">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade gallery" id="gallery1" tabindex="-1" role="dialog" aria-labelledby="gallery1" aria-hidden="true">
         <div class="modal-dialog" role="document">

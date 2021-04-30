@@ -306,4 +306,6 @@ $(document).ready(function(){
             $('.slidesCounter span.current').text(` ${current + 1}`) 
         }
     });
+   $('.propertyDetails__propertyInfo--gallery .slick-arrow').text('')
+    
 });

@@ -668,10 +668,14 @@ h3.sectionTitle {
                 align-items: center;
                 border-radius: 11px;
                 color: var(--primary);
+                justify-content: center;
                 img {
                     position: absolute;
                     max-width: 100%;
                     width: 30px;
+                    @media screen and (max-width:767px){
+                        width: 25px;
+                    }
                     &.checked {
                         opacity: 0;
                     }
@@ -710,11 +714,10 @@ h3.sectionTitle {
 }
 
 .searchAddress {
-    @include flex(center,
-    flex-start);
+    @include flex(center,flex-start);
     .form-control {
-        flex: 0 0 33.3%;
-        max-width: 33.3%;
+        // flex: 0 0 33.3%;
+        // max-width: 33.3%;
     }
     button {
         background: none;

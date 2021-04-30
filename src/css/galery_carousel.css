@@ -78,7 +78,7 @@ Version: 1.0
 /* _______________________________________________ */
 
 
-.carousel .nextButton {
+.carousel .nextButton,.slick-next {
   position : absolute;
   right : 10px;
   top : 133px;
@@ -90,9 +90,11 @@ Version: 1.0
   background-color: #fff;
   border-radius: 50%;
   background-size: 30px 30px;
+  outline: none;
+  border: none;
 }
 
-.carousel .prevButton {
+.carousel .prevButton,.slick-prev {
   position : absolute;
   left : 10px;
   top : 133px;
@@ -103,7 +105,8 @@ Version: 1.0
   z-index : 9999;
   background-color: #fff;
   border-radius: 50%;
-  background-size: 30px 30px;
+  background-size: 30px 30px;outline: none;
+  border: none;
 }
 
 /* _______________________________________________ */
@@ -195,7 +198,6 @@ Version: 1.0
 /* gradient color for Opera */
 
 .carousel .gradient { background-image : url(../scripts/gradient.svg); }
-
 
 /* Navigation Counter  */
 

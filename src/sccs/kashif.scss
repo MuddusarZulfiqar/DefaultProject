@@ -3,6 +3,12 @@
     &__banner{
         height: 650px;
         position: relative;
+        @media screen and (max-width:767px) {
+            height: 500px;
+        }
+        @media screen and (max-width:575px) {
+            height: 600px;
+        }
         &--image{
             height: 100%;
             width: 100%;
@@ -27,7 +33,21 @@
         }
         &--propertyInfo{
             padding-top: rem(55px);
-            
+            .banner_heading{
+                @media screen and (max-width:767px) {
+                    margin-bottom: rem(20px);
+                }
+            }
+            .banner_heart{
+                @media screen and (max-width:767px) {
+                    margin-top: rem(20px);
+                }
+            }
+            .banner_content{
+                @media screen and (max-width:576px) {
+                    margin-top: rem(40px) !important;
+                }
+            }
             .transparent{
                 background: rgba(255, 255, 255, 0.2);
                 padding: 15px;
@@ -35,11 +55,18 @@
                 display: inline-flex;
                 align-items: center;
                 font-weight: bold;
+                @media screen and (max-width:575px) {
+                    padding: 10px 8px;
+                }
                 span{
                     width: 15px;
                     height: 15px;
                     margin-right: 5px;
                     display: inherit;
+                    @media screen and (max-width:626px) {
+                        font-size:rem(12px);
+                        width: 15px !important;
+                    }
                     svg{
                         width: 100%;
                         height: auto;
@@ -62,8 +89,17 @@
         &--title{
             color: #fff;
             font-size: rem(72px);
+            @media screen and (max-width:767px) {
+                font-size: rem(50px);
+            }
         }
         &--detail{
+            @media screen and (max-width:767px) {
+                .d-flex{
+                    justify-content: center;
+                }
+                
+            }
             .logo{
                 max-width: 61px;
                 margin-right: 15px;
@@ -75,6 +111,7 @@
                 font-weight: bold;
                 color: #fff;
                 text-transform: uppercase;
+                text-align: left;
                 span{
                     display: block;
                     margin-bottom: 4px;
@@ -121,20 +158,65 @@
             
         }
         &--gallery{
+            .slick-arrow {
+                top: 50%;
+                transform: translateY(-50%);
+                box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+                background-size: 25px 25px;
+                width: 45px;
+                height: 45px;
+                @media screen and (max-width:575px) {
+                    width: 40px;
+                    height: 40px;
+                }
+                &.slick-prev{
+                    left: -30px;
+                    @media screen and (max-width:767px) {
+                        left: -50px;
+                    }
+                    @media screen and (max-width:400px) {
+                        left: -40px;
+                    }
+                }
+                &.slick-next{
+                    right: -30px;
+                    @media screen and (max-width:767px) {
+                        right: -50px;
+                    }  
+                    @media screen and (max-width:400px) {
+                        right: -40px;
+                    }
+                }
+            }
             margin-top: 120px;
+            @media screen and (max-width:767px) {
+                margin-top: 30px;
+                
+            }
+            @media screen and (max-width:575px) {
+                margin-top: rem(20px);
+                max-width: 270px;
+                margin-left: auto;
+                margin-right: auto;
+            }
             .gallery__image {
                 overflow: hidden;
-                border-radius: 25px;
                 position: relative;
+                padding: 0px 10px;
+                
+                img{  
+                    border-radius: 25px;
+                }
                 &--overlay{
                     position: absolute;
-                    width: 100%;
+                    width: calc(100% - 20px);
                     height: 100%;
                     top: 0;
                     background: rgba(0,49,96,0.6);
                     opacity: 0;
                     visibility: hidden;
                     transition: .5s ease all;
+                    border-radius: 25px;
                     button{
                         width: 100%;
                         height: 100%;
@@ -169,6 +251,13 @@
         margin-left: auto;
         text-align: center;
         color: #fff;
+        @media screen and (max-width:991px) {
+            max-width: 175px;
+        }
+        @media screen and (max-width:767px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
         svg{
             
             width: 40px;
@@ -178,10 +267,17 @@
     }
     &__details{
         padding-top: rem(120px);
+        
+        @media screen and (max-width:767px) {
+            padding-top: rem(160px);
+        }
+        @media screen and (max-width:575px) {
+            padding-top: rem(205px);
+        }
         &--title{
             font-size: rem(24px);
             color: var(--primary);
-            margin-bottom: 20px;
+            margin-bottom: unset !important;
             span{
                 font-weight: normal;
                 margin-top: rem(10px);
@@ -198,6 +294,10 @@
         &--category{
             span{
                 font-size: rem(20px);
+                @media screen and (max-width:464px) {
+                    font-size: rem(16px);
+                    word-break: break-word;
+                }
             }
         }
         &--amenities{
@@ -208,13 +308,39 @@
             }
         }
         &--contact{
+            @media screen and (max-width:757px) {
+                .row{
+                    .right-border{
+                        &::before{
+                            content: unset;
+                            
+                        }
+                        .icon_wrapper{
+                            width: auto;
+                        }
+                    }
+                    [class*='col-']{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .contect_items{
+                width: 25%;
+            }
             .icon_wrapper{
                 text-align: center;
                 width: max-content;
+                @media screen and (max-width:979px) {
+                    width: auto;
+                }
                 span{
                     &:nth-child(2){
                         font-size: rem(18px);
                         color: #515151;
+                        @media screen and (max-width:979px) {
+                            width: auto;
+                            word-break: break-all;
+                        }
                     }
                 }
             }
@@ -229,8 +355,17 @@
                         margin-top: 5px;
                     }
                 }
+                @media screen and (max-width:975px) {
+                    padding: 8px 20px;
+                    span{
+                        font-size: rem(16px);
+                        svg{
+                            width: 35px;
+                        }
+                    }
+                }
             }
-            .custom_icons{
+            .right-border{
                 position: relative;
                 &::before{
                     content: '';
@@ -241,6 +376,9 @@
                     transform: translateY(-50%);
                     background: var(--primary);
                     left: calc(300px / 1.4);
+                    @media screen and (max-width:767px) {
+                        left: calc(300px / 1.7);
+                    }
                 }
             }
             .image-wrapper{
@@ -248,6 +386,13 @@
                 overflow: hidden;
                 border-radius: 30px;
                 position: relative;
+                @media screen and (max-width:979px) {
+                    border-radius: 25px;
+                    height: 120px;
+                }
+                @media screen and (max-width:575px) {
+                    border-radius: 20px;
+                }
                 img{
                     width: 100%;
                     height: 100%;
@@ -259,10 +404,20 @@
                     top: 50%;
                     left: 130px;
                     transform: translateY(-50%);
+                    @media screen and (max-width:991px) {
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                    }
                     h2{
                         font-weight: normal;
                         span{
                             font-weight: bold;
+                        }
+                        @media screen and (max-width:1300px) {
+                            font-size: 35px;
+                        }
+                        @media screen and (max-width:991px) {
+                            font-size: 30px;
                         }
                     }
                 }
@@ -271,11 +426,17 @@
         &--warning{
             a.text-danger{
                 span{
-                    font-size: 20px;
+                    font-size: rem(20px);
                     font-weight: bold;
+                    @media screen and (max-width:575px) {
+                        font-size: rem(18px);
+                    }
                     img{
                         max-width: 35px;
                         margin-right: 10px;
+                        @media screen and (max-width:575px) {
+                            max-width: 25px;
+                        }
                     }
                 }
             }
@@ -338,5 +499,14 @@
         span.current{
             font-size: rem(50px);
         }
+    }
+}
+
+#done{
+    h4{
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        margin-top: 20px;
     }
 }

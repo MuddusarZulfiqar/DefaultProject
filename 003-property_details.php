@@ -27,8 +27,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="row mt-80">
-                    <div class="col-md-6">
+                <div class="row mt-80 banner_content">
+                    <div class="col-sm-6 mx-sm-0 mx-auto text-sm-left text-center banner_heading">
                         <h2 class="propertyDetails__propertyInfo--title">Sui House</h2>
                         <div class="propertyDetails__propertyInfo--detail mt-15">
                             <div class="d-flex">
@@ -36,7 +36,7 @@
                                     <img src="src/images/card_logo.png" alt="" class="img-fluid rounded-circle">
                                 </div>
                                 <div class="label">
-                                    <span>Property By</span>
+                                    <span >Property By</span>
                                     Gulf Investment Co.
                                     <div class="icons mt-40">
                                         <div>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 text-right">
+                    <div class="col-sm-6 text-sm-right text-center banner_heart">
                         <div class="propertyDetails__propertyInfo--const">
                             <p>Rate / Cost <span>230 KWD</span></p>
                         </div>
@@ -78,7 +78,37 @@
                         </div>
                     </div>
                 </div>
-                <div class="propertyDetails__propertyInfo--gallery grid" grid-item-width="1/4" data-item-gap="20" >
+                <div class="propertyDetails__propertyInfo--gallery slick-instance" data-slick='{"slidesToShow": 4, 
+                    "slidesToScroll": 1,
+                    "arrows":false,
+                    "dots":false,
+                    "responsive":[
+                        {
+                            "breakpoint": 991,
+                            "settings": {
+                                "slidesToShow": 3,
+                                "slidesToScroll": 1,
+                                "arrows": true
+                            }
+                        },
+                        {
+                            "breakpoint": 767,
+                            "settings": {
+                                "slidesToShow": 2,
+                                "slidesToScroll": 1,
+                                "arrows": true
+                            }
+                        },
+                        {
+                            "breakpoint": 576,
+                            "settings": {
+                                "slidesToShow": 1,
+                                "slidesToScroll": 1,
+                                "arrows": true
+                            }
+                        }
+                    ]
+                }'>
                     <div class="gallery__image">
                         <img src="src/images/home-tab-four.png" alt="" class="img-fluid">
                         <div class="gallery__image--overlay">
@@ -109,11 +139,11 @@
     </div>
     <div class="propertyDetails__details ">
         <div class="container">
-            <div class="row align-items-center mb-20">
-                <div class="col-6 mb-20">
+            <div class="row align-items-center ">
+                <div class="col-md-6 col-12 text-md-left text-center mb-20">
                     <h4 class="propertyDetails__details--title">Apartment Description</h4>
                 </div>
-                <div class="col-6 text-right paciNo">
+                <div class="col-md-6 col-12 text-md-right text-center paciNo mb-20">
                     <img src="src/images/property-details/detailsIcon.png" alt="" class="img-fluid">
                     <span class="font-weight-bold mr-3">PACI No.</span>
                     <span>216965874545</span>
@@ -122,42 +152,42 @@
             <p class="propertyDetails__details--description mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab magni, quia tempora ea debitis nesciunt odio praesentium reiciendis repellat deserunt accusantium accusamus pariatur itaque exercitationem libero, ex illo adipisci velit sunt dicta labore nam earum. Commodi aspernatur repellendus fuga? Esse omnis quos architecto, pariatur sunt doloremque repudiandae corporis cum.</p>
             <div class="propertyDetails__details--category">
                 <div class="row">
-                    <div class="col-6 mb-30">
+                    <div class="col-md-6 mb-30">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-5">
                                 <span class="text-primary-light font-weight-bold">Property Size</span>
                             </div>
-                            <div class="col-6 ">
+                            <div class="col-7 ">
                                 <span class="text-gray">9600 m2</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 mb-30">
+                    <div class="col-md-6 mb-30">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-5">
                                 <span class="text-primary-light font-weight-bold">Property Category</span>
                             </div>
-                            <div class="col-6">
+                            <div class="col-7">
                                 <span class="text-gray">Offices,Parking Space</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 mb-30">
+                    <div class="col-md-6 mb-30">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-5">
                                 <span class="text-primary-light font-weight-bold">Property Type</span>
                             </div>
-                            <div class="col-6 ">
+                            <div class="col-7 ">
                                 <span class="text-gray">Offices,Parking,Apartments</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 mb-30">
+                    <div class="col-md-6 mb-30">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-5">
                                 <span class="text-primary-light font-weight-bold">Property Sub-Category</span>
                             </div>
-                            <div class="col-6">
+                            <div class="col-7">
                                 <span class="text-gray">Offices,Parking,Apartments</span>
                             </div>
                         </div>
@@ -170,7 +200,7 @@
             <div class="container">
                 <h4 class="propertyDetails__details--title">Amenities</h4>
                 <div class="row mt-40">
-                    <div class="col-2 mb-40 d-flex align-items-center">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-40 d-flex align-items-center">
                         <span class="icon">
                             <img src="src/images/icons/mosque_uncheck.png" alt="" class="img-fluid">
                         </span>
@@ -178,7 +208,7 @@
                             Mosque
                         </span>
                     </div>
-                    <div class="col-2 mb-40 d-flex align-items-center">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-40 d-flex align-items-center">
                         <span class="icon">
                             <img src="src/images/icons/food_uncheck.png" alt="" class="img-fluid">
                         </span>
@@ -186,7 +216,7 @@
                             Food Outlet
                         </span>
                     </div>
-                    <div class="col-2 mb-40 d-flex align-items-center">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-40 d-flex align-items-center">
                         <span class="icon">
                             <img src="src/images/icons/office_uncheck.png" alt="" class="img-fluid">
                         </span>
@@ -194,7 +224,7 @@
                             Shopping Mall
                         </span>
                     </div>
-                    <div class="col-2 mb-40 d-flex align-items-center">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-40 d-flex align-items-center">
                         <span class="icon">
                             <img src="src/images/icons/pool_uncheck.png" alt="" class="img-fluid">
                         </span>
@@ -202,7 +232,7 @@
                             Pool
                         </span>
                     </div>
-                    <div class="col-2 mb-40 d-flex align-items-center">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-40 d-flex align-items-center">
                         <span class="icon">
                             <img src="src/images/icons/garden_uncheck.png" alt="" class="img-fluid">
                         </span>
@@ -210,7 +240,7 @@
                             Garden
                         </span>
                     </div>
-                    <div class="col-2 mb-40 d-flex align-items-center">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-40 d-flex align-items-center">
                         <span class="icon">
                             <img src="src/images/icons/elevator_uncheck.png" alt="" class="img-fluid">
                         </span>
@@ -218,7 +248,7 @@
                             Elevator
                         </span>
                     </div>
-                    <div class="col-2 mb-40 d-flex align-items-center">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-40 d-flex align-items-center">
                         <span class="icon">
                             <img src="src/images/icons/chair_uncheck.png" alt="" class="img-fluid">
                         </span>
@@ -227,7 +257,7 @@
                             Accessible
                         </span>
                     </div>
-                    <div class="col-2 mb-40 d-flex align-items-center">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-40 d-flex align-items-center">
                         <span class="icon">
                             <img src="src/images/icons/ballcony_uncheck.png" alt="" class="img-fluid">
                         </span>
@@ -235,7 +265,7 @@
                             Balcony
                         </span>
                     </div>
-                    <div class="col-2 mb-40 d-flex align-items-center">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-40 d-flex align-items-center">
                         <span class="icon">
                             <img src="src/images/icons/storage_uncheck.png" alt="" class="img-fluid">
                         </span>
@@ -243,7 +273,7 @@
                             Storage
                         </span>
                     </div>
-                    <div class="col-2 mb-40 d-flex align-items-center">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-40 d-flex align-items-center">
                         <span class="icon">
                             <img src="src/images/icons/garden_uncheck.png" alt="" class="img-fluid">
                         </span>
@@ -251,7 +281,7 @@
                             View
                         </span>
                     </div>
-                    <div class="col-2 mb-40 d-flex align-items-center">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-40 d-flex align-items-center">
                         <span class="icon">
                             <img src="src/images/icons/parking_uncheck.png" alt="" class="img-fluid">
                         </span>
@@ -259,7 +289,7 @@
                             Parking Spot
                         </span>
                     </div>
-                    <div class="col-2 mb-40 d-flex align-items-center">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-40 d-flex align-items-center">
                         <span class="icon">
                             <img src="src/images/icons/doorman_uncheck.png" alt="" class="img-fluid">
                         </span>
@@ -273,10 +303,10 @@
         <div class="propertyDetails__details--contact mb-40">
             <div class="container">
                 <div class="row mb-30">
-                    <div class="col-3">
+                    <div class="col-xl-3 col-12">
                         <h4 class="propertyDetails__details--title">Get In Touch<br/><span>Gulf Investment Co.</span></h4>
                     </div>
-                    <div class="col-2 custom_icons">
+                    <div class="col-xl-2 col-md-4 col-sm-6 right-border">
                         <div class="icon_wrapper">
                             <span class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
@@ -288,7 +318,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col-4 ">
+                    <div class="col-xl-4 col-md-4 col-sm-6">
                         <div class="icon_wrapper mx-auto">
                             <span class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
@@ -300,9 +330,9 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-xl-3 col-md-4 col-12 text-md-right text-center">
                         <a href="" class="btn btn-primary">
-                            <div class="d-flex">
+                            <div class="d-flex align-items-center">
                                 <span class="mr-3">
                                 <svg fill="currentColor" data-name="Layer 1" width="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464 599.96">
                                         <use xlink:href="#pdf-icon"></use>
@@ -329,7 +359,7 @@
         <div class="propertyDetails__details--warning">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-md-6 col-12 text-md-let text-center mb-20">
                         <a href="" class="warning text-danger">
                             <span>
                                 <img src="src/images/icons/danger.png" alt="" class="img-fluid">
@@ -337,7 +367,7 @@
                             <span>See Something Incorrect , Please inform us</span>
                         </a>
                     </div>
-                    <div class="col-6 text-right">
+                    <div class="col-md-6 col-12 text-md-right text-center">
                         <a href="" class="btn btn-primary">Report abuse</a>
                     </div>
                 </div>
