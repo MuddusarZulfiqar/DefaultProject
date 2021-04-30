@@ -1268,17 +1268,23 @@ h3.sectionTitle {
 				padding-left: 0.9375rem;
 				padding-right: 0.9375rem;
 				font-weight: normal;
-				opacity: 0;
-				visibility: hidden;
+				opacity: 1;
+				visibility: visible;
 				position: absolute;
 				bottom: 19px;
+				@media screen and (min-width: 992px) {
+					opacity: 0;
+					visibility: hidden;
+				}
 			}
 			&:hover {
 				border: 1px solid #52a7fb;
 				box-shadow: 0 0 11px 4px rgba(82, 167, 251, 0.2);
-				.card-button {
-					opacity: 1;
-					visibility: visible;
+				@media screen and (min-width: 992px) {
+					.card-button {
+						opacity: 1;
+						visibility: visible;
+					}
 				}
 			}
 		}
@@ -1854,6 +1860,23 @@ h3.sectionTitle {
 		}
 		.map {
 			height: 400px;
+		}
+	}
+}
+@media screen and (max-width: 575px) {
+	.sell-page {
+		.image {
+			max-width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+		}
+		.card {
+			max-width: 320px;
+			margin: auto;
+		}
+		.card-wrapper > div {
+			margin-bottom: rem(20px);
 		}
 	}
 }
