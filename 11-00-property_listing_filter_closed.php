@@ -210,7 +210,7 @@
                         <div class="form-group row align-items-center">
                             <label class="control-label col-sm-2">Bedrooms</label>
                             <div class="col-sm-10">
-                                <div class="grid" grid-item-width="1/5" data-item-gap="15">
+                                <div class="grid" data-grid-item-width="1/5" data-item-gap="15">
                                     <div>
                                         <div class="radio">
                                             <label style="">
@@ -267,7 +267,7 @@
                         <div class="form-group row align-items-center">
                             <label class="control-label col-sm-2">Bathroom</label>
                             <div class="col-sm-10">
-                                <div class="grid" grid-item-width="1/5" data-item-gap="15">
+                                <div class="grid"  data-grid-item-width="1/5" data-item-gap="15">
                                     <div>
                                         <div class="radio">
                                             <label style="">
@@ -386,7 +386,7 @@
         <div class="container">
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="propertyListing" role="tabpanel">
-                    <div class="grid properties " grid-item-width="1/3" data-item-gap="30">
+                    <div class="grid properties " data-grid-item-width="1/3" data-item-gap="30">
                         <?php include "includes/propertyItemListing.php";?>
                         <?php include "includes/propertyItemListing.php";?>
                         <?php include "includes/propertyItemListing.php";?>

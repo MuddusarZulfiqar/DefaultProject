@@ -88,7 +88,7 @@
                 <div class="col-12">
                     <div class="form-group">
                         <label class="control-label">Property Features</label>
-                        <div class="propertyFeatures grid" grid-item-width="1/3" data-item-gap="15">
+                        <div class="propertyFeatures grid" data-grid-item-width="1/3" data-item-gap="15">
                             <div class="checkbox">
                                 <label>
                                     <input type="checkbox" name="radio" checked="">
@@ -220,7 +220,7 @@
             <div class="col-12">       
                 <div class="form-group">
                     <label class="control-label">Images <span class="note">(upto 4 images)</span></label>
-                    <div class="grid uploadFile" data-item-gap="20" grid-item-width="1/4">
+                    <div class="grid uploadFile" data-item-gap="20" data-grid-item-width="1/4">
                         <div class="uploadFile__item">
                             <div class="uploadFile__item--file">
                                 <input type="file" name="file">
