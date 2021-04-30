@@ -510,3 +510,13 @@
         margin-top: 20px;
     }
 }
+
+.custom_list{
+    flex-wrap: wrap;
+    @media screen and (max-width:560px) {
+        .radio{
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
