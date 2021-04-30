@@ -308,6 +308,53 @@
         </div>
     </div>
 
+ <!-- // abuse Modal -->
+
+    <div class="modal fade" id="abuseModal" tabindex="-1" role="dialog" aria-labelledby="abuseModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-title"></span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                    <label class="control-label">Reason for Abuse</label>
+                    <div>
+                        <select class="selectpicker form-control">
+                            <option>False Company</option>
+                            <option>2 Week</option>
+                            <option>3 Week</option>
+                            <option>4 Week</option>
+                            <option>5 Week</option>
+                            <option>6 Week</option>
+                            <option>7 Week</option>
+                            <option>8 Week</option>
+                            <option>9 Week</option>
+                            <option>10 Week</option>
+                            <option>1 Year</option>
+                            <option>2 Year</option>
+                            <option>3 Year</option>
+                        </select>
+                    </div>
+                </div>
+                    <div class="button-row">
+                        <button class="btn btn-danger ">
+                            Report Abuse
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="modal fade gallery" id="gallery1" tabindex="-1" role="dialog" aria-labelledby="gallery1" aria-hidden="true">
@@ -358,4 +405,9 @@
             </div>
         </div>
     </div>
+
+
+
+
+ 
 </div>
