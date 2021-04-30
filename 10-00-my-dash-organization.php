@@ -17,7 +17,7 @@
                             <div class="uploadFile__item--file" data-label="edit">
                                 <input type="file" name="file">
                                 <div class="uploadFile__item--image">
-                                    <img src="src/images/dash_organization_img.png">
+                                    <img src="src/images/dash_organization_img.png" alt = ''>
                                     <span class="delete">
                                     </span>
                                 </div>
