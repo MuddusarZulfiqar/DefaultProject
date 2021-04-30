@@ -117,7 +117,7 @@
                         </div>
                         <div class="table__row--cell text-left" data-label="Status" data-width="17">
                             <div class="status blue">
-                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="52.8014mm" height="59.3963mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 1227 1380.25" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="52.8014mm" height="59.3963mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 1227 1380.25" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <use xlink:href="#progress-icon"></use>
                                 </svg>
                                 In-progress

@@ -87,7 +87,7 @@
                 </div>
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="" class="control-label">Property Features</label>
+                        <label class="control-label">Property Features</label>
                         <div class="propertyFeatures grid" grid-item-width="1/3" data-item-gap="15">
                             <div class="checkbox">
                                 <label>

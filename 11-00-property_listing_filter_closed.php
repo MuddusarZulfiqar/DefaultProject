@@ -21,7 +21,7 @@
                                 <img src="src/images/list.png " alt="" class="img-fluid">
                             </span>List
                         </a>
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#map" role="tab" aria-controls="profile" aria-selected="false">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#map" role="tab" aria-controls="profile-tab" aria-selected="false">
                             <span>
                                 <img src="src/images/map.png " alt="" class="img-fluid">
                             </span>Map
@@ -56,7 +56,7 @@
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="form-group float-label">
-                                            <label for="" class="">Area</label>
+                                            <label class="control-label" >Area</label>
                                             <select class="selectpicker">
                                                 <option>Salmiya</option>
                                                 <option>Salmiya</option>
@@ -70,7 +70,7 @@
                                     </div>
                                     <div class="col-6">
                                         <div class="form-group float-label">
-                                            <label for="" class="">Area</label>
+                                            <label class="control-label">Area</label>
                                             <select class="selectpicker">
                                                 <option>Salmiya</option>
                                                 <option>Salmiya</option>
