@@ -3689,6 +3689,13 @@ footer {
   color: #fff;
   margin-top: 20px; }
 
+.custom_list {
+  flex-wrap: wrap; }
+  @media screen and (max-width: 560px) {
+    .custom_list .radio {
+      margin-right: 10px;
+      margin-bottom: 10px; } }
+
 .inner-scroll {
   --scrollheight: 250px;
   max-height: var(--scrollheight); }
